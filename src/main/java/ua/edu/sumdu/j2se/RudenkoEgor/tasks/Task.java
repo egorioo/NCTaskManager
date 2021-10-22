@@ -108,27 +108,27 @@ public class Task {
         if (current < start ) return start;
         if (current >= end) return -1;
 
-        ArrayList<Integer> NextTime = new ArrayList<Integer>();
+        ArrayList<Integer> nextTime = new ArrayList<Integer>();
         for(int j = start; j < end; j += interval) {
-            NextTime.add(j);
+            nextTime.add(j);
         }
 
-        for (int i = 0; i < NextTime.size(); i++) {
-            if (current == NextTime.get(i)) {
-                if (current == NextTime.get(NextTime.size() - 1)) {
+        for (int i = 0; i < nextTime.size(); i++) {
+            if (current == nextTime.get(i)) {
+                if (current == nextTime.get(nextTime.size() - 1)) {
                     return -1;
                 }
-                else return NextTime.get(i + 1);
+                else return nextTime.get(i + 1);
             }
         }
 
-        for (int i = 0; i < NextTime.size(); i++) {
-            if (current >= NextTime.get(NextTime.size() - 1) && current < end) {
+        for (int i = 0; i < nextTime.size(); i++) {
+            if (current >= nextTime.get(nextTime.size() - 1) && current < end) {
                 return -1;
             }
 
-            if (current > NextTime.get(i) && current < NextTime.get(i + 1)) {
-                return NextTime.get(i+1);
+            if (current > nextTime.get(i) && current < nextTime.get(i + 1)) {
+                return nextTime.get(i+1);
             }
         }
 
