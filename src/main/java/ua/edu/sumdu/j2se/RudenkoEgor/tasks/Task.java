@@ -10,14 +10,21 @@ public class Task {
     private boolean active;
     private boolean repeat;
 
-    /*Конструктор неактивной задачи которая выполняется один раз  */
-    public Task(String title,int time) {
+    /** Constructor of an inactive task that runs at a given time once
+     * @param title - task name
+     * @param time - task execution time*/
+    public Task(String title, int time) {
         this.title = title;
         this.time = time;
         this.repeat = false;
     }
 
-    /*Конструктор неактивной задачи, которая выполняется с интервалом  */
+    /** Constructor of an inactive task that is
+     * specified by a time interval and runs at an interval
+     * @param title - task name
+     * @param start - start time
+     * @param end - end time
+     * @param interval - time interval after which the task will be repeated */
     public Task(String title, int start, int end, int interval) {
         this.title = title;
         this.start = start;
@@ -26,34 +33,34 @@ public class Task {
         this.repeat = true;
     }
 
-    /*Геттер для названия */
+    /** Returns the name of the task*/
     public String getTitle() {
         return title;
     }
 
-    /*Сеттер для названия*/
+    /** Set the name of the task*/
     public void setTitle(String title) {
         this.title = title;
     }
 
-    /*Метод для проверки состояния задачи */
+    /** Method for checking the status of a task*/
     public boolean isActive() {
         return active;
     }
 
-    /*Метод для установления состояния задачи */
+    /** Method for setting task state */
     public void setActive(boolean active){
         this.active = active;
     }
 
-    /*Геттер для времени. Возвращает время выполненения,
-    или время начала для задачи которая повторяется  */
+    /** Returns the execution time of the task, or the start time for a task that is repeating*/
     public int getTime(){
         if (repeat) return start;
         else return time;
     }
 
-    /*Сеттер для времени. Превращает повторяющуюся задачу в неповторяющуюся */
+    /** Changes the execution time of the task. If the task is repeated,
+     * turns into one that does not repeat*/
     public void setTime(int time){
         this.time = time;
         if (repeat) {
@@ -64,25 +71,28 @@ public class Task {
         }
     }
 
-    /*Геттер для времени повторения. Если не повторяется возвращается время выполнения */
+    /** Returns the start time of the task. If the task is not repeated,
+     * the execution time is returned */
     public int getStartTime(){
         if (repeat) return start;
         else return time;
     }
 
-    /*Геттер для конца выполнения повт. задачи. Если не повторяется возвращается время выполнения */
+    /** Returns the end of the task execution. If the task is not repeated,
+     * the execution time is returned*/
     public int getEndTime(){
         if (repeat) return end;
         else return time;
     }
 
-    /*Геттер для интервала. Если не повторяется возвращается 0*/
+    /** Returns the interval. Returns 0 if the task is not repeated*/
     public int getRepeatInterval(){
         if (repeat) return interval;
         else return 0;
     }
 
-    /*Сеттер для времени начала, конца и интервала. Если задача не повторяется, превращает в повт.*/
+    /** A method that changes the start time, end time and repetition interval of a task.
+     *  If the task is not repetitive, it turns into a repetitive one*/
     public void setTime(int start, int end, int interval) {
         this.start = start;
         this.end = end;
@@ -93,12 +103,13 @@ public class Task {
         }
     }
 
-    /*Геттер для проверки состояния задачи. Повторяется или нет */
+    /** Checks the status of the task, whether it is repeating or not*/
     public boolean isRepeated(){
         return repeat;
     }
 
-    /*Ищет следующую задачу*/
+    /** Method that returns the time of the next task execution after the specified time
+     * If the task does not run after the specified time, returns -1*/
     public int nextTimeAfter(int current) {
         if (!active) return -1;
         if (!repeat) {
