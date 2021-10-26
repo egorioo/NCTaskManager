@@ -65,17 +65,16 @@ public class Main {
 		Task ex3 = new Task("3", 26);
 		Task ex4 = new Task("4", 10,14,2);
 
+		ex1.setActive(true);
+		ex2.setActive(true);
+		ex3.setActive(true);
+		ex4.setActive(true);
+
 		arr3.add(ex1);
 		arr3.add(ex2);
 		arr3.add(ex3);
 		arr3.add(ex4);
 
-		//arr3.incoming(0,30);
-
-		System.out.println(ex1.nextTimeAfter(5));
-		System.out.println(ex2.nextTimeAfter(20));
-
-		Task task = new Task("some", 10, 100, 20);
-		System.out.println(task.nextTimeAfter(40));
+		arr3.incoming(11,21);
 	}
 }
