@@ -1,13 +1,13 @@
 package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 
 public class ArrayTaskList {
-    private int capacity = 10;
+    private final int capacity = 10;
     private Task list[] = new Task[capacity];
 
     /**
      * Constructor where all elements are initialized to null
      */
-    ArrayTaskList() {
+    public ArrayTaskList() {
         init(list);
     }
 
@@ -89,30 +89,22 @@ public class ArrayTaskList {
     public boolean remove(Task task) {
         for (int i = 0; i < list.length; i++) {
             if (list[i] == task) {
-                Task list2[] = new Task[getCapacity(list) - 1];
+                Task listTemp[] = new Task[getCapacity(list) - 1];
                 int j = 0;
                 for (; j < i; j++) {
-                    list2[j] = list[j];
+                    listTemp[j] = list[j];
                 }
                 j++;
                 for (; j < list.length; j++) {
                     int temp = j;
-                    list2[--temp] = list[j];
+                    listTemp[--temp] = list[j];
                 }
-                list = list2;
+                list = listTemp;
                 return true;
             }
         }
         return false;
     }
-
-   /* public void print() {
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] != null) {
-                System.out.println(list[i].getTitle());
-            }
-        }
-    }*/
 
     /**
      * Method that returns the size of the array
@@ -139,25 +131,11 @@ public class ArrayTaskList {
         ArrayTaskList arr = new ArrayTaskList();
         for (int i = 0; i < list.length; i++) {
             if (list[i] != null) {
-                if (list[i].isRepeated()) {
-                    for (int j = list[i].getStartTime(); j < list[i].getEndTime(); j += list[i].getRepeatInterval()) {
-                        if (list[i].nextTimeAfter(j) > from && list[i].nextTimeAfter(j) < to) {
-                            arr.add(list[i]);
-                            break;
-                        }
-                    }
-                } else {
-                    if (list[i].getTime() > from && list[i].getTime() < to) {
-                        arr.add(list[i]);
-                    }
+                if (list[i].nextTimeAfter(from) < to && list[i].nextTimeAfter(from) != -1) {
+                    arr.add(list[i]);
                 }
             }
         }
-        //test
-        for (int i = 0; i < arr.size(); i++) {
-            System.out.println(arr.getTask(i).getTitle());
-        }
-        //test
         return arr;
     }
 }
