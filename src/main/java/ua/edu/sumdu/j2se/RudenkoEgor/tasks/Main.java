@@ -52,6 +52,7 @@ public class Main {
 		System.out.println("Add 2 elem A");
 		arr.add(A);
 		arr.add(A);
+
 		System.out.println("ArrayTaskList.size(). Expected: 4. My result: " + arr.size());
 		System.out.println("ArrayTaskList.remove(A) повинно бути істинним. My result: " + arr.remove(A));
 		System.out.println("ArrayTaskList.size(). Expected: 3. My result: " + arr.size());
@@ -65,17 +66,18 @@ public class Main {
 		Task ex3 = new Task("3", 26);
 		Task ex4 = new Task("4", 10,14,2);
 
-		ex1.setActive(true);
-		ex2.setActive(true);
-		ex3.setActive(true);
-		ex4.setActive(true);
 
 		arr3.add(ex1);
 		arr3.add(ex2);
 		arr3.add(ex3);
 		arr3.add(ex4);
 
-		arr3.incoming(11,21);
+	/*	System.out.println(arr3.remove(ex2));
+		System.out.println(arr3.remove(ex3));
+		System.out.println(arr3.remove(ex4));
+		System.out.println(arr3.remove(ex1));
+*/
+
 
 
 	}

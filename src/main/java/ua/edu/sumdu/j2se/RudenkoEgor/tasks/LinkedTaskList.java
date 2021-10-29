@@ -3,6 +3,7 @@ package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 public class LinkedTaskList {
     private int size;
     private Node head;
+    private Node lastElem = null;
 
     private class Node {
         public Node pNext;
@@ -20,13 +21,19 @@ public class LinkedTaskList {
     public void add(Task task) {
         if (head == null) {
             head = new Node(task);
-        } else {
+        } else if(lastElem == null){
             Node current = head;
             while (current.pNext != null) {
                 current = current.pNext;
             }
             current.pNext = new Node(task);
+            lastElem = current.pNext;
+        } else {
+            Node temp = lastElem;
+            temp.pNext = new Node(task);
+            lastElem = temp.pNext;
         }
+
         size++;
     }
 
@@ -66,6 +73,9 @@ public class LinkedTaskList {
             if (next.data == task) {
                 current.pNext = next.pNext;
                 size--;
+                //here
+                lastElem = null;
+                //here
                 return true;
             }
             current = current.pNext;
