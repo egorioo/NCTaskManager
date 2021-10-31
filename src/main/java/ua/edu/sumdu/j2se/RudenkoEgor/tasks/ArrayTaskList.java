@@ -61,7 +61,6 @@ public class ArrayTaskList {
                     list[i] = task;
                     break;
                 }
-
             }
         } else {
             Task list2[] = new Task[(int) (getSize(list) * 2)];

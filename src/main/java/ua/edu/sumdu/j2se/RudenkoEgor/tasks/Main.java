@@ -66,7 +66,6 @@ public class Main {
 		Task ex3 = new Task("3", 26);
 		Task ex4 = new Task("4", 10,14,2);
 
-
 		arr3.add(ex1);
 		arr3.add(ex2);
 		arr3.add(ex3);
@@ -77,8 +76,5 @@ public class Main {
 		System.out.println(arr3.remove(ex4));
 		System.out.println(arr3.remove(ex1));
 */
-
-
-
 	}
 }

@@ -3,10 +3,19 @@ package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 public class LinkedTaskList {
     private int size;
     private Node head;
-    private Node lastElem = null;
+    private Node lastElem;
 
+    /**
+     * Inner class that represents one element of a linked list
+     */
     private class Node {
+        /**
+         * @param pNext - pointer to the next item in the list
+         */
         public Node pNext;
+        /**
+         * @param data - information
+         */
         public Task data;
 
         public Node(Task data) {
@@ -14,29 +23,43 @@ public class LinkedTaskList {
         }
     }
 
+    /**
+     * Method that return size of list
+     */
     public int size() {
         return size;
     }
 
+    /**
+     * Method that adds an element to the end
+     */
     public void add(Task task) {
+        /** If the list is empty, create an element*/
         if (head == null) {
             head = new Node(task);
-        } else if(lastElem == null){
+        }
+        /** If there is only one element in the list*/
+        else if (lastElem == null) {
             Node current = head;
             while (current.pNext != null) {
                 current = current.pNext;
             }
             current.pNext = new Node(task);
             lastElem = current.pNext;
-        } else {
+        }
+        /** If there is more than one item in the list.
+         * Items are added immediately to the end through a pointer to the end of the list*/
+        else {
             Node temp = lastElem;
             temp.pNext = new Node(task);
             lastElem = temp.pNext;
         }
-
         size++;
     }
 
+    /**
+     * Method returns the element at its index in the list
+     */
     public Task getTask(int index) {
         int counter = 0;
         Node current = head;
@@ -50,10 +73,16 @@ public class LinkedTaskList {
         return null;
     }
 
+    /**
+     * Method that removes a task from the list
+     *
+     * @return true - if element is found and removed, false - if element is not found
+     */
     public boolean remove(Task task) {
         Node current = head;
         Node next = head.pNext;
         int counter = 0;
+        /** If there is one element in the list*/
         if (next == null) {
             if (current.data == task) {
                 head = null;
@@ -62,6 +91,7 @@ public class LinkedTaskList {
             }
             return false;
         }
+        /** If 0 item has a task to be deleted*/
         if (current.data == task) {
             Node temp = head;
             head = head.pNext;
@@ -69,13 +99,18 @@ public class LinkedTaskList {
             size--;
             return true;
         }
+        /** Loops through all the elements until the required task is found*/
         while (next != null) {
+
+            if (next.pNext == null && next.data == task) {
+                current.pNext = next.pNext;
+                lastElem = current;
+                size--;
+                return true;
+            }
             if (next.data == task) {
                 current.pNext = next.pNext;
                 size--;
-                //here
-                lastElem = null;
-                //here
                 return true;
             }
             current = current.pNext;
@@ -84,6 +119,13 @@ public class LinkedTaskList {
         return false;
     }
 
+    /**
+     * Method that returns a subset of tasks that are scheduled
+     * to run at least once after time 'from' and no later than 'to'.
+     *
+     * @param from - start time
+     * @param to   - end time
+     */
     public LinkedTaskList incoming(int from, int to) {
         Node current = head;
         LinkedTaskList list = new LinkedTaskList();
