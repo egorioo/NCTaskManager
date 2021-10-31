@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 
-public class LinkedTaskList {
+public class LinkedTaskList extends AbstractTaskList{
     private int size;
     private Node head;
     private Node lastElem;
@@ -117,24 +117,5 @@ public class LinkedTaskList {
             next = next.pNext;
         }
         return false;
-    }
-
-    /**
-     * Method that returns a subset of tasks that are scheduled
-     * to run at least once after time 'from' and no later than 'to'.
-     *
-     * @param from - start time
-     * @param to   - end time
-     */
-    public LinkedTaskList incoming(int from, int to) {
-        Node current = head;
-        LinkedTaskList list = new LinkedTaskList();
-        while (current != null) {
-            if (current.data.nextTimeAfter(from) < to && current.data.nextTimeAfter(from) != -1) {
-                list.add(current.data);
-            }
-            current = current.pNext;
-        }
-        return list;
     }
 }
