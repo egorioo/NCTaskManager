@@ -10,7 +10,7 @@ public class Main {
 		Task D = new Task("D", 42);
 		Task E = new Task("E", 42);
 
-		ArrayTaskList arr2 = new ArrayTaskList();
+		LinkedTaskList arr2 = new LinkedTaskList();
 
 
 		System.out.println("TEST1");
@@ -22,7 +22,7 @@ public class Main {
 
 		System.out.println("TEST2");
 
-		ArrayTaskList arr = new ArrayTaskList();
+		LinkedTaskList arr = new LinkedTaskList();
 		arr.add(A);
 		arr.add(B);
 		arr.add(C);
@@ -52,6 +52,7 @@ public class Main {
 		System.out.println("Add 2 elem A");
 		arr.add(A);
 		arr.add(A);
+
 		System.out.println("ArrayTaskList.size(). Expected: 4. My result: " + arr.size());
 		System.out.println("ArrayTaskList.remove(A) повинно бути істинним. My result: " + arr.remove(A));
 		System.out.println("ArrayTaskList.size(). Expected: 3. My result: " + arr.size());
@@ -59,22 +60,21 @@ public class Main {
 		System.out.println("ArrayTaskList.size(). Expected: 2. My result: " + arr.size());
 
 		System.out.println("-------------------");
-		ArrayTaskList arr3 = new ArrayTaskList();
+		LinkedTaskList arr3 = new LinkedTaskList();
 		Task ex1 = new Task("1", 9);
 		Task ex2 = new Task("2", 15,25,5);
 		Task ex3 = new Task("3", 26);
 		Task ex4 = new Task("4", 10,14,2);
-
-		ex1.setActive(true);
-		ex2.setActive(true);
-		ex3.setActive(true);
-		ex4.setActive(true);
 
 		arr3.add(ex1);
 		arr3.add(ex2);
 		arr3.add(ex3);
 		arr3.add(ex4);
 
-		arr3.incoming(11,21);
+	/*	System.out.println(arr3.remove(ex2));
+		System.out.println(arr3.remove(ex3));
+		System.out.println(arr3.remove(ex4));
+		System.out.println(arr3.remove(ex1));
+*/
 	}
 }
