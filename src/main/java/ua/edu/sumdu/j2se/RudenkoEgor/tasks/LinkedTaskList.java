@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 
-public class LinkedTaskList extends AbstractTaskList{
+public class LinkedTaskList extends AbstractTaskList {
     private int size;
     private Node head;
     private Node lastElem;
@@ -117,5 +117,9 @@ public class LinkedTaskList extends AbstractTaskList{
             next = next.pNext;
         }
         return false;
+    }
+
+    public ListTypes.types getType() {
+        return ListTypes.types.LINKED;
     }
 }

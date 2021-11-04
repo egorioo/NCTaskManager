@@ -118,4 +118,8 @@ public class ArrayTaskList extends AbstractTaskList {
     public Task getTask(int index) {
         return list[index];
     }
+
+    public ListTypes.types getType() {
+        return ListTypes.types.ARRAY;
+    }
 }

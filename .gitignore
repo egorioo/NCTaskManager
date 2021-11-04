@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+echo '.idea' >> .gitignore
+git rm -r --cached .idea
