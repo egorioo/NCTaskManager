@@ -1,6 +1,6 @@
 package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
 
-public class ArrayTaskList {
+public class ArrayTaskList extends AbstractTaskList {
     private final int capacity = 10;
     private Task list[] = new Task[capacity];
 
@@ -119,22 +119,7 @@ public class ArrayTaskList {
         return list[index];
     }
 
-    /**
-     * Method that returns a subset of tasks that are scheduled
-     * to run at least once after time 'from' and no later than 'to'.
-     *
-     * @param from - start time
-     * @param to   - end time
-     */
-    public ArrayTaskList incoming(int from, int to) {
-        ArrayTaskList arr = new ArrayTaskList();
-        for (int i = 0; i < list.length; i++) {
-            if (list[i] != null) {
-                if (list[i].nextTimeAfter(from) < to && list[i].nextTimeAfter(from) != -1) {
-                    arr.add(list[i]);
-                }
-            }
-        }
-        return arr;
+    public ListTypes.types getType() {
+        return ListTypes.types.ARRAY;
     }
 }
