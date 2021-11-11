@@ -1,7 +1,5 @@
 # Project exclude paths
-.idea/
-NCTaskManager.iml
+/target/
+.idea
 README.md
-readme_img/
-src/test/
-target/
+NCTaskManager.iml

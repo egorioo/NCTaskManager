@@ -1,6 +1,7 @@
-package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Task {
     private String title;
@@ -212,4 +213,8 @@ public class Task {
         return -1;
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(getTitle(),isActive(),getStartTime(),getEndTime(),getRepeatInterval());
+    }
 }

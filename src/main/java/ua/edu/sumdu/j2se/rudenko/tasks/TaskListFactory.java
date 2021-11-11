@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks;
 
 public class TaskListFactory {
     /**
@@ -17,4 +17,3 @@ public class TaskListFactory {
         throw new ClassNotFoundException("This type is not supported");
     }
 }
-
