@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks;
 
 /**
  * The class that stores enum types, where

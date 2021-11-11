@@ -1,10 +1,10 @@
-package ua.edu.sumdu.j2se.RudenkoEgor.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks;
 
 /**
  * Abstract class that describes the functionality of
  * the classes ArrayTaskList and LinkedTaskList
  */
-public abstract class AbstractTaskList {
+public abstract class AbstractTaskList implements Iterable{
     public abstract void add(Task task);
 
     public abstract int size();
