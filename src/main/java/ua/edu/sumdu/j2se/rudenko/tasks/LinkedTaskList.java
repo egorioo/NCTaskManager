@@ -214,13 +214,7 @@ public class LinkedTaskList extends AbstractTaskList {
             return true;
         }
         while (runner != null) {
-            if (runner.data.getTitle() != givenobj.data.getTitle() ||
-                    runner.data.getTime() != givenobj.data.getTime() ||
-                    runner.data.getRepeatInterval() != givenobj.data.getRepeatInterval() ||
-                    runner.data.isActive() != givenobj.data.isActive() ||
-                    runner.data.isRepeated() != givenobj.data.isRepeated() ||
-                    runner.data.getStartTime() != givenobj.data.getStartTime() ||
-                    runner.data.getEndTime() != givenobj.data.getEndTime()) {
+            if (!runner.data.equals(givenobj.data)) {
                 return false;
             }
             runner = runner.pNext;
@@ -252,12 +246,4 @@ public class LinkedTaskList extends AbstractTaskList {
         return returnObj;
     }
 
-    @Override
-    public String toString() {
-        return "LinkedTaskList{" +
-                "size=" + size +
-                ", head=" + head +
-                ", lastElem=" + lastElem +
-                '}';
-    }
 }

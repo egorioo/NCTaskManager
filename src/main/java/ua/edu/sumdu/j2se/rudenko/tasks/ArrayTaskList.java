@@ -183,13 +183,7 @@ public class ArrayTaskList extends AbstractTaskList {
         if (o == null || getClass() != o.getClass()) return false;
         ArrayTaskList that = (ArrayTaskList) o;
         for (int i = 0; i < ((ArrayTaskList) o).size(); i++) {
-            if (list[i].isActive() != that.getTask(i).isActive() ||
-                    list[i].isRepeated() != that.getTask(i).isRepeated() ||
-                    list[i].getTitle() != that.getTask(i).getTitle() ||
-                    list[i].getEndTime() != that.getTask(i).getEndTime() ||
-                    list[i].getTime() != that.getTask(i).getTime() ||
-                    list[i].getStartTime() != that.getTask(i).getStartTime() ||
-                    list[i].getRepeatInterval() != that.getTask(i).getRepeatInterval()) {
+            if (!list[i].equals(that.getTask(i))) {
                 return false;
             }
         }
@@ -214,11 +208,4 @@ public class ArrayTaskList extends AbstractTaskList {
         return retObj;
     }
 
-    @Override
-    public String toString() {
-        return "ArrayTaskList{" +
-                "capacity=" + capacity +
-                ", list=" + Arrays.toString(list) +
-                '}';
-    }
 }

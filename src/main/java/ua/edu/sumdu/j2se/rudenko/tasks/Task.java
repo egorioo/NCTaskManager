@@ -3,7 +3,7 @@ package ua.edu.sumdu.j2se.rudenko.tasks;
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Task {
+public class Task implements Cloneable {
     private String title;
     private int time;
     private int start;
@@ -215,6 +215,45 @@ public class Task {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getTitle(),isActive(),getStartTime(),getEndTime(),getRepeatInterval());
+        return Objects.hash(getTitle(), isActive(), getStartTime(), getEndTime(), getRepeatInterval());
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Task that = (Task) o;
+        if (isActive() != that.isActive() ||
+                isRepeated() != that.isRepeated() ||
+                getTitle() != that.getTitle() ||
+                getEndTime() != that.getEndTime() ||
+                getTime() != that.getTime() ||
+                getStartTime() != that.getStartTime() ||
+                getRepeatInterval() != that.getRepeatInterval()) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public Task clone() throws CloneNotSupportedException {
+        Task task = new Task(this.title, this.time);
+        task.active = this.active;
+        task.end = this.end;
+        task.interval = this.interval;
+        task.repeat = this.repeat;
+        task.start = this.start;
+        return task;
+    }
+
+    @Override
+    public String toString() {
+        return "title='" + title + '\'' +
+                ", time=" + time +
+                ", start=" + start +
+                ", end=" + end +
+                ", interval=" + interval +
+                ", active=" + active +
+                ", repeat=" + repeat;
     }
 }

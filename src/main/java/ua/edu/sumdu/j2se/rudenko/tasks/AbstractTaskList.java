@@ -1,10 +1,12 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
+import java.util.Iterator;
+
 /**
  * Abstract class that describes the functionality of
  * the classes ArrayTaskList and LinkedTaskList
  */
-public abstract class AbstractTaskList implements Iterable{
+public abstract class AbstractTaskList implements Iterable, Cloneable {
     public abstract void add(Task task);
 
     public abstract int size();
@@ -33,5 +35,25 @@ public abstract class AbstractTaskList implements Iterable{
             }
         }
         return list;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder str = new StringBuilder();
+        if (getType() == ListTypes.types.ARRAY)
+            str.append("ArrayTaskList | ");
+        else str.append("LinkedTaskList | ");
+
+        str.append("Size " + size() + " |");
+        Iterator<Task> it = this.iterator();
+        int counter = 0;
+        while(it.hasNext()) {
+            str.append(" Elem №" + counter + " {");
+            str.append(it.next().toString());
+            str.append("}");
+            counter++;
+        }
+        return new String(str);
     }
 }
