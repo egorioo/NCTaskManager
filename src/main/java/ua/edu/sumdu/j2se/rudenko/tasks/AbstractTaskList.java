@@ -1,6 +1,8 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.stream.Stream;
 
 /**
  * Abstract class that describes the functionality of
@@ -24,22 +26,26 @@ public abstract class AbstractTaskList implements Iterable, Cloneable {
      * @param from - start time
      * @param to   - end time
      */
-    public AbstractTaskList incoming(int from, int to) throws IllegalArgumentException, ClassNotFoundException {
-        if (from < 0 || to <= from) throw new IllegalArgumentException("Invalid parameters specified");
+    final public AbstractTaskList incoming(int from, int to) throws IllegalArgumentException, ClassNotFoundException {
+        if (from < 0 || to < 0 || to <= from) throw new IllegalArgumentException("Invalid parameters specified");
 
         AbstractTaskList list = TaskListFactory.createTaskList(getType());
 
-        for (int i = 0; i < list.size(); i++) {
-            if (getTask(i).nextTimeAfter(from) < to && getTask(i).nextTimeAfter(from) != -1) {
-                list.add(getTask(i));
-            }
-        }
+        getStream().filter(e->e.nextTimeAfter(from) < to && e.nextTimeAfter(from) != -1).forEach(list::add);
         return list;
+    }
+
+    public Stream<Task> getStream() {
+       Task[] task = new Task[size()];
+
+       for (int i = 0; i < size(); i++) {
+           task[i] = getTask(i);
+       }
+       return Arrays.stream(task);
     }
 
     @Override
     public String toString() {
-
         StringBuilder str = new StringBuilder();
         if (getType() == ListTypes.types.ARRAY)
             str.append("ArrayTaskList | ");

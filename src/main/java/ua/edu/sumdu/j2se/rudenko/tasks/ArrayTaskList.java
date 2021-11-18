@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
+import java.util.stream.Stream;
 
 public class ArrayTaskList extends AbstractTaskList {
     private final int capacity = 10;
@@ -207,5 +208,4 @@ public class ArrayTaskList extends AbstractTaskList {
         }
         return retObj;
     }
-
 }
