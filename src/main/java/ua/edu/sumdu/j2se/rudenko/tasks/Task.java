@@ -1,13 +1,13 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
-import java.util.ArrayList;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Task implements Cloneable {
     private String title;
-    private int time;
-    private int start;
-    private int end;
+    private LocalDateTime time;
+    private LocalDateTime start;
+    private LocalDateTime end;
     private int interval;
     private boolean active;
     private boolean repeat;
@@ -18,15 +18,9 @@ public class Task implements Cloneable {
      * @param title - task name
      * @param time  - task execution time
      */
-    public Task(String title, int time) throws IllegalArgumentException {
-        if (title == null) {
-            throw new IllegalArgumentException("Tittle of the task can't be null");
-        }
-        this.title = title;
-        if (time < 0) {
-            throw new IllegalArgumentException("Time cannot be less than zero");
-        }
-        this.time = time;
+    public Task(String title, LocalDateTime time) {
+        setTitle(title);
+        setTime(time);
     }
 
     /**
@@ -38,26 +32,9 @@ public class Task implements Cloneable {
      * @param end      - end time
      * @param interval - time interval after which the task will be repeated
      */
-    public Task(String title, int start, int end, int interval) throws IllegalArgumentException {
-        if (title == null) {
-            throw new IllegalArgumentException("Title of the task cannot be null");
-        }
-        this.title = title;
-        if (start < 0) {
-            throw new IllegalArgumentException("Start point cannot be less than zero");
-        }
-        this.start = start;
-        if (end < 0) {
-            throw new IllegalArgumentException("End point cannot be less than zero");
-        } else if (start >= end) {
-            throw new IllegalArgumentException("End point cannot be less or equal to start point");
-        }
-        this.end = end;
-        if (interval < 0) {
-            throw new IllegalArgumentException("Interval cannot be less than zero");
-        }
-        this.interval = interval;
-        this.repeat = true;
+    public Task(String title, LocalDateTime start, LocalDateTime end, int interval) {
+        setTitle(title);
+        setTime(start, end, interval);
     }
 
     /**
@@ -94,7 +71,7 @@ public class Task implements Cloneable {
     /**
      * Returns the execution time of the task, or the start time for a task that is repeating
      */
-    public int getTime() {
+    public LocalDateTime getTime() {
         if (repeat) return start;
         else return time;
     }
@@ -103,14 +80,14 @@ public class Task implements Cloneable {
      * Changes the execution time of the task. If the task is repeated,
      * turns into one that does not repeat
      */
-    public void setTime(int time) throws IllegalArgumentException {
-        if (time < 0) {
-            throw new IllegalArgumentException("Time cannot be less than zero");
+    public void setTime(LocalDateTime time) throws IllegalArgumentException {
+        if (time == null) {
+            throw new IllegalArgumentException("Time of the task cannot be null");
         }
         this.time = time;
         if (repeat) {
-            start = 0;
-            end = 0;
+            start = time;
+            end = time;
             interval = 0;
             repeat = false;
         }
@@ -120,7 +97,7 @@ public class Task implements Cloneable {
      * Returns the start time of the task. If the task is not repeated,
      * the execution time is returned
      */
-    public int getStartTime() {
+    public LocalDateTime getStartTime() {
         if (repeat) return start;
         else return time;
     }
@@ -129,7 +106,7 @@ public class Task implements Cloneable {
      * Returns the end of the task execution. If the task is not repeated,
      * the execution time is returned
      */
-    public int getEndTime() {
+    public LocalDateTime getEndTime() {
         if (repeat) return end;
         else return time;
     }
@@ -146,24 +123,19 @@ public class Task implements Cloneable {
      * A method that changes the start time, end time and repetition interval of a task.
      * If the task is not repetitive, it turns into a repetitive one
      */
-    public void setTime(int start, int end, int interval) throws IllegalArgumentException {
-        if (start < 0) {
-            throw new IllegalArgumentException("Start point cannot be less than zero");
+    public void setTime(LocalDateTime start, LocalDateTime end, int interval) throws IllegalArgumentException, NullPointerException {
+        if (start == null || end == null) {
+            throw new NullPointerException();
         }
-        if (end < 0) {
-            throw new IllegalArgumentException("End point cannot be less than zero");
-        } else if (start >= end) {
-            throw new IllegalArgumentException("End point cannot be less or equal to start point");
-        }
-        if (interval < 0) {
-            throw new IllegalArgumentException("Interval cannot be less than zero");
+        if (start.isAfter(end) || start.isEqual(end) || interval <= 0) {
+            throw new IllegalArgumentException("Invalid parameters specified");
         }
         this.start = start;
         this.end = end;
         this.interval = interval;
+
         if (!repeat) {
             repeat = true;
-            time = 0;
         }
     }
 
@@ -176,41 +148,32 @@ public class Task implements Cloneable {
 
     /**
      * Method that returns the time of the next task execution after the specified time
-     * If the task does not run after the specified time, returns -1
+     * If the task does not run after the specified time, returns null
      */
-    public int nextTimeAfter(int current) {
-        if (!active) return -1;
-        if (!repeat) {
-            return (current >= time) ? -1 : time;
+    public LocalDateTime nextTimeAfter(LocalDateTime current) {
+        if (active && !isRepeated()) {
+            if (current.isBefore(time)) {
+                return time;
+            }
+            return null;
         }
 
-        if (current < start) return start;
-        if (current >= end) return -1;
-
-        ArrayList<Integer> nextTime = new ArrayList<Integer>();
-        for (int j = start; j < end; j += interval) {
-            nextTime.add(j);
-        }
-
-        for (int i = 0; i < nextTime.size(); i++) {
-            if (current == nextTime.get(i)) {
-                if (current == nextTime.get(nextTime.size() - 1)) {
-                    return -1;
-                } else return nextTime.get(i + 1);
+        if (active) {
+            LocalDateTime nextTime = start;
+            if (current.isBefore(start)) {
+                return start;
+            } else if (current.isAfter(end)) {
+                return null;
+            } else {
+                while (nextTime.isBefore(end) || nextTime.isEqual(end)) {
+                    if (nextTime.isAfter(current)) {
+                        return nextTime;
+                    }
+                    nextTime = nextTime.plusSeconds(interval);
+                }
             }
         }
-
-        for (int i = 0; i < nextTime.size(); i++) {
-            if (current >= nextTime.get(nextTime.size() - 1) && current < end) {
-                return -1;
-            }
-
-            if (current > nextTime.get(i) && current < nextTime.get(i + 1)) {
-                return nextTime.get(i + 1);
-            }
-        }
-
-        return -1;
+        return null;
     }
 
     @Override

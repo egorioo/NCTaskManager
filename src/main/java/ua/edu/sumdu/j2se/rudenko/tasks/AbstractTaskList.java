@@ -1,5 +1,6 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
+import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.stream.Stream;
@@ -26,22 +27,23 @@ public abstract class AbstractTaskList implements Iterable, Cloneable {
      * @param from - start time
      * @param to   - end time
      */
-    final public AbstractTaskList incoming(int from, int to) throws IllegalArgumentException, ClassNotFoundException {
-        if (from < 0 || to < 0 || to <= from) throw new IllegalArgumentException("Invalid parameters specified");
+    final public AbstractTaskList incoming(LocalDateTime from, LocalDateTime to) throws IllegalArgumentException, ClassNotFoundException {
+        if (from == null || to == null || from.isAfter(to))
+            throw new IllegalArgumentException("Invalid parameters specified");
 
         AbstractTaskList list = TaskListFactory.createTaskList(getType());
 
-        getStream().filter(e->e.nextTimeAfter(from) < to && e.nextTimeAfter(from) != -1).forEach(list::add);
+        getStream().filter(e -> e.nextTimeAfter(from).isAfter(from) && e.nextTimeAfter(to).isBefore(to)).forEach(list::add);
         return list;
     }
 
     public Stream<Task> getStream() {
-       Task[] task = new Task[size()];
+        Task[] task = new Task[size()];
 
-       for (int i = 0; i < size(); i++) {
-           task[i] = getTask(i);
-       }
-       return Arrays.stream(task);
+        for (int i = 0; i < size(); i++) {
+            task[i] = getTask(i);
+        }
+        return Arrays.stream(task);
     }
 
     @Override
@@ -54,7 +56,7 @@ public abstract class AbstractTaskList implements Iterable, Cloneable {
         str.append("Size " + size() + " |");
         Iterator<Task> it = this.iterator();
         int counter = 0;
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             str.append(" Elem №" + counter + " {");
             str.append(it.next().toString());
             str.append("}");
