@@ -1,10 +1,7 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Objects;
-import java.util.stream.Stream;
 
 public class ArrayTaskList extends AbstractTaskList {
     private final int capacity = 10;
@@ -203,7 +200,7 @@ public class ArrayTaskList extends AbstractTaskList {
     @Override
     public ArrayTaskList clone() {
         ArrayTaskList retObj = new ArrayTaskList();
-        for(int counter = 0; counter < size(); counter++) {
+        for (int counter = 0; counter < size(); counter++) {
             retObj.add(list[counter]);
         }
         return retObj;

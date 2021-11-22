@@ -2,7 +2,6 @@ package ua.edu.sumdu.j2se.rudenko.tasks;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.Objects;
 
 public class LinkedTaskList extends AbstractTaskList {
     private int size;
@@ -227,7 +226,7 @@ public class LinkedTaskList extends AbstractTaskList {
     public int hashCode() {
         int result = 0;
         Node runner = head;
-        while(runner != null) {
+        while (runner != null) {
             result += runner.data.hashCode();
             runner = runner.pNext;
         }
