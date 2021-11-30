@@ -9,7 +9,7 @@ import java.util.stream.Stream;
  * Abstract class that describes the functionality of
  * the classes ArrayTaskList and LinkedTaskList
  */
-public abstract class AbstractTaskList implements Iterable, Cloneable {
+public abstract class AbstractTaskList implements Iterable<Task>, Cloneable {
     public abstract void add(Task task);
 
     public abstract int size();
