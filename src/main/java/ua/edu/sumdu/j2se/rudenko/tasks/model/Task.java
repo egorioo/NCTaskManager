@@ -1,7 +1,12 @@
-package ua.edu.sumdu.j2se.rudenko.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks.model;
+
+import javafx.beans.property.*;
+import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.Objects;
 
 public class Task implements Cloneable, Serializable {

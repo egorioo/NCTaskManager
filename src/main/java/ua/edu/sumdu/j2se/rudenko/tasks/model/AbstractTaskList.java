@@ -1,4 +1,4 @@
-package ua.edu.sumdu.j2se.rudenko.tasks;
+package ua.edu.sumdu.j2se.rudenko.tasks.model;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
