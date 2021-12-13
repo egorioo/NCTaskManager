@@ -1,9 +1,8 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.util;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeParseException;
 
 public class DateUtil {
 
@@ -23,7 +22,28 @@ public class DateUtil {
         return LocalDateTime.parse(date, formatter);
     }
 
+    public static LocalTime stringToTime(String time) {
+        if (time == null) {
+            return null;
+        }
+        return LocalTime.parse(time,DateTimeFormatter.ofPattern("HH:mm:ss"));
+    }
+
     public static boolean validDate(String dateString) {
-        return DateUtil.stringToDate(dateString) != null;
+        try {
+            return DateUtil.stringToDate(dateString) != null;
+        }
+        catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static boolean validTime(String timeString) {
+        try {
+            return LocalTime.parse(timeString, DateTimeFormatter.ofPattern("HH:mm:ss")) != null;
+        }
+        catch (Exception e) {
+            return false;
+        }
     }
 }

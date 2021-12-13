@@ -1,5 +1,5 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
-import com.google.gson.internal.bind.util.ISO8601Utils;
+
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,47 +11,39 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskEditDialogController;
 import ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskOverviewController;
-import ua.edu.sumdu.j2se.rudenko.tasks.model.AbstractTaskList;
-import ua.edu.sumdu.j2se.rudenko.tasks.model.LinkedTaskList;
-import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
+import ua.edu.sumdu.j2se.rudenko.tasks.model.*;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main extends Application{
 
     private Stage primaryStage;
-
-    private Task t1 = new Task("name1", LocalDateTime.now());
-    private Task t2 = new Task("name2", LocalDateTime.now().plusDays(2));
-    private Task t3 = new Task("name3", LocalDateTime.now().plusDays(5));
-    private Task t4 = new Task("name4", LocalDateTime.now(),LocalDateTime.now().plusDays(2),1000);
-
-    private AbstractTaskList list = new LinkedTaskList();
+    private AbstractTaskList list = new ArrayTaskList();
     private ObservableList<Task> tasksData = FXCollections.observableArrayList();
 
     /**
      * Конструктор
      */
     public Main() {
-        // В качестве образца добавляем некоторые данные
-        list.add(t1);
-        list.add(t3);
-        list.add(t2);
-        list.add(t4);
+        TaskIO.readBinary(list,new File("data.txt"));
 
-        tasksData.add(t1);
-        tasksData.add(t3);
-        tasksData.add(t2);
-        tasksData.add(t4);
+        list.add(new Task("test",LocalDateTime.now(), LocalDateTime.now().plusDays(2),1000));
+        for (Task task : list) {
+            tasksData.add(task);
+        }
+
+        System.out.println(LocalTime.parse("11:22:39", DateTimeFormatter.ofPattern("HH:mm:ss")).toString());
+
 
     }
 
     public static void main(String[] args) {
-
         Application.launch(args);
-
     }
 
     public ObservableList<Task> getData() {
@@ -79,6 +71,16 @@ public class Main extends Application{
         DateUtil date = new DateUtil();
         System.out.println(date.dateToString(LocalDateTime.now()));
         controller.setMainApp(this);
+    }
+
+    @Override
+    public void stop() throws Exception {
+        AbstractTaskList tempList = new ArrayTaskList();
+        for (Task task : tasksData) {
+            tempList.add(task);
+        }
+        TaskIO.writeBinary(tempList,new File("data.txt"));
+        super.stop();
     }
 
     public boolean showTaskEditDialog(Task task) {

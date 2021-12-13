@@ -22,7 +22,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 
 public class TaskOverviewController {
