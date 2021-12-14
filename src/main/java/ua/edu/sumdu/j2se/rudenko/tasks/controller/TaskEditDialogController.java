@@ -9,10 +9,8 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
-
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 
 public class TaskEditDialogController {
     @FXML
@@ -206,7 +204,6 @@ public class TaskEditDialogController {
                     && DateUtil.stringToTime(timeHoursField.getText()).isAfter(DateUtil.stringToTime(endTimeField.getText()))) {
                 errorMessage += "No valid start time and end time!\n";
             }
-
             if (timeDatePicker.getValue().equals(endTaskDatePicker.getValue())
                     && DateUtil.stringToTime(timeHoursField.getText()).equals(DateUtil.stringToTime(endTimeField.getText()))) {
                 errorMessage += "No valid start time and end time! Time can't be the same\n";
