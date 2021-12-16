@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskEditDialogView;
@@ -15,6 +16,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class TaskEditDialogController extends TaskEditDialogView {
+    private static final Logger logger = Logger.getLogger(TaskEditDialogController.class);
     @FXML
     private DatePicker timeDatePicker;
     @FXML
@@ -88,7 +90,6 @@ public class TaskEditDialogController extends TaskEditDialogView {
             hbox = new HBox(10,endTaskDatePicker,endTimeField);
 
             gridPaneDialog.add(hbox,1,3);
-
         }
 
         groupRepeated.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
@@ -96,6 +97,7 @@ public class TaskEditDialogController extends TaskEditDialogView {
             public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
                 RadioButton selectedBtn = (RadioButton) t1;
                 if (selectedBtn.getText().equals("Да")) {
+                    logger.debug("changing a task to a repeated one");
                     displayTimeStartDialogLabel("Время начала");
                     displayEndDialogLabel("Время конца");
                     repeatedRadioBtn.setSelected(true);
@@ -112,10 +114,10 @@ public class TaskEditDialogController extends TaskEditDialogView {
 
                     hbox = new HBox(10,endTaskDatePicker,endTimeField);
 
-
                     gridPaneDialog.add(hbox,1,3);
                 }
                 else {
+                    logger.debug("changing a task to a non-repeated one");
                     displayTimeStartDialogLabel("Время выполнения");
                     displayEndDialogLabel("");
 
@@ -151,12 +153,15 @@ public class TaskEditDialogController extends TaskEditDialogView {
 
             stage.close();
             okClicked = true;
+            logger.debug("button OK pressed");
         }
     }
 
     @FXML
     private void handleCancel() {
         stage.close();
+        logger.debug("button cancel pressed");
+        logger.debug("data has not been changed");
     }
 
     private boolean isInputValid() {
@@ -208,6 +213,7 @@ public class TaskEditDialogController extends TaskEditDialogView {
         if (errorMessage.length() == 0) {
             return true;
         } else {
+            logger.warn("Invalid data: \n" + errorMessage);
             // Показываем сообщение об ошибке.
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);

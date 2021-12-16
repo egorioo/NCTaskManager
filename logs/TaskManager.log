@@ -1,0 +1,73 @@
+2021-12-16 20:06:21 DEBUG Main:94 - reading data from a file
+2021-12-16 20:06:21 DEBUG Main:41 - starting the application
+2021-12-16 20:06:22 DEBUG Notification:65 - added tray icon
+2021-12-16 20:06:25 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-16 20:06:25 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-16 20:06:26 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-16 20:06:26 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-16 20:06:27 DEBUG TaskOverviewController:182 - filtering tasks
+2021-12-16 20:06:27 DEBUG TaskOverviewController:200 - filter by current week selected
+2021-12-16 20:06:27 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-16 20:06:30 DEBUG TaskOverviewController:182 - filtering tasks
+2021-12-16 20:06:30 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-16 20:06:33 DEBUG TaskOverviewController:172 - adding a task
+2021-12-16 20:06:44 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-16 20:06:44 DEBUG TaskEditDialogController:157 - data has been changed
+2021-12-16 20:07:00 DEBUG Main:29 - writing data to a file
+2021-12-16 20:07:00 DEBUG Main:83 - termination of the application
+2021-12-16 20:11:35 DEBUG Main:94 - reading data from a file
+2021-12-16 20:11:35 DEBUG Main:41 - starting the application
+2021-12-16 20:11:35 DEBUG Notification:65 - added tray icon
+2021-12-16 20:11:38 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-16 20:11:39 DEBUG TaskOverviewController:160 - editing a task еуые
+2021-12-16 20:11:45 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-16 20:11:45 DEBUG TaskEditDialogController:157 - data has been changed
+2021-12-16 20:11:45 DEBUG TaskOverviewController:165 - asdas has been changed
+2021-12-16 20:11:53 DEBUG TaskOverviewController:173 - adding a task
+2021-12-16 20:12:01 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-16 20:12:01 DEBUG TaskEditDialogController:157 - data has been changed
+2021-12-16 20:12:01 DEBUG TaskOverviewController:178 - asdas has been added
+2021-12-16 20:12:37 DEBUG Main:94 - reading data from a file
+2021-12-16 20:12:37 DEBUG Main:41 - starting the application
+2021-12-16 20:12:37 DEBUG Notification:65 - added tray icon
+2021-12-16 20:12:39 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-16 20:12:40 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-16 20:12:41 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-16 20:12:44 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-16 20:12:45 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:12:45 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-16 20:12:48 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:12:48 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-16 20:12:51 DEBUG DateDialogWindowController:29 - button OK pressed
+2021-12-16 20:12:51 DEBUG DateDialogWindowController:33 - tasks filtered
+2021-12-16 20:12:57 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:12:57 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-16 20:13:05 DEBUG DateIntervalDialogWindowController:41 - button ok pressed
+2021-12-16 20:13:05 WARN  DateIntervalDialogWindowController:86 - Invalid data: 
+Неверное время начала и конца! Время не может быть одинаковым
+
+2021-12-16 20:13:09 DEBUG DateIntervalDialogWindowController:41 - button ok pressed
+2021-12-16 20:13:10 DEBUG DateIntervalDialogWindowController:47 - tasks filtered
+2021-12-16 20:13:13 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:13:13 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-16 20:13:16 DEBUG DateDialogWindowController:29 - button OK pressed
+2021-12-16 20:13:16 DEBUG DateDialogWindowController:33 - tasks filtered
+2021-12-16 20:13:19 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:13:21 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:13:21 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-16 20:13:24 DEBUG DateDialogWindowController:29 - button OK pressed
+2021-12-16 20:13:24 DEBUG DateDialogWindowController:33 - tasks filtered
+2021-12-16 20:13:34 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-16 20:13:34 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-16 20:13:51 DEBUG Main:29 - writing data to a file
+2021-12-16 20:13:51 DEBUG Main:83 - termination of the application
+2021-12-16 22:26:59 DEBUG Main:94 - reading data from a file
+2021-12-16 22:26:59 DEBUG Main:41 - starting the application
+2021-12-16 22:26:59 DEBUG Notification:65 - added tray icon
+2021-12-16 22:27:01 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-16 22:27:01 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-16 22:27:02 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-16 22:27:03 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-16 22:28:31 DEBUG Main:94 - reading data from a file
+2021-12-16 22:28:31 DEBUG Main:41 - starting the application
+2021-12-16 22:28:32 DEBUG Notification:65 - added tray icon

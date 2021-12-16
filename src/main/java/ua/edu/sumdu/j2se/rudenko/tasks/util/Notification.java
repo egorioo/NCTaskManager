@@ -1,19 +1,19 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.util;
 
 import javafx.application.Platform;
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.List;
 
 public class Notification {
+    private static final Logger logger = Logger.getLogger(Notification.class);
     private Main main;
     private final Timer notificationTimer = new Timer();
     private TrayIcon trayIcon;
@@ -28,7 +28,7 @@ public class Notification {
                 SystemTray tray = SystemTray.getSystemTray();
                 Image image = null;
 
-                image = ImageIO.read(new File("src/main/resources/icon.png"));
+                image = ImageIO.read(new File("src/main/resources/images/icon.png"));
 
                 trayIcon = new TrayIcon(image, "Task Manager");
 
@@ -62,12 +62,14 @@ public class Notification {
                 trayIcon.setPopupMenu(popup);
 
                 tray.add(trayIcon);
-            }
+                logger.debug("added tray icon");
+            } else
+                logger.error("system tray is not support");
         }
           catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e);
         } catch (AWTException e) {
-            e.printStackTrace();
+            logger.error(e);
         }
     }
 
@@ -85,6 +87,7 @@ public class Notification {
                 }
                 if (list.size() != 0) {
                     if (list.size() == 1) {
+                        logger.debug("received notification");
                         trayIcon.displayMessage("Напоминание", "Скоро наступит время выполнения задачи: "
                                 + list.get(0).getTitle(), java.awt.TrayIcon.MessageType.INFO);
                     }
@@ -94,6 +97,7 @@ public class Notification {
                             titles += task.getTitle() + ", ";
                         }
                         titles = titles.substring(0, titles.length() - 2 );
+                        logger.debug("received notification");
                         trayIcon.displayMessage("Напоминание", "Скоро наступит время выполнение задач: "
                                 + titles , java.awt.TrayIcon.MessageType.INFO);
                     }

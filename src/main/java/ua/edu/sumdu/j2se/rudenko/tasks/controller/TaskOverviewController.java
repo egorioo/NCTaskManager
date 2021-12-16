@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Tasks;
@@ -27,6 +28,7 @@ import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 
 public class TaskOverviewController extends TaskOverviewView {
     private Main main;
+    private static final Logger logger = Logger.getLogger(TaskOverviewController.class);
 
     @FXML
     private AnchorPane leftAnchorPane;
@@ -51,14 +53,15 @@ public class TaskOverviewController extends TaskOverviewView {
         tableView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Task>() {
             @Override
             public void changed(ObservableValue<? extends Task> observableValue, Task person, Task t1) {
+                if (t1 != null)
+                    logger.debug("task " + t1.getTitle() + " was selected");
                 showTaskDetails(t1);
-                System.out.println("listening");
             }
         });
 
-        ObservableList<String> langs = FXCollections.observableArrayList("На этой неделе", "В этом месяце", "Указать дату", "Указать промежуток", "Все задачи");
+        ObservableList<String> filters = FXCollections.observableArrayList("На этой неделе", "В этом месяце", "Указать дату", "Указать промежуток", "Все задачи");
         filterComboBox.setValue("Все задачи");
-        filterComboBox.setItems(langs);
+        filterComboBox.setItems(filters);
 
         leftAnchorPane.setMinWidth(150);
         rightAnchorPane.setMinWidth(270);
@@ -89,7 +92,6 @@ public class TaskOverviewController extends TaskOverviewView {
             displayIntervalValue(task.getRepeatInterval() == 0 ? "Задача не повторяется" : String.valueOf(task.getRepeatInterval()));
             displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
         }
-
     }
 
     public void setMainApp(Main main) {
@@ -117,7 +119,7 @@ public class TaskOverviewController extends TaskOverviewView {
             dialogStage.showAndWait();
             return controller.okClicked;
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
             return false;
         }
     }
@@ -125,9 +127,10 @@ public class TaskOverviewController extends TaskOverviewView {
     @FXML
     private void handleDeleteTask() {
         int index = tableView.getSelectionModel().getSelectedIndex();
-        var a = tableView.getSelectionModel().getSelectedItem();
+        Task task = tableView.getSelectionModel().getSelectedItem();
         if (index == -1) {
-            // Ничего не выбрано.
+            logger.warn("task to delete is not selected");
+
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(main.getPrimaryStage());
             alert.setTitle("Ошибка");
@@ -135,8 +138,9 @@ public class TaskOverviewController extends TaskOverviewView {
             alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {
-            main.getData().remove(a);
-            tableView.getItems().remove(a);
+            main.getData().remove(task);
+            tableView.getItems().remove(task);
+            logger.debug("deleting a task" + task.getTitle());
         }
     }
 
@@ -144,6 +148,8 @@ public class TaskOverviewController extends TaskOverviewView {
     private void handleEditTask() {
         Task selectedTask = tableView.getSelectionModel().getSelectedItem();
         if (selectedTask == null) {
+            logger.warn("task to edit is not selected");
+
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(main.getPrimaryStage());
             alert.setTitle("Ошибка");
@@ -151,10 +157,12 @@ public class TaskOverviewController extends TaskOverviewView {
             alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {
+            logger.debug("editing a task " + selectedTask.getTitle());
             boolean okClicked = showTaskEditDialog(selectedTask);
             if (okClicked) {
                 showTaskDetails(selectedTask);
                 tableView.refresh();
+                logger.debug(selectedTask.getTitle() + " has been changed");
             }
         }
     }
@@ -162,114 +170,132 @@ public class TaskOverviewController extends TaskOverviewView {
     @FXML
     private void handleAddTask() {
         Task tempPerson = new Task("", LocalDateTime.now());
+        logger.debug("adding a task");
         boolean okClicked = showTaskEditDialog(tempPerson);
         if (okClicked) {
             main.getData().add(tempPerson);
             showTaskDetails(tempPerson);
+            logger.debug(tempPerson.getTitle() + " has been added");
         }
     }
 
     @FXML
-    private void event() throws ClassNotFoundException, IOException {
+    private void event() {
+        logger.debug("filtering tasks");
         if (filterComboBox.getValue().equals("На этой неделе")) {
             filterThisWeek();
-        }
-        else if (filterComboBox.getValue().equals("В этом месяце")) {
+        } else if (filterComboBox.getValue().equals("В этом месяце")) {
             filterThisMonth();
-        }
-        else if (filterComboBox.getValue().equals("Указать дату")) {
+        } else if (filterComboBox.getValue().equals("Указать дату")) {
             filterDay();
-        }
-        else if (filterComboBox.getValue().equals("Указать промежуток")) {
+        } else if (filterComboBox.getValue().equals("Указать промежуток")) {
             filterTimeInterval();
-        }
-        else if (filterComboBox.getValue().equals("Указать промежуток")) {
+        } else if (filterComboBox.getValue().equals("Указать промежуток")) {
             filterTimeInterval();
-        }
-        else if (filterComboBox.getValue().equals("Все задачи")) {
+        } else if (filterComboBox.getValue().equals("Все задачи")) {
             allTasks();
         }
     }
 
-    private void filterThisWeek() throws ClassNotFoundException {
-        ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
+    private void filterThisWeek() {
+        try {
+            logger.debug("filter by current week selected");
+            ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
 
-        for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(DayOfWeek.SUNDAY))) {
-            tasksWeek.add(task);
+            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(DayOfWeek.SUNDAY))) {
+                tasksWeek.add(task);
+            }
+            tableView.setItems(tasksWeek);
+        } catch (ClassNotFoundException e) {
+            logger.error(e);
         }
-        tableView.setItems(tasksWeek);
-
     }
 
-
-    private void filterThisMonth() throws ClassNotFoundException {
-        ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
-        for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(lastDayOfMonth()))) {
-            tasksWeek.add(task);
+    private void filterThisMonth() {
+        try {
+            logger.debug("filter by current months selected");
+            ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
+            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(lastDayOfMonth()))) {
+                tasksWeek.add(task);
+            }
+            tableView.setItems(tasksWeek);
+        } catch (ClassNotFoundException e) {
+            logger.error(e);
         }
-        tableView.setItems(tasksWeek);
     }
-
 
     private void allTasks() {
         tableView.setItems(main.getData());
     }
 
+    private void filterTimeInterval() {
+        try {
+            logger.debug("filter by date interval selected");
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/DateIntervalDialogWindow.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
 
-    private void filterTimeInterval() throws IOException, ClassNotFoundException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/DateIntervalDialogWindow.fxml"));
-        AnchorPane page = (AnchorPane) loader.load();
+            Stage dateSelectStage = new Stage();
+            dateSelectStage.setTitle("");
+            dateSelectStage.initModality(Modality.WINDOW_MODAL);
+            dateSelectStage.initOwner(main.getPrimaryStage());
+            Scene scene = new Scene(page);
+            dateSelectStage.setScene(scene);
+            dateSelectStage.setResizable(false);
 
-        Stage dateSelectStage = new Stage();
-        dateSelectStage.setTitle("");
-        dateSelectStage.initModality(Modality.WINDOW_MODAL);
-        dateSelectStage.initOwner(main.getPrimaryStage());
-        Scene scene = new Scene(page);
-        dateSelectStage.setScene(scene);
-        dateSelectStage.setResizable(false);
+            DateIntervalDialogWindowController controller = loader.getController();
 
-        DateIntervalDialogWindowController controller = loader.getController();
+            controller.setDialogStage(dateSelectStage);
 
-        controller.setDialogStage(dateSelectStage);
+            dateSelectStage.showAndWait();
 
-        dateSelectStage.showAndWait();
-
-        if (controller.okClicked) {
-            ObservableList<Task> taskDateInterval = FXCollections.observableArrayList();
-            for (Task task : Tasks.incoming(main.getData(), controller.getStartDateTime(), controller.getEndDateTime())) {
-                taskDateInterval.add(task);
+            if (controller.okClicked) {
+                ObservableList<Task> taskDateInterval = FXCollections.observableArrayList();
+                for (Task task : Tasks.incoming(main.getData(), controller.getStartDateTime(), controller.getEndDateTime())) {
+                    taskDateInterval.add(task);
+                }
+                tableView.setItems(taskDateInterval);
             }
-            tableView.setItems(taskDateInterval);
+        } catch (ClassNotFoundException e) {
+            logger.error(e);
+        } catch (IOException e) {
+            logger.error(e);
         }
     }
 
-    private void filterDay() throws IOException, ClassNotFoundException {
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/fxml/DateDialogWindow.fxml"));
-        AnchorPane page = (AnchorPane) loader.load();
+    private void filterDay() {
+        try {
+            logger.debug("filter by date selected");
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/DateDialogWindow.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
 
-        Stage dateSelectStage = new Stage();
-        dateSelectStage.setTitle("");
-        dateSelectStage.initModality(Modality.WINDOW_MODAL);
-        dateSelectStage.initOwner(main.getPrimaryStage());
-        Scene scene = new Scene(page);
-        dateSelectStage.setScene(scene);
-        dateSelectStage.setResizable(false);
+            Stage dateSelectStage = new Stage();
+            dateSelectStage.setTitle("");
+            dateSelectStage.initModality(Modality.WINDOW_MODAL);
+            dateSelectStage.initOwner(main.getPrimaryStage());
+            Scene scene = new Scene(page);
+            dateSelectStage.setScene(scene);
+            dateSelectStage.setResizable(false);
 
-        DateDialogWindowController controller = loader.getController();
+            DateDialogWindowController controller = loader.getController();
 
-        controller.setDialogStage(dateSelectStage);
+            controller.setDialogStage(dateSelectStage);
 
-        dateSelectStage.showAndWait();
+            dateSelectStage.showAndWait();
 
-        if (controller.okClicked) {
-            LocalDate date = controller.getDate();
-            ObservableList<Task> taskDate = FXCollections.observableArrayList();
-            for (Task task : Tasks.incoming(main.getData(), date.atTime(0, 0, 1), date.atTime(23, 59, 59))) {
-                taskDate.add(task);
+            if (controller.okClicked) {
+                LocalDate date = controller.getDate();
+                ObservableList<Task> taskDate = FXCollections.observableArrayList();
+                for (Task task : Tasks.incoming(main.getData(), date.atTime(0, 0, 1), date.atTime(23, 59, 59))) {
+                    taskDate.add(task);
+                }
+                tableView.setItems(taskDate);
             }
-            tableView.setItems(taskDate);
+        } catch (ClassNotFoundException e) {
+            logger.error(e);
+        } catch (IOException e) {
+            logger.error(e);
         }
     }
 }

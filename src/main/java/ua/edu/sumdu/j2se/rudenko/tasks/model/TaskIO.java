@@ -1,13 +1,15 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.model;
 
 import com.google.gson.Gson;
+import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
 public class TaskIO {
-
+    private static final Logger logger = Logger.getLogger(Main.class);
     /**
      * Writes tasks from the list in stream in the binary format
      * Structure of format:
@@ -24,6 +26,8 @@ public class TaskIO {
      */
     public static void write(AbstractTaskList tasks, OutputStream out) {
         try (ObjectOutputStream outputStream = new ObjectOutputStream(out)) {
+            logger.debug("writing data to a file");
+
             outputStream.writeInt(tasks.size());
             for (Task task : tasks) {
                 outputStream.writeInt(task.getTitle().length());
@@ -38,39 +42,35 @@ public class TaskIO {
                     outputStream.writeLong(task.getEndTime().toEpochSecond(ZoneOffset.UTC));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 
     /**
      * Reads tasks from given stream and write to given list
      */
-    public static void read(AbstractTaskList tasks, InputStream in) {
+    public static void read(AbstractTaskList tasks, InputStream in) throws IOException {
         Task task;
         LocalDateTime start;
         LocalDateTime end;
-        try {
-            ObjectInputStream stream = new ObjectInputStream(in);
-            int size = stream.readInt();
-            for (int i = 0; i < size; i++) {
-                int tempLength = stream.readInt();
-                String title = stream.readUTF();
-                int tempActive = stream.readInt();
-                boolean isActive = false;
-                if (tempActive == 1) isActive = true;
-                int interval = stream.readInt();
+        ObjectInputStream stream = new ObjectInputStream(in);
+        int size = stream.readInt();
+        for (int i = 0; i < size; i++) {
+            int tempLength = stream.readInt();
+            String title = stream.readUTF();
+            int tempActive = stream.readInt();
+            boolean isActive = false;
+            if (tempActive == 1) isActive = true;
+            int interval = stream.readInt();
 
-                start = LocalDateTime.ofEpochSecond(stream.readLong(), 0, ZoneOffset.UTC);
-                task = new Task(title, start);
-                if (interval != 0) {
-                    end = LocalDateTime.ofEpochSecond(stream.readLong(), 0, ZoneOffset.UTC);
-                    task = new Task(title, start, end, interval);
-                }
-                task.setActive(isActive);
-                tasks.add(task);
+            start = LocalDateTime.ofEpochSecond(stream.readLong(), 0, ZoneOffset.UTC);
+            task = new Task(title, start);
+            if (interval != 0) {
+                end = LocalDateTime.ofEpochSecond(stream.readLong(), 0, ZoneOffset.UTC);
+                task = new Task(title, start, end, interval);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+            task.setActive(isActive);
+            tasks.add(task);
         }
     }
 
@@ -82,7 +82,7 @@ public class TaskIO {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             write(tasks, fileOutputStream);
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 
@@ -91,10 +91,11 @@ public class TaskIO {
      */
     public static void readBinary(AbstractTaskList tasks, File file) {
         try {
+            logger.debug("reading data from a file");
             FileInputStream fileInputStream = new FileInputStream(file);
             read(tasks, fileInputStream);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        }  catch (IOException e) {
+            logger.fatal(e);
         }
     }
 
@@ -115,7 +116,7 @@ public class TaskIO {
             }
             bufferedWriter.flush();
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 
@@ -131,7 +132,7 @@ public class TaskIO {
                 tasks.add(json.fromJson(str, Task.class));
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 
@@ -142,7 +143,7 @@ public class TaskIO {
         try (FileWriter fileWriter = new FileWriter(file)) {
             write(tasks, fileWriter);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 
@@ -153,7 +154,7 @@ public class TaskIO {
         try (FileReader fileReader = new FileReader(file)) {
             read(tasks, fileReader);
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.fatal(e);
         }
     }
 }
