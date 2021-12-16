@@ -27,7 +27,7 @@
       <ButtonBar layoutX="47.0" layoutY="152.0" prefHeight="40.0" prefWidth="200.0">
         <buttons>
           <Button mnemonicParsing="false" onAction="#okDateIntervalButtonPressed" text="OK" />
-            <Button mnemonicParsing="false" onAction="#cancelDateIntervalButtonPressed" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#cancelDateIntervalButtonPressed" text="Отменить" />
         </buttons>
       </ButtonBar>
    </children>

@@ -13,12 +13,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="350.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskEditDialogController">
+<AnchorPane prefHeight="320.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskEditDialogController">
    <children>
-      <GridPane fx:id="gridPaneDialog" layoutX="29.0" layoutY="55.0" prefHeight="211.0" prefWidth="370.0">
+      <GridPane fx:id="gridPaneDialog" layoutX="30.0" layoutY="33.0" prefHeight="211.0" prefWidth="354.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="163.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="207.0" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -83,10 +83,10 @@
             </HBox>
          </children>
       </GridPane>
-      <ButtonBar layoutX="186.0" layoutY="296.0" prefHeight="40.0" prefWidth="200.0">
+      <ButtonBar layoutX="186.0" layoutY="264.0" prefHeight="40.0" prefWidth="200.0">
         <buttons>
           <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
-            <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="Отменить" />
         </buttons>
       </ButtonBar>
    </children>

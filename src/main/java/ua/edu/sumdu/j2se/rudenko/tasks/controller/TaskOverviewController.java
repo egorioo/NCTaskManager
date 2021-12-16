@@ -8,10 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -19,6 +16,8 @@ import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Tasks;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskOverviewView;
+
 import java.io.IOException;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -26,9 +25,13 @@ import java.time.LocalDateTime;
 
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 
-public class TaskOverviewController {
+public class TaskOverviewController extends TaskOverviewView {
     private Main main;
 
+    @FXML
+    private AnchorPane leftAnchorPane;
+    @FXML
+    private AnchorPane rightAnchorPane;
     @FXML
     private TableView<Task> tableView;
     @FXML
@@ -36,19 +39,7 @@ public class TaskOverviewController {
     @FXML
     private TableColumn<Task, String> dateColumn;
     @FXML
-    private Label nameValue;
-    @FXML
-    private Label timeValue;
-    @FXML
-    private Label endValue;
-    @FXML
-    private Label timeLabel;
-    @FXML
-    private Label endLabel;
-    @FXML
-    private Label intervalValue;
-    @FXML
-    private Label activeValue;
+    private ComboBox<String> filterComboBox;
 
     @FXML
     private void initialize() {
@@ -64,33 +55,41 @@ public class TaskOverviewController {
                 System.out.println("listening");
             }
         });
+
+        ObservableList<String> langs = FXCollections.observableArrayList("На этой неделе", "В этом месяце", "Указать дату", "Указать промежуток", "Все задачи");
+        filterComboBox.setValue("Все задачи");
+        filterComboBox.setItems(langs);
+
+        leftAnchorPane.setMinWidth(150);
+        rightAnchorPane.setMinWidth(270);
     }
 
     private void showTaskDetails(Task task) {
         if (task == null) {
-            nameValue.setText("");
-            timeValue.setText("");
-            endValue.setText("");
-            intervalValue.setText("");
-            activeValue.setText("");
+            displayTitleValue("");
+            displayStartTimeValue("");
+            displayEndTimeValue("");
+            displayIntervalValue("");
+            displayActivityValue("");
         } else if (task.isRepeated()) {
             showTaskDetails(null);
-            nameValue.setText(task.getTitle());
-            timeLabel.setText("Время начала");
-            endLabel.setText("Время конца");
-            timeValue.setText(DateUtil.dateToString(task.getStartTime()));
-            endValue.setText(DateUtil.dateToString(task.getEndTime()));
-            intervalValue.setText(String.valueOf(task.getRepeatInterval()));
-            activeValue.setText(task.isActive() ? "Активна" : "Неактивна");
+            displayTitleValue(task.getTitle());
+            displayTimeStartLabel("Время начала");
+            displayEndLabel("Время конца");
+            displayStartTimeValue(DateUtil.dateToString(task.getStartTime()));
+            displayEndTimeValue(DateUtil.dateToString(task.getEndTime()));
+            displayIntervalValue(String.valueOf(task.getRepeatInterval()));
+            displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
         } else {
             showTaskDetails(null);
-            nameValue.setText(task.getTitle());
-            timeLabel.setText("Время выполнения");
-            endLabel.setText("");
-            timeValue.setText(DateUtil.dateToString(task.getTime()));
-            intervalValue.setText(task.getRepeatInterval() == 0 ? "Задача не повторяется" : String.valueOf(task.getRepeatInterval()));
-            activeValue.setText(task.isActive() ? "Активна" : "Неактивна");
+            displayTitleValue(task.getTitle());
+            displayTimeStartLabel("Время выполнения");
+            displayEndTimeValue("");
+            displayStartTimeValue(DateUtil.dateToString(task.getTime()));
+            displayIntervalValue(task.getRepeatInterval() == 0 ? "Задача не повторяется" : String.valueOf(task.getRepeatInterval()));
+            displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
         }
+
     }
 
     public void setMainApp(Main main) {
@@ -101,15 +100,16 @@ public class TaskOverviewController {
     public boolean showTaskEditDialog(Task task) {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/view/TaskEditDialog.fxml"));
+            loader.setLocation(getClass().getResource("/fxml/TaskEditDialog.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
 
             Stage dialogStage = new Stage();
-            dialogStage.setTitle("Edit Task");
+            dialogStage.setTitle("Изменить");
             dialogStage.initModality(Modality.WINDOW_MODAL);
             dialogStage.initOwner(main.getPrimaryStage());
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
+            dialogStage.setResizable(false);
 
             TaskEditDialogController controller = loader.getController();
             controller.showCurrentTask(task);
@@ -130,9 +130,9 @@ public class TaskOverviewController {
             // Ничего не выбрано.
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(main.getPrimaryStage());
-            alert.setTitle("No Selection");
-            alert.setHeaderText("No Person Selected");
-            alert.setContentText("Please select a person in the table.");
+            alert.setTitle("Ошибка");
+            alert.setHeaderText("Задача не выбрана");
+            alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {
             main.getData().remove(a);
@@ -146,9 +146,9 @@ public class TaskOverviewController {
         if (selectedTask == null) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(main.getPrimaryStage());
-            alert.setTitle("No Selection");
-            alert.setHeaderText("No task selected");
-            alert.setContentText("Please select task in the table");
+            alert.setTitle("Ошибка");
+            alert.setHeaderText("Задача не выбрана");
+            alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {
             boolean okClicked = showTaskEditDialog(selectedTask);
@@ -170,6 +170,27 @@ public class TaskOverviewController {
     }
 
     @FXML
+    private void event() throws ClassNotFoundException, IOException {
+        if (filterComboBox.getValue().equals("На этой неделе")) {
+            filterThisWeek();
+        }
+        else if (filterComboBox.getValue().equals("В этом месяце")) {
+            filterThisMonth();
+        }
+        else if (filterComboBox.getValue().equals("Указать дату")) {
+            filterDay();
+        }
+        else if (filterComboBox.getValue().equals("Указать промежуток")) {
+            filterTimeInterval();
+        }
+        else if (filterComboBox.getValue().equals("Указать промежуток")) {
+            filterTimeInterval();
+        }
+        else if (filterComboBox.getValue().equals("Все задачи")) {
+            allTasks();
+        }
+    }
+
     private void filterThisWeek() throws ClassNotFoundException {
         ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
 
@@ -180,7 +201,7 @@ public class TaskOverviewController {
 
     }
 
-    @FXML
+
     private void filterThisMonth() throws ClassNotFoundException {
         ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
         for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(lastDayOfMonth()))) {
@@ -189,23 +210,24 @@ public class TaskOverviewController {
         tableView.setItems(tasksWeek);
     }
 
-    @FXML
+
     private void allTasks() {
         tableView.setItems(main.getData());
     }
 
-    @FXML
+
     private void filterTimeInterval() throws IOException, ClassNotFoundException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/view/DateIntervalDialogWindow.fxml"));
+        loader.setLocation(getClass().getResource("/fxml/DateIntervalDialogWindow.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
 
         Stage dateSelectStage = new Stage();
-        dateSelectStage.setTitle("Edit Task");
+        dateSelectStage.setTitle("");
         dateSelectStage.initModality(Modality.WINDOW_MODAL);
         dateSelectStage.initOwner(main.getPrimaryStage());
         Scene scene = new Scene(page);
         dateSelectStage.setScene(scene);
+        dateSelectStage.setResizable(false);
 
         DateIntervalDialogWindowController controller = loader.getController();
 
@@ -222,18 +244,18 @@ public class TaskOverviewController {
         }
     }
 
-    @FXML
     private void filterDay() throws IOException, ClassNotFoundException {
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/view/DateDialogWindow.fxml"));
+        loader.setLocation(getClass().getResource("/fxml/DateDialogWindow.fxml"));
         AnchorPane page = (AnchorPane) loader.load();
 
         Stage dateSelectStage = new Stage();
-        dateSelectStage.setTitle("Edit Task");
+        dateSelectStage.setTitle("");
         dateSelectStage.initModality(Modality.WINDOW_MODAL);
         dateSelectStage.initOwner(main.getPrimaryStage());
         Scene scene = new Scene(page);
         dateSelectStage.setScene(scene);
+        dateSelectStage.setResizable(false);
 
         DateDialogWindowController controller = loader.getController();
 

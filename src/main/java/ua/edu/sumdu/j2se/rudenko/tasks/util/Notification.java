@@ -15,8 +15,7 @@ import java.util.List;
 
 public class Notification {
     private Main main;
-    private Timer notificationTimer = new Timer();
-    private DateFormat timeFormat = SimpleDateFormat.getTimeInstance();
+    private final Timer notificationTimer = new Timer();
     private TrayIcon trayIcon;
     public void setMain(Main main) {
         this.main = main;

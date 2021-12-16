@@ -7,7 +7,6 @@ import javafx.stage.Stage;
 import java.time.LocalDate;
 
 public class DateDialogWindowController {
-
     @FXML
     private DatePicker dateSelectPickerDialog;
     private Stage stage;

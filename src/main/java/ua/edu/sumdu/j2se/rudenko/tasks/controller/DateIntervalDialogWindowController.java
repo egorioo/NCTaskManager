@@ -3,23 +3,14 @@ package ua.edu.sumdu.j2se.rudenko.tasks.controller;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.DateIntervalDialogWindowView;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class DateIntervalDialogWindowController {
-    @FXML
-    private DatePicker startIntervalDatePicker;
-    @FXML
-    private DatePicker endIntervalDatePicker;
-    @FXML
-    private TextField startIntervalField;
-    @FXML
-    private TextField endIntervalField;
-
+public class DateIntervalDialogWindowController extends DateIntervalDialogWindowView {
     private Stage stage;
     private LocalDateTime startDateTime;
     private LocalDateTime endDateTime;
@@ -28,8 +19,8 @@ public class DateIntervalDialogWindowController {
 
     @FXML
     private void initialize() {
-        startIntervalDatePicker.setValue(LocalDate.now());
-        endIntervalDatePicker.setValue(LocalDate.now());
+        displayStartIntervalDatePicker(LocalDate.now());
+        displayEndIntervalDatePicker(LocalDate.now());
     }
 
     public void setDialogStage(Stage stage) {
@@ -47,8 +38,8 @@ public class DateIntervalDialogWindowController {
     @FXML
     private void okDateIntervalButtonPressed() {
         if (validInput()) {
-            startDateTime = startIntervalDatePicker.getValue().atTime(DateUtil.stringToTime(startIntervalField.getText()));
-            endDateTime = endIntervalDatePicker.getValue().atTime(DateUtil.stringToTime(endIntervalField.getText()));
+            startDateTime = getStartIntervalDatePicker().atTime(DateUtil.stringToTime(getStartHoursIntervalField()));
+            endDateTime = getEndIntervalDatePicker().atTime(DateUtil.stringToTime(getEndHoursIntervalField()));
             okClicked = true;
             stage.close();
         }
@@ -61,27 +52,27 @@ public class DateIntervalDialogWindowController {
 
     private boolean validInput() {
         String errorMessage = "";
-        if (startIntervalDatePicker == null || startIntervalField.getText().length() == 0) {
-            errorMessage += "No valid start time!\n";
-        } else if (!DateUtil.validTime(startIntervalField.getText())) {
-            errorMessage += "No valid start time! Use the format HH:mm:ss\n";
+        if (startIntervalDatePicker == null || getStartHoursIntervalField().length() == 0) {
+            errorMessage += "Неверное время начала!\n";
+        } else if (!DateUtil.validTime(getStartHoursIntervalField())) {
+            errorMessage += "Неверное время начала! Используйте формат HH:mm:ss\n";
         }
-        if (endIntervalDatePicker == null || endIntervalField.getText().length() == 0) {
-            errorMessage += "No valid end time!\n";
-        } else if (!DateUtil.validTime(endIntervalField.getText())) {
-            errorMessage += "No valid end time! Use the format HH:mm:ss\n";
+        if (endIntervalDatePicker == null || getEndHoursIntervalField().length() == 0) {
+            errorMessage += "Неверное время конца!\n";
+        } else if (!DateUtil.validTime(getEndHoursIntervalField())) {
+            errorMessage += "Неверное время конца! Используйте формат HH:mm:ss\n";
         }
-        if (!startIntervalField.getText().equals("") && !endIntervalField.getText().equals("")) {
-            if (startIntervalDatePicker.getValue().equals(endIntervalDatePicker.getValue())
-                    && DateUtil.stringToTime(startIntervalField.getText()).isAfter(DateUtil.stringToTime(endIntervalField.getText()))) {
-                errorMessage += "No valid start time and end time!\n";
+        if (!getStartHoursIntervalField().equals("") && !getEndHoursIntervalField().equals("")) {
+            if (getStartIntervalDatePicker().equals(getEndIntervalDatePicker())
+                    && DateUtil.stringToTime(getStartHoursIntervalField()).isAfter(DateUtil.stringToTime(getEndHoursIntervalField()))) {
+                errorMessage += "Неверное время начала и конца!\n";
             }
-            if (startIntervalDatePicker.getValue().equals(endIntervalDatePicker.getValue())
-                    && DateUtil.stringToTime(startIntervalField.getText()).equals(DateUtil.stringToTime(endIntervalField.getText()))) {
-                errorMessage += "No valid start time and end time! Time can't be the same\n";
+            if (getStartIntervalDatePicker().equals(getEndIntervalDatePicker())
+                    && DateUtil.stringToTime(getStartHoursIntervalField()).equals(DateUtil.stringToTime(getEndHoursIntervalField()))) {
+                errorMessage += "Неверное время начала и конца! Время не может быть одинаковым\n";
             }
-            if (startIntervalDatePicker.getValue().isAfter(endIntervalDatePicker.getValue())) {
-                errorMessage += "No valid start time and end time! \n";
+            if (getStartIntervalDatePicker().isAfter(getEndIntervalDatePicker())) {
+                errorMessage += "Неверное время начала и конца! \n";
             }
         }
 
@@ -91,8 +82,8 @@ public class DateIntervalDialogWindowController {
             // Показываем сообщение об ошибке.
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
-            alert.setTitle("Invalid Fields");
-            alert.setHeaderText("Please correct invalid fields");
+            alert.setTitle("Ошибка");
+            alert.setHeaderText("Неверные данные");
             alert.setContentText(errorMessage);
             alert.showAndWait();
             return false;

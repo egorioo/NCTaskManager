@@ -46,7 +46,7 @@ public class Main extends Application{
         notification.enableNotifications();
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("/view/TaskOverview.fxml"));
+        loader.setLocation(Main.class.getResource("/fxml/TaskOverview.fxml"));
         Parent root = loader.load();
         TaskOverviewController controller = loader.getController();
 
@@ -54,9 +54,11 @@ public class Main extends Application{
 
         stage.setScene(scene);
 
-        stage.setTitle("Hello JavaFX");
+        stage.setTitle("Task Manager");
         stage.setWidth(600);
         stage.setHeight(400);
+        stage.setMinHeight(360);
+        stage.setMinWidth(550);
 
         stage.show();
         System.out.println(controller);

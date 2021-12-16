@@ -19,7 +19,7 @@
       <ButtonBar layoutX="12.0" layoutY="94.0" prefHeight="40.0" prefWidth="200.0">
         <buttons>
           <Button onAction="#okDateButtonDialog" minWidth="62.0" mnemonicParsing="false" prefHeight="25.0" text="OK" />
-            <Button onAction="#cancelDateButtonDialog" minWidth="65.0" mnemonicParsing="false" prefHeight="25.0" text="Cancel" />
+            <Button onAction="#cancelDateButtonDialog" minWidth="65.0" mnemonicParsing="false" prefHeight="25.0" text="Отменить" />
         </buttons>
       </ButtonBar>
    </children>
