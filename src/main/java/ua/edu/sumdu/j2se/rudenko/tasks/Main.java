@@ -4,18 +4,20 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskOverviewController;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.*;
-import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.Notification;
 
 import java.io.File;
 import java.io.IOException;
+
 
 
 public class Main extends Application {
@@ -59,10 +61,10 @@ public class Main extends Application {
             stage.setScene(scene);
 
             stage.setTitle("Task Manager");
-            stage.setWidth(600);
-            stage.setHeight(400);
-            stage.setMinHeight(360);
+
+            stage.setMinHeight(370);
             stage.setMinWidth(550);
+            stage.getIcons().add(new Image(Main.class.getResourceAsStream("/images/icon24px.png")));
 
             stage.show();
             controller.setMainApp(this);

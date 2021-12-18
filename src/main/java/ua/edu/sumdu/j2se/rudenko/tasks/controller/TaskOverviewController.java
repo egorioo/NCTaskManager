@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -64,7 +65,7 @@ public class TaskOverviewController extends TaskOverviewView {
         filterComboBox.setItems(filters);
 
         leftAnchorPane.setMinWidth(150);
-        rightAnchorPane.setMinWidth(270);
+        rightAnchorPane.setMinWidth(300);
     }
 
     private void showTaskDetails(Task task) {
@@ -112,6 +113,7 @@ public class TaskOverviewController extends TaskOverviewView {
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             dialogStage.setResizable(false);
+            dialogStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
 
             TaskEditDialogController controller = loader.getController();
             controller.showCurrentTask(task);
@@ -242,7 +244,7 @@ public class TaskOverviewController extends TaskOverviewView {
             Scene scene = new Scene(page);
             dateSelectStage.setScene(scene);
             dateSelectStage.setResizable(false);
-
+            dateSelectStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
             DateIntervalDialogWindowController controller = loader.getController();
 
             controller.setDialogStage(dateSelectStage);
@@ -277,6 +279,7 @@ public class TaskOverviewController extends TaskOverviewView {
             Scene scene = new Scene(page);
             dateSelectStage.setScene(scene);
             dateSelectStage.setResizable(false);
+            dateSelectStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
 
             DateDialogWindowController controller = loader.getController();
 

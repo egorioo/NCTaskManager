@@ -71,3 +71,1353 @@
 2021-12-16 22:28:31 DEBUG Main:94 - reading data from a file
 2021-12-16 22:28:31 DEBUG Main:41 - starting the application
 2021-12-16 22:28:32 DEBUG Notification:65 - added tray icon
+2021-12-16 22:35:06 DEBUG Main:94 - reading data from a file
+2021-12-16 22:35:06 DEBUG Main:41 - starting the application
+2021-12-16 22:35:06 DEBUG Notification:65 - added tray icon
+2021-12-17 09:41:57 DEBUG Main:94 - reading data from a file
+2021-12-17 09:41:57 DEBUG Main:42 - starting the application
+2021-12-17 09:41:57 DEBUG Main:29 - writing data to a file
+2021-12-17 09:41:57 DEBUG Main:84 - termination of the application
+2021-12-17 10:16:03 DEBUG Main:94 - reading data from a file
+2021-12-17 10:16:03 DEBUG Main:42 - starting the application
+2021-12-17 10:16:04 DEBUG Notification:65 - added tray icon
+2021-12-17 10:16:09 DEBUG Notification:90 - received notification
+2021-12-17 10:18:09 DEBUG Notification:90 - received notification
+2021-12-17 10:20:09 DEBUG Notification:90 - received notification
+2021-12-17 10:21:37 DEBUG Main:94 - reading data from a file
+2021-12-17 10:21:37 DEBUG Main:42 - starting the application
+2021-12-17 10:21:38 DEBUG Notification:65 - added tray icon
+2021-12-17 10:21:43 DEBUG Notification:90 - received notification
+2021-12-17 10:23:12 DEBUG Main:94 - reading data from a file
+2021-12-17 10:23:13 DEBUG Main:43 - starting the application
+2021-12-17 10:23:13 DEBUG Notification:65 - added tray icon
+2021-12-17 10:23:13 DEBUG Main:29 - writing data to a file
+2021-12-17 10:23:13 DEBUG Main:86 - termination of the application
+2021-12-17 10:24:36 DEBUG Main:94 - reading data from a file
+2021-12-17 10:24:36 DEBUG Main:43 - starting the application
+2021-12-17 10:24:36 DEBUG Notification:65 - added tray icon
+2021-12-17 10:24:46 DEBUG Main:94 - reading data from a file
+2021-12-17 10:24:46 DEBUG Main:43 - starting the application
+2021-12-17 10:24:46 DEBUG Notification:65 - added tray icon
+2021-12-17 10:26:22 DEBUG Main:94 - reading data from a file
+2021-12-17 10:26:22 DEBUG Main:43 - starting the application
+2021-12-17 10:26:22 DEBUG Notification:65 - added tray icon
+2021-12-17 10:26:23 DEBUG Main:29 - writing data to a file
+2021-12-17 10:26:23 DEBUG Main:86 - termination of the application
+2021-12-17 10:26:50 DEBUG Main:94 - reading data from a file
+2021-12-17 10:26:50 DEBUG Main:43 - starting the application
+2021-12-17 10:26:50 DEBUG Notification:65 - added tray icon
+2021-12-17 10:27:04 DEBUG Main:94 - reading data from a file
+2021-12-17 10:27:05 DEBUG Main:43 - starting the application
+2021-12-17 10:27:05 DEBUG Notification:65 - added tray icon
+2021-12-17 10:27:22 DEBUG Main:94 - reading data from a file
+2021-12-17 10:27:22 DEBUG Main:43 - starting the application
+2021-12-17 10:27:22 DEBUG Notification:65 - added tray icon
+2021-12-17 10:27:23 DEBUG Main:29 - writing data to a file
+2021-12-17 10:27:23 DEBUG Main:86 - termination of the application
+2021-12-17 10:28:11 DEBUG Main:94 - reading data from a file
+2021-12-17 10:28:11 DEBUG Main:43 - starting the application
+2021-12-17 10:28:11 DEBUG Notification:65 - added tray icon
+2021-12-17 10:28:40 DEBUG Main:94 - reading data from a file
+2021-12-17 10:28:40 DEBUG Main:43 - starting the application
+2021-12-17 10:28:40 DEBUG Notification:65 - added tray icon
+2021-12-17 10:28:40 DEBUG Main:29 - writing data to a file
+2021-12-17 10:28:40 DEBUG Main:86 - termination of the application
+2021-12-17 10:29:05 DEBUG Main:94 - reading data from a file
+2021-12-17 10:29:05 DEBUG Main:43 - starting the application
+2021-12-17 10:29:06 DEBUG Notification:65 - added tray icon
+2021-12-17 10:29:06 DEBUG Main:29 - writing data to a file
+2021-12-17 10:29:06 DEBUG Main:86 - termination of the application
+2021-12-17 10:29:23 DEBUG Main:94 - reading data from a file
+2021-12-17 10:29:23 DEBUG Main:43 - starting the application
+2021-12-17 10:29:24 DEBUG Notification:65 - added tray icon
+2021-12-17 10:31:06 DEBUG Main:94 - reading data from a file
+2021-12-17 10:31:06 DEBUG Main:40 - starting the application
+2021-12-17 10:31:07 DEBUG Notification:65 - added tray icon
+2021-12-17 10:31:12 DEBUG Main:29 - writing data to a file
+2021-12-17 10:31:12 DEBUG Main:83 - termination of the application
+2021-12-17 10:31:20 DEBUG Main:94 - reading data from a file
+2021-12-17 10:31:20 DEBUG Main:40 - starting the application
+2021-12-17 10:31:21 DEBUG Notification:65 - added tray icon
+2021-12-17 11:14:23 DEBUG Main:94 - reading data from a file
+2021-12-17 11:14:23 DEBUG Main:40 - starting the application
+2021-12-17 11:14:23 DEBUG Notification:65 - added tray icon
+2021-12-17 11:14:25 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 11:14:26 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:14:26 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:14:31 DEBUG Main:29 - writing data to a file
+2021-12-17 11:14:31 DEBUG Main:83 - termination of the application
+2021-12-17 11:34:35 DEBUG Main:94 - reading data from a file
+2021-12-17 11:34:35 DEBUG Main:40 - starting the application
+2021-12-17 11:34:35 DEBUG Notification:65 - added tray icon
+2021-12-17 11:34:40 DEBUG Notification:90 - received notification
+2021-12-17 11:34:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 11:34:46 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:34:47 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:34:48 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 11:34:54 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 11:34:55 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:34:55 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:34:59 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:35:00 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:35:00 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:35:01 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 11:35:01 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 11:35:02 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:35:02 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:35:16 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:35:16 DEBUG TaskOverviewController:143 - deleting a taskеуые
+2021-12-17 11:35:17 DEBUG TaskOverviewController:160 - editing a task test
+2021-12-17 11:35:18 DEBUG TaskEditDialogController:163 - button cancel pressed
+2021-12-17 11:35:18 DEBUG TaskEditDialogController:164 - data has not been changed
+2021-12-17 11:35:40 DEBUG Main:94 - reading data from a file
+2021-12-17 11:35:40 DEBUG Main:40 - starting the application
+2021-12-17 11:35:40 DEBUG Notification:65 - added tray icon
+2021-12-17 11:35:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 11:35:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 11:35:45 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 11:35:45 DEBUG Notification:90 - received notification
+2021-12-17 11:35:46 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 11:58:40 DEBUG Main:94 - reading data from a file
+2021-12-17 11:58:40 DEBUG Main:40 - starting the application
+2021-12-17 11:58:40 DEBUG Notification:65 - added tray icon
+2021-12-17 12:00:28 DEBUG Main:94 - reading data from a file
+2021-12-17 12:00:28 DEBUG Main:40 - starting the application
+2021-12-17 12:00:29 DEBUG Notification:65 - added tray icon
+2021-12-17 13:22:24 DEBUG Main:94 - reading data from a file
+2021-12-17 13:22:24 DEBUG Main:40 - starting the application
+2021-12-17 13:22:24 DEBUG Notification:65 - added tray icon
+2021-12-17 13:31:52 DEBUG Main:94 - reading data from a file
+2021-12-17 13:31:52 DEBUG Main:40 - starting the application
+2021-12-17 13:31:52 DEBUG Notification:65 - added tray icon
+2021-12-17 13:32:25 DEBUG Main:94 - reading data from a file
+2021-12-17 13:32:25 DEBUG Main:40 - starting the application
+2021-12-17 13:32:25 DEBUG Notification:65 - added tray icon
+2021-12-17 13:32:43 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:32:43 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 13:32:46 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:32:46 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-17 13:32:47 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:32:48 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:32:48 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 13:32:51 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:32:51 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-17 13:32:52 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:33:44 DEBUG Main:94 - reading data from a file
+2021-12-17 13:33:44 DEBUG Main:40 - starting the application
+2021-12-17 13:33:45 DEBUG Notification:65 - added tray icon
+2021-12-17 13:34:03 DEBUG Main:94 - reading data from a file
+2021-12-17 13:34:03 DEBUG Main:40 - starting the application
+2021-12-17 13:34:03 DEBUG Notification:65 - added tray icon
+2021-12-17 13:35:03 DEBUG Main:94 - reading data from a file
+2021-12-17 13:35:03 DEBUG Main:40 - starting the application
+2021-12-17 13:35:03 DEBUG Notification:65 - added tray icon
+2021-12-17 13:35:14 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:35:14 DEBUG TaskOverviewController:216 - filter by current months selected
+2021-12-17 13:35:16 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:35:16 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-17 13:35:18 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:35:19 DEBUG TaskOverviewController:160 - editing a task title
+2021-12-17 13:35:23 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:35:23 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:35:25 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:35:25 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:35:26 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:35:26 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:35:26 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:36:35 DEBUG Main:94 - reading data from a file
+2021-12-17 13:36:35 DEBUG Main:40 - starting the application
+2021-12-17 13:36:35 DEBUG Notification:65 - added tray icon
+2021-12-17 13:36:39 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:36:39 DEBUG TaskOverviewController:216 - filter by current months selected
+2021-12-17 13:36:40 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 13:37:03 DEBUG Main:94 - reading data from a file
+2021-12-17 13:37:03 DEBUG Main:40 - starting the application
+2021-12-17 13:37:03 DEBUG Notification:65 - added tray icon
+2021-12-17 13:38:55 DEBUG Main:94 - reading data from a file
+2021-12-17 13:38:55 DEBUG Main:40 - starting the application
+2021-12-17 13:38:56 DEBUG Notification:65 - added tray icon
+2021-12-17 13:40:13 DEBUG Main:94 - reading data from a file
+2021-12-17 13:40:13 DEBUG Main:40 - starting the application
+2021-12-17 13:40:13 DEBUG Notification:65 - added tray icon
+2021-12-17 13:40:15 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:15 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:40:16 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:40:16 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:16 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:40:40 DEBUG Main:94 - reading data from a file
+2021-12-17 13:40:41 DEBUG Main:40 - starting the application
+2021-12-17 13:40:41 DEBUG Notification:65 - added tray icon
+2021-12-17 13:40:42 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:43 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:40:44 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:40:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:40:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:45 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:40:54 DEBUG Main:94 - reading data from a file
+2021-12-17 13:40:54 DEBUG Main:40 - starting the application
+2021-12-17 13:40:54 DEBUG Notification:65 - added tray icon
+2021-12-17 13:40:56 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:56 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:40:57 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:40:57 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:40:58 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:40:58 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:41:31 DEBUG Main:94 - reading data from a file
+2021-12-17 13:41:31 DEBUG Main:40 - starting the application
+2021-12-17 13:41:31 DEBUG Notification:65 - added tray icon
+2021-12-17 13:41:33 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:41:34 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:41:42 DEBUG Main:94 - reading data from a file
+2021-12-17 13:41:42 DEBUG Main:40 - starting the application
+2021-12-17 13:41:42 DEBUG Notification:65 - added tray icon
+2021-12-17 13:41:43 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:41:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:41:44 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:42:25 DEBUG Main:94 - reading data from a file
+2021-12-17 13:42:25 DEBUG Main:40 - starting the application
+2021-12-17 13:42:25 DEBUG Notification:65 - added tray icon
+2021-12-17 13:42:27 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:42:27 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:42:27 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:42:34 DEBUG Main:94 - reading data from a file
+2021-12-17 13:42:34 DEBUG Main:40 - starting the application
+2021-12-17 13:42:35 DEBUG Notification:65 - added tray icon
+2021-12-17 13:42:36 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:42:36 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:42:37 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:44:04 DEBUG Main:94 - reading data from a file
+2021-12-17 13:44:04 DEBUG Main:40 - starting the application
+2021-12-17 13:44:05 DEBUG Notification:65 - added tray icon
+2021-12-17 13:44:06 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:07 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:44:07 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:07 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:44:08 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:44:08 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:44:09 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:10 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:44:42 DEBUG Main:94 - reading data from a file
+2021-12-17 13:44:42 DEBUG Main:40 - starting the application
+2021-12-17 13:44:43 DEBUG Notification:65 - added tray icon
+2021-12-17 13:44:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:45 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:44:45 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:46 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:44:49 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:44:49 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:52 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:44:56 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:44:57 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:44:58 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:45:00 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:45:01 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:45:04 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:45:16 DEBUG Main:94 - reading data from a file
+2021-12-17 13:45:16 DEBUG Main:40 - starting the application
+2021-12-17 13:45:16 DEBUG Notification:65 - added tray icon
+2021-12-17 13:45:17 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:45:17 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:45:20 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:45:20 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:45:21 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:46:18 DEBUG Main:94 - reading data from a file
+2021-12-17 13:46:18 DEBUG Main:40 - starting the application
+2021-12-17 13:46:18 DEBUG Notification:65 - added tray icon
+2021-12-17 13:46:20 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:46:20 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:46:21 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:46:25 DEBUG Main:94 - reading data from a file
+2021-12-17 13:46:25 DEBUG Main:40 - starting the application
+2021-12-17 13:46:25 DEBUG Notification:65 - added tray icon
+2021-12-17 13:46:28 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:46:29 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:46:29 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:47:21 DEBUG Main:94 - reading data from a file
+2021-12-17 13:47:21 DEBUG Main:40 - starting the application
+2021-12-17 13:47:21 DEBUG Notification:65 - added tray icon
+2021-12-17 13:47:23 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:47:23 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:47:24 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:48:37 DEBUG Main:94 - reading data from a file
+2021-12-17 13:48:37 DEBUG Main:40 - starting the application
+2021-12-17 13:48:37 DEBUG Notification:65 - added tray icon
+2021-12-17 13:48:40 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:48:40 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:48:41 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:17 DEBUG Main:94 - reading data from a file
+2021-12-17 13:49:17 DEBUG Main:40 - starting the application
+2021-12-17 13:49:18 DEBUG Notification:65 - added tray icon
+2021-12-17 13:49:19 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:49:20 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:21 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:21 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:49:35 DEBUG Main:94 - reading data from a file
+2021-12-17 13:49:35 DEBUG Main:40 - starting the application
+2021-12-17 13:49:36 DEBUG Notification:65 - added tray icon
+2021-12-17 13:49:37 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:38 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:49:39 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:39 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:40 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:41 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:49:42 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:49:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:45 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:49:53 DEBUG Main:94 - reading data from a file
+2021-12-17 13:49:53 DEBUG Main:40 - starting the application
+2021-12-17 13:49:53 DEBUG Notification:65 - added tray icon
+2021-12-17 13:49:55 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:55 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:56 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:49:56 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:57 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:57 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:49:58 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:49:58 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:49:59 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:49:59 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:50:03 DEBUG Main:94 - reading data from a file
+2021-12-17 13:50:04 DEBUG Main:40 - starting the application
+2021-12-17 13:50:04 DEBUG Notification:65 - added tray icon
+2021-12-17 13:50:07 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:50:07 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:50:08 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:50:08 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:50:08 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:50:09 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:50:10 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:50:10 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:50:21 DEBUG Main:94 - reading data from a file
+2021-12-17 13:50:21 DEBUG Main:40 - starting the application
+2021-12-17 13:50:21 DEBUG Notification:65 - added tray icon
+2021-12-17 13:50:27 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:50:28 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:50:29 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:50:30 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-17 13:50:39 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:50:39 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:50:40 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:50:40 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:51:03 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:51:03 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:51:04 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 13:51:56 DEBUG Main:94 - reading data from a file
+2021-12-17 13:51:56 DEBUG Main:40 - starting the application
+2021-12-17 13:51:57 DEBUG Notification:65 - added tray icon
+2021-12-17 13:51:58 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 13:51:59 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 13:51:59 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 13:52:01 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:18:02 DEBUG Notification:90 - received notification
+2021-12-17 14:20:02 DEBUG Notification:90 - received notification
+2021-12-17 14:22:02 DEBUG Notification:90 - received notification
+2021-12-17 14:24:02 DEBUG Notification:90 - received notification
+2021-12-17 14:26:02 DEBUG Notification:90 - received notification
+2021-12-17 14:26:10 DEBUG Main:29 - writing data to a file
+2021-12-17 14:26:10 DEBUG Main:83 - termination of the application
+2021-12-17 14:51:19 DEBUG Main:94 - reading data from a file
+2021-12-17 14:51:19 DEBUG Main:40 - starting the application
+2021-12-17 14:51:19 DEBUG Notification:65 - added tray icon
+2021-12-17 14:51:22 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:51:22 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 14:51:23 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:51:23 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 14:51:27 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 14:51:27 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 14:51:29 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 14:51:30 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:51:31 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:51:31 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 14:51:35 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:53:28 DEBUG Main:94 - reading data from a file
+2021-12-17 14:53:28 DEBUG Main:40 - starting the application
+2021-12-17 14:53:28 DEBUG Notification:65 - added tray icon
+2021-12-17 14:56:37 DEBUG Main:94 - reading data from a file
+2021-12-17 14:56:38 DEBUG Main:40 - starting the application
+2021-12-17 14:56:38 DEBUG Notification:65 - added tray icon
+2021-12-17 14:56:42 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:56:43 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:56:43 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 14:56:48 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:58:19 DEBUG Main:94 - reading data from a file
+2021-12-17 14:58:19 DEBUG Main:40 - starting the application
+2021-12-17 14:58:20 DEBUG Notification:65 - added tray icon
+2021-12-17 14:58:26 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 14:58:26 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 14:58:30 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:58:31 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 14:58:31 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 14:58:33 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:58:33 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 14:58:46 DEBUG Main:94 - reading data from a file
+2021-12-17 14:58:46 DEBUG Main:40 - starting the application
+2021-12-17 14:58:47 DEBUG Notification:65 - added tray icon
+2021-12-17 14:58:51 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 14:58:52 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 14:58:52 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:00:19 DEBUG Main:94 - reading data from a file
+2021-12-17 15:00:19 DEBUG Main:40 - starting the application
+2021-12-17 15:00:19 DEBUG Notification:65 - added tray icon
+2021-12-17 15:00:30 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:00:31 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:00:31 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:00:56 DEBUG Main:94 - reading data from a file
+2021-12-17 15:00:56 DEBUG Main:40 - starting the application
+2021-12-17 15:00:56 DEBUG Notification:65 - added tray icon
+2021-12-17 15:01:16 DEBUG Main:94 - reading data from a file
+2021-12-17 15:01:16 DEBUG Main:40 - starting the application
+2021-12-17 15:01:16 DEBUG Notification:65 - added tray icon
+2021-12-17 15:01:26 DEBUG Main:94 - reading data from a file
+2021-12-17 15:01:26 DEBUG Main:40 - starting the application
+2021-12-17 15:01:27 DEBUG Notification:65 - added tray icon
+2021-12-17 15:01:44 DEBUG Main:94 - reading data from a file
+2021-12-17 15:01:44 DEBUG Main:40 - starting the application
+2021-12-17 15:01:44 DEBUG Notification:65 - added tray icon
+2021-12-17 15:01:49 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:01:49 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:01:49 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:01:50 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:02:02 DEBUG Main:94 - reading data from a file
+2021-12-17 15:02:02 DEBUG Main:40 - starting the application
+2021-12-17 15:02:03 DEBUG Notification:65 - added tray icon
+2021-12-17 15:02:06 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:02:06 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:02:07 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:02:07 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:02:08 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:02:08 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:02:09 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:04:49 DEBUG Main:94 - reading data from a file
+2021-12-17 15:04:49 DEBUG Main:40 - starting the application
+2021-12-17 15:04:49 DEBUG Notification:65 - added tray icon
+2021-12-17 15:04:59 DEBUG Main:94 - reading data from a file
+2021-12-17 15:04:59 DEBUG Main:40 - starting the application
+2021-12-17 15:04:59 DEBUG Notification:65 - added tray icon
+2021-12-17 15:05:07 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:05:07 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:05:08 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:05:08 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:05:08 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:05:09 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:05:18 DEBUG Main:94 - reading data from a file
+2021-12-17 15:05:18 DEBUG Main:40 - starting the application
+2021-12-17 15:05:19 DEBUG Notification:65 - added tray icon
+2021-12-17 15:05:23 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:05:23 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:05:24 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:05:24 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:05:24 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:05:25 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:05:43 DEBUG Main:94 - reading data from a file
+2021-12-17 15:05:43 DEBUG Main:40 - starting the application
+2021-12-17 15:05:43 DEBUG Notification:65 - added tray icon
+2021-12-17 15:06:01 DEBUG Main:94 - reading data from a file
+2021-12-17 15:06:01 DEBUG Main:40 - starting the application
+2021-12-17 15:06:02 DEBUG Notification:65 - added tray icon
+2021-12-17 15:06:14 DEBUG Main:94 - reading data from a file
+2021-12-17 15:06:14 DEBUG Main:40 - starting the application
+2021-12-17 15:06:14 DEBUG Notification:65 - added tray icon
+2021-12-17 15:06:24 DEBUG Main:94 - reading data from a file
+2021-12-17 15:06:24 DEBUG Main:40 - starting the application
+2021-12-17 15:06:25 DEBUG Notification:65 - added tray icon
+2021-12-17 15:06:26 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:27 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:27 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:06:28 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:06:32 DEBUG Main:94 - reading data from a file
+2021-12-17 15:06:32 DEBUG Main:40 - starting the application
+2021-12-17 15:06:32 DEBUG Notification:65 - added tray icon
+2021-12-17 15:06:36 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:36 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:37 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:06:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:06:45 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:45 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:45 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:06:45 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:46 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:46 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:06:47 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:47 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:47 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:06:48 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:06:48 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:06:48 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:06:49 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:06:53 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:07:08 DEBUG Main:94 - reading data from a file
+2021-12-17 15:07:08 DEBUG Main:40 - starting the application
+2021-12-17 15:07:08 DEBUG Notification:65 - added tray icon
+2021-12-17 15:07:10 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:07:10 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:07:11 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:07:12 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:07:41 DEBUG Main:94 - reading data from a file
+2021-12-17 15:07:41 DEBUG Main:40 - starting the application
+2021-12-17 15:07:42 DEBUG Notification:65 - added tray icon
+2021-12-17 15:07:45 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 15:07:45 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 15:07:54 DEBUG Main:94 - reading data from a file
+2021-12-17 15:07:54 DEBUG Main:40 - starting the application
+2021-12-17 15:07:54 DEBUG Notification:65 - added tray icon
+2021-12-17 15:08:07 DEBUG Main:94 - reading data from a file
+2021-12-17 15:08:07 DEBUG Main:40 - starting the application
+2021-12-17 15:08:07 DEBUG Notification:65 - added tray icon
+2021-12-17 15:08:53 DEBUG Main:94 - reading data from a file
+2021-12-17 15:08:53 DEBUG Main:40 - starting the application
+2021-12-17 15:08:54 DEBUG Notification:65 - added tray icon
+2021-12-17 15:08:57 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 15:08:57 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-17 15:09:12 DEBUG Main:94 - reading data from a file
+2021-12-17 15:09:12 DEBUG Main:40 - starting the application
+2021-12-17 15:09:12 DEBUG Notification:65 - added tray icon
+2021-12-17 15:09:31 DEBUG Main:94 - reading data from a file
+2021-12-17 15:09:31 DEBUG Main:40 - starting the application
+2021-12-17 15:09:31 DEBUG Notification:65 - added tray icon
+2021-12-17 15:09:56 DEBUG Main:94 - reading data from a file
+2021-12-17 15:09:56 DEBUG Main:40 - starting the application
+2021-12-17 15:09:56 DEBUG Notification:65 - added tray icon
+2021-12-17 15:10:11 DEBUG Main:94 - reading data from a file
+2021-12-17 15:10:11 DEBUG Main:40 - starting the application
+2021-12-17 15:10:11 DEBUG Notification:65 - added tray icon
+2021-12-17 15:10:28 DEBUG Main:94 - reading data from a file
+2021-12-17 15:10:28 DEBUG Main:40 - starting the application
+2021-12-17 15:10:28 DEBUG Notification:65 - added tray icon
+2021-12-17 15:10:35 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:10:35 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:10:35 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:10:36 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:10:36 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:10:37 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:12:18 DEBUG Main:94 - reading data from a file
+2021-12-17 15:12:18 DEBUG Main:40 - starting the application
+2021-12-17 15:12:18 DEBUG Notification:65 - added tray icon
+2021-12-17 15:12:28 DEBUG Main:94 - reading data from a file
+2021-12-17 15:12:28 DEBUG Main:40 - starting the application
+2021-12-17 15:12:28 DEBUG Notification:65 - added tray icon
+2021-12-17 15:12:49 DEBUG Main:94 - reading data from a file
+2021-12-17 15:12:49 DEBUG Main:40 - starting the application
+2021-12-17 15:12:49 DEBUG Notification:65 - added tray icon
+2021-12-17 15:14:07 DEBUG Main:94 - reading data from a file
+2021-12-17 15:14:07 DEBUG Main:40 - starting the application
+2021-12-17 15:14:07 DEBUG Notification:65 - added tray icon
+2021-12-17 15:14:32 DEBUG Main:94 - reading data from a file
+2021-12-17 15:14:32 DEBUG Main:40 - starting the application
+2021-12-17 15:14:32 DEBUG Notification:65 - added tray icon
+2021-12-17 15:14:35 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:14:36 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:14:37 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:14:37 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:14:38 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:14:40 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 15:14:40 DEBUG TaskOverviewController:216 - filter by current months selected
+2021-12-17 15:14:40 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:14:42 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 15:14:42 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-17 15:14:43 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:14:46 DEBUG TaskOverviewController:173 - adding a task
+2021-12-17 15:14:51 DEBUG TaskOverviewController:143 - deleting a tasktitle
+2021-12-17 15:14:53 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-17 15:15:19 DEBUG Main:94 - reading data from a file
+2021-12-17 15:15:19 DEBUG Main:40 - starting the application
+2021-12-17 15:15:19 DEBUG Notification:65 - added tray icon
+2021-12-17 15:15:26 DEBUG Main:94 - reading data from a file
+2021-12-17 15:15:27 DEBUG Main:40 - starting the application
+2021-12-17 15:15:27 DEBUG Notification:65 - added tray icon
+2021-12-17 15:15:56 DEBUG Main:94 - reading data from a file
+2021-12-17 15:15:56 DEBUG Main:40 - starting the application
+2021-12-17 15:15:57 DEBUG Notification:65 - added tray icon
+2021-12-17 15:16:00 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:16:00 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:16:01 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:16:01 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:16:02 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:16:42 DEBUG Main:94 - reading data from a file
+2021-12-17 15:16:42 DEBUG Main:40 - starting the application
+2021-12-17 15:16:43 DEBUG Notification:65 - added tray icon
+2021-12-17 15:17:14 DEBUG Main:94 - reading data from a file
+2021-12-17 15:17:14 DEBUG Main:40 - starting the application
+2021-12-17 15:17:14 DEBUG Notification:65 - added tray icon
+2021-12-17 15:18:08 DEBUG Main:94 - reading data from a file
+2021-12-17 15:18:08 DEBUG Main:40 - starting the application
+2021-12-17 15:18:08 DEBUG Notification:65 - added tray icon
+2021-12-17 15:18:36 DEBUG Main:94 - reading data from a file
+2021-12-17 15:18:36 DEBUG Main:40 - starting the application
+2021-12-17 15:18:36 DEBUG Notification:65 - added tray icon
+2021-12-17 15:18:46 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:18:46 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:18:47 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:19:16 DEBUG Main:94 - reading data from a file
+2021-12-17 15:19:16 DEBUG Main:40 - starting the application
+2021-12-17 15:19:16 DEBUG Notification:65 - added tray icon
+2021-12-17 15:19:19 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:19:19 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:19:19 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:19:20 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:19:20 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:19:20 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:19:21 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:19:21 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:19:26 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:19:39 DEBUG Main:94 - reading data from a file
+2021-12-17 15:19:39 DEBUG Main:40 - starting the application
+2021-12-17 15:19:40 DEBUG Notification:65 - added tray icon
+2021-12-17 15:20:03 DEBUG Main:94 - reading data from a file
+2021-12-17 15:20:03 DEBUG Main:40 - starting the application
+2021-12-17 15:20:03 DEBUG Notification:65 - added tray icon
+2021-12-17 15:20:23 DEBUG Main:94 - reading data from a file
+2021-12-17 15:20:23 DEBUG Main:40 - starting the application
+2021-12-17 15:20:23 DEBUG Notification:65 - added tray icon
+2021-12-17 15:20:45 DEBUG Main:94 - reading data from a file
+2021-12-17 15:20:45 DEBUG Main:40 - starting the application
+2021-12-17 15:20:45 DEBUG Notification:65 - added tray icon
+2021-12-17 15:21:00 DEBUG Main:94 - reading data from a file
+2021-12-17 15:21:00 DEBUG Main:40 - starting the application
+2021-12-17 15:21:00 DEBUG Notification:65 - added tray icon
+2021-12-17 15:21:20 DEBUG Main:94 - reading data from a file
+2021-12-17 15:21:20 DEBUG Main:40 - starting the application
+2021-12-17 15:21:20 DEBUG Notification:65 - added tray icon
+2021-12-17 15:21:31 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:21:32 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:21:32 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-17 15:21:33 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:21:33 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:21:34 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-17 15:21:34 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-17 15:21:35 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-17 15:21:51 DEBUG Main:94 - reading data from a file
+2021-12-17 15:21:51 DEBUG Main:40 - starting the application
+2021-12-17 15:21:51 DEBUG Notification:65 - added tray icon
+2021-12-17 15:41:56 DEBUG Notification:90 - received notification
+2021-12-17 15:43:56 DEBUG Notification:90 - received notification
+2021-12-17 15:45:56 DEBUG Notification:90 - received notification
+2021-12-17 15:47:56 DEBUG Notification:90 - received notification
+2021-12-17 15:49:56 DEBUG Notification:90 - received notification
+2021-12-17 15:51:56 DEBUG Notification:90 - received notification
+2021-12-17 15:53:56 DEBUG Notification:90 - received notification
+2021-12-17 16:05:49 DEBUG Main:94 - reading data from a file
+2021-12-17 16:05:49 DEBUG Main:40 - starting the application
+2021-12-17 16:05:49 DEBUG Notification:65 - added tray icon
+2021-12-17 16:06:05 DEBUG Main:94 - reading data from a file
+2021-12-17 16:06:05 DEBUG Main:40 - starting the application
+2021-12-17 16:06:05 DEBUG Notification:65 - added tray icon
+2021-12-18 09:51:11 DEBUG Main:94 - reading data from a file
+2021-12-18 09:51:11 DEBUG Main:40 - starting the application
+2021-12-18 09:51:11 DEBUG Notification:65 - added tray icon
+2021-12-18 09:52:52 DEBUG Main:94 - reading data from a file
+2021-12-18 09:52:52 DEBUG Main:42 - starting the application
+2021-12-18 09:52:52 DEBUG Notification:65 - added tray icon
+2021-12-18 09:52:53 DEBUG Main:29 - writing data to a file
+2021-12-18 09:52:53 DEBUG Main:85 - termination of the application
+2021-12-18 09:56:55 DEBUG Main:94 - reading data from a file
+2021-12-18 09:56:55 DEBUG Main:44 - starting the application
+2021-12-18 09:56:56 DEBUG Notification:65 - added tray icon
+2021-12-18 09:56:56 DEBUG Main:29 - writing data to a file
+2021-12-18 09:56:56 DEBUG Main:88 - termination of the application
+2021-12-18 09:57:10 DEBUG Main:94 - reading data from a file
+2021-12-18 09:57:10 DEBUG Main:44 - starting the application
+2021-12-18 09:57:10 DEBUG Notification:65 - added tray icon
+2021-12-18 09:57:14 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 09:57:15 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 09:57:16 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 09:57:16 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 09:57:17 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 09:57:18 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-18 10:00:15 DEBUG Main:94 - reading data from a file
+2021-12-18 10:00:16 DEBUG Main:43 - starting the application
+2021-12-18 10:00:16 DEBUG Notification:65 - added tray icon
+2021-12-18 10:00:27 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:00:27 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:00:28 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:00:28 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:00:30 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:00:30 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 10:00:33 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:00:33 DEBUG TaskOverviewController:216 - filter by current months selected
+2021-12-18 10:00:33 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:00:34 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:00:34 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:01:22 DEBUG Main:94 - reading data from a file
+2021-12-18 10:01:22 DEBUG Main:43 - starting the application
+2021-12-18 10:01:23 DEBUG Notification:65 - added tray icon
+2021-12-18 10:01:26 WARN  TaskOverviewController:132 - task to delete is not selected
+2021-12-18 10:01:31 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:01:33 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-18 10:02:40 DEBUG Main:94 - reading data from a file
+2021-12-18 10:02:40 DEBUG Main:43 - starting the application
+2021-12-18 10:02:40 DEBUG Notification:65 - added tray icon
+2021-12-18 10:02:42 WARN  TaskOverviewController:151 - task to edit is not selected
+2021-12-18 10:02:44 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:02:45 DEBUG TaskOverviewController:160 - editing a task test
+2021-12-18 10:02:49 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-18 10:03:03 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:03:04 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:03:04 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:03:04 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:03:05 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:03:33 DEBUG Main:94 - reading data from a file
+2021-12-18 10:03:33 DEBUG Main:43 - starting the application
+2021-12-18 10:03:33 DEBUG Notification:65 - added tray icon
+2021-12-18 10:03:35 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:03:37 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:03:37 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-18 10:03:44 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:03:44 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 10:05:48 DEBUG Main:94 - reading data from a file
+2021-12-18 10:05:48 DEBUG Main:43 - starting the application
+2021-12-18 10:05:49 DEBUG Notification:65 - added tray icon
+2021-12-18 10:05:50 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:05:51 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:06:08 DEBUG Main:94 - reading data from a file
+2021-12-18 10:06:08 DEBUG Main:43 - starting the application
+2021-12-18 10:06:08 DEBUG Notification:65 - added tray icon
+2021-12-18 10:06:11 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:06:12 DEBUG TaskOverviewController:160 - editing a task title
+2021-12-18 10:19:42 DEBUG Main:94 - reading data from a file
+2021-12-18 10:19:42 DEBUG Main:43 - starting the application
+2021-12-18 10:19:42 DEBUG Notification:65 - added tray icon
+2021-12-18 10:19:45 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:19:46 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-18 10:32:24 DEBUG Main:94 - reading data from a file
+2021-12-18 10:32:24 DEBUG Main:43 - starting the application
+2021-12-18 10:32:24 DEBUG Notification:65 - added tray icon
+2021-12-18 10:32:34 DEBUG Main:94 - reading data from a file
+2021-12-18 10:32:34 DEBUG Main:43 - starting the application
+2021-12-18 10:32:35 DEBUG Notification:65 - added tray icon
+2021-12-18 10:32:52 DEBUG Main:94 - reading data from a file
+2021-12-18 10:32:52 DEBUG Main:43 - starting the application
+2021-12-18 10:32:52 DEBUG Notification:65 - added tray icon
+2021-12-18 10:32:55 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:32:55 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:32:56 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:33:03 DEBUG Main:94 - reading data from a file
+2021-12-18 10:33:03 DEBUG Main:43 - starting the application
+2021-12-18 10:33:03 DEBUG Notification:65 - added tray icon
+2021-12-18 10:33:04 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:33:05 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:33:05 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 10:33:05 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:33:27 DEBUG Main:94 - reading data from a file
+2021-12-18 10:33:27 DEBUG Main:43 - starting the application
+2021-12-18 10:33:27 DEBUG Notification:65 - added tray icon
+2021-12-18 10:33:31 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:33:32 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:33:32 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:33:36 DEBUG Main:94 - reading data from a file
+2021-12-18 10:33:36 DEBUG Main:43 - starting the application
+2021-12-18 10:33:36 DEBUG Notification:65 - added tray icon
+2021-12-18 10:33:49 DEBUG Main:94 - reading data from a file
+2021-12-18 10:33:49 DEBUG Main:43 - starting the application
+2021-12-18 10:33:49 DEBUG Notification:65 - added tray icon
+2021-12-18 10:33:55 DEBUG Main:94 - reading data from a file
+2021-12-18 10:33:55 DEBUG Main:43 - starting the application
+2021-12-18 10:33:55 DEBUG Notification:65 - added tray icon
+2021-12-18 10:34:00 DEBUG Main:94 - reading data from a file
+2021-12-18 10:34:00 DEBUG Main:43 - starting the application
+2021-12-18 10:34:00 DEBUG Notification:65 - added tray icon
+2021-12-18 10:34:34 DEBUG Main:94 - reading data from a file
+2021-12-18 10:34:34 DEBUG Main:43 - starting the application
+2021-12-18 10:34:34 DEBUG Notification:65 - added tray icon
+2021-12-18 10:34:41 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:42 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:42 DEBUG TaskOverviewController:178 - ывфыв has been added
+2021-12-18 10:34:43 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:44 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:44 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:45 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:45 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:45 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:46 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:47 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:47 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:47 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:48 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:48 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:48 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:49 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:49 DEBUG TaskOverviewController:178 - ыфв has been added
+2021-12-18 10:34:50 WARN  TaskOverviewController:151 - task to edit is not selected
+2021-12-18 10:34:51 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:52 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:52 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:53 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:54 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:54 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:54 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:55 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:55 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:56 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:57 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:57 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:58 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:34:58 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:34:58 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:34:59 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:35:00 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:35:00 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:35:00 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 10:35:01 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-18 10:35:01 DEBUG TaskOverviewController:178 - фыв has been added
+2021-12-18 10:35:08 DEBUG Main:29 - writing data to a file
+2021-12-18 10:35:08 DEBUG Main:85 - termination of the application
+2021-12-18 10:35:30 DEBUG Main:94 - reading data from a file
+2021-12-18 10:35:30 DEBUG Main:43 - starting the application
+2021-12-18 10:35:31 DEBUG Notification:65 - added tray icon
+2021-12-18 10:35:38 DEBUG Main:94 - reading data from a file
+2021-12-18 10:35:38 DEBUG Main:43 - starting the application
+2021-12-18 10:35:38 DEBUG Notification:65 - added tray icon
+2021-12-18 10:35:46 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 10:35:46 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:35:46 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 10:35:57 DEBUG Main:94 - reading data from a file
+2021-12-18 10:35:57 DEBUG Main:43 - starting the application
+2021-12-18 10:35:57 DEBUG Notification:65 - added tray icon
+2021-12-18 10:36:05 DEBUG Main:94 - reading data from a file
+2021-12-18 10:36:05 DEBUG Main:43 - starting the application
+2021-12-18 10:36:05 DEBUG Notification:65 - added tray icon
+2021-12-18 10:36:51 DEBUG Main:94 - reading data from a file
+2021-12-18 10:36:51 DEBUG Main:43 - starting the application
+2021-12-18 10:36:51 DEBUG Notification:65 - added tray icon
+2021-12-18 10:36:55 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:36:56 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:36:56 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:37:21 DEBUG Main:94 - reading data from a file
+2021-12-18 10:37:21 DEBUG Main:43 - starting the application
+2021-12-18 10:37:21 DEBUG Notification:65 - added tray icon
+2021-12-18 10:38:15 DEBUG Main:94 - reading data from a file
+2021-12-18 10:38:15 DEBUG Main:43 - starting the application
+2021-12-18 10:38:16 DEBUG Notification:65 - added tray icon
+2021-12-18 10:38:29 DEBUG Main:94 - reading data from a file
+2021-12-18 10:38:29 DEBUG Main:43 - starting the application
+2021-12-18 10:38:29 DEBUG Notification:65 - added tray icon
+2021-12-18 10:42:02 DEBUG Main:94 - reading data from a file
+2021-12-18 10:42:02 DEBUG Main:43 - starting the application
+2021-12-18 10:42:03 DEBUG Notification:65 - added tray icon
+2021-12-18 10:42:05 WARN  TaskOverviewController:132 - task to delete is not selected
+2021-12-18 10:42:07 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:42:08 DEBUG TaskOverviewController:160 - editing a task helo
+2021-12-18 10:42:11 WARN  TaskEditDialogController:216 - Invalid data: 
+Неверное название задачи!
+
+2021-12-18 10:42:20 DEBUG Main:94 - reading data from a file
+2021-12-18 10:42:20 DEBUG Main:43 - starting the application
+2021-12-18 10:42:21 DEBUG Notification:65 - added tray icon
+2021-12-18 10:42:22 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 10:42:23 DEBUG TaskOverviewController:160 - editing a task test
+2021-12-18 10:42:26 WARN  TaskEditDialogController:216 - Invalid data: 
+Неверное название задачи!
+
+2021-12-18 10:50:04 DEBUG Main:94 - reading data from a file
+2021-12-18 10:50:04 DEBUG Main:43 - starting the application
+2021-12-18 10:50:04 DEBUG Notification:65 - added tray icon
+2021-12-18 10:50:08 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 10:50:08 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:50:09 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 10:50:18 DEBUG Main:94 - reading data from a file
+2021-12-18 10:50:18 DEBUG Main:43 - starting the application
+2021-12-18 10:50:18 DEBUG Notification:65 - added tray icon
+2021-12-18 10:52:09 DEBUG Main:94 - reading data from a file
+2021-12-18 10:52:09 DEBUG Main:43 - starting the application
+2021-12-18 10:52:10 DEBUG Notification:65 - added tray icon
+2021-12-18 10:52:10 DEBUG Main:29 - writing data to a file
+2021-12-18 10:52:10 DEBUG Main:85 - termination of the application
+2021-12-18 10:54:56 DEBUG Main:94 - reading data from a file
+2021-12-18 10:54:56 DEBUG Main:43 - starting the application
+2021-12-18 10:54:56 DEBUG Notification:65 - added tray icon
+2021-12-18 10:54:59 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:55:00 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 10:55:42 DEBUG Main:94 - reading data from a file
+2021-12-18 10:55:42 DEBUG Main:43 - starting the application
+2021-12-18 10:55:42 DEBUG Notification:65 - added tray icon
+2021-12-18 10:55:44 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 10:55:45 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 10:56:13 DEBUG Main:94 - reading data from a file
+2021-12-18 10:56:13 DEBUG Main:43 - starting the application
+2021-12-18 10:56:13 DEBUG Notification:65 - added tray icon
+2021-12-18 10:56:31 DEBUG Main:94 - reading data from a file
+2021-12-18 10:56:31 DEBUG Main:43 - starting the application
+2021-12-18 10:56:31 DEBUG Notification:65 - added tray icon
+2021-12-18 10:56:37 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 10:56:37 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-18 10:57:13 DEBUG Main:94 - reading data from a file
+2021-12-18 10:57:13 DEBUG Main:43 - starting the application
+2021-12-18 10:57:13 DEBUG Notification:65 - added tray icon
+2021-12-18 10:57:20 DEBUG Main:94 - reading data from a file
+2021-12-18 10:57:21 DEBUG Main:43 - starting the application
+2021-12-18 10:57:21 DEBUG Notification:65 - added tray icon
+2021-12-18 11:00:16 DEBUG Main:94 - reading data from a file
+2021-12-18 11:00:16 DEBUG Main:43 - starting the application
+2021-12-18 11:00:16 DEBUG Notification:65 - added tray icon
+2021-12-18 11:05:07 DEBUG Main:94 - reading data from a file
+2021-12-18 11:05:07 DEBUG Main:43 - starting the application
+2021-12-18 11:05:08 DEBUG Notification:65 - added tray icon
+2021-12-18 11:05:11 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:05:11 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:05:12 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:05:30 DEBUG Main:94 - reading data from a file
+2021-12-18 11:05:30 DEBUG Main:43 - starting the application
+2021-12-18 11:05:30 DEBUG Notification:65 - added tray icon
+2021-12-18 11:05:31 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:05:32 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:05:32 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:05:43 DEBUG Main:94 - reading data from a file
+2021-12-18 11:05:43 DEBUG Main:43 - starting the application
+2021-12-18 11:05:43 DEBUG Notification:65 - added tray icon
+2021-12-18 11:05:46 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:05:47 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:05:47 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:06:02 DEBUG Main:94 - reading data from a file
+2021-12-18 11:06:02 DEBUG Main:43 - starting the application
+2021-12-18 11:06:03 DEBUG Notification:65 - added tray icon
+2021-12-18 11:06:35 DEBUG Main:94 - reading data from a file
+2021-12-18 11:06:35 DEBUG Main:43 - starting the application
+2021-12-18 11:06:36 DEBUG Notification:65 - added tray icon
+2021-12-18 11:06:39 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:06:40 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:06:40 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:09:48 DEBUG Main:94 - reading data from a file
+2021-12-18 11:09:48 DEBUG Main:43 - starting the application
+2021-12-18 11:09:49 DEBUG Notification:65 - added tray icon
+2021-12-18 11:12:12 DEBUG Main:94 - reading data from a file
+2021-12-18 11:12:12 DEBUG Main:43 - starting the application
+2021-12-18 11:12:13 DEBUG Notification:65 - added tray icon
+2021-12-18 11:12:26 DEBUG Main:94 - reading data from a file
+2021-12-18 11:12:26 DEBUG Main:43 - starting the application
+2021-12-18 11:12:26 DEBUG Notification:65 - added tray icon
+2021-12-18 11:12:29 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:12:30 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:12:31 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:12:31 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:12:32 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:12:32 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:13:04 DEBUG Main:94 - reading data from a file
+2021-12-18 11:13:04 DEBUG Main:43 - starting the application
+2021-12-18 11:13:05 DEBUG Notification:65 - added tray icon
+2021-12-18 11:13:07 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:13:08 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:13:09 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:13:10 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:14:03 DEBUG Main:94 - reading data from a file
+2021-12-18 11:14:03 DEBUG Main:43 - starting the application
+2021-12-18 11:14:03 DEBUG Notification:65 - added tray icon
+2021-12-18 11:14:24 DEBUG Main:94 - reading data from a file
+2021-12-18 11:14:24 DEBUG Main:43 - starting the application
+2021-12-18 11:14:24 DEBUG Notification:65 - added tray icon
+2021-12-18 11:14:40 DEBUG Main:94 - reading data from a file
+2021-12-18 11:14:40 DEBUG Main:43 - starting the application
+2021-12-18 11:14:40 DEBUG Notification:65 - added tray icon
+2021-12-18 11:14:43 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:14:43 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:14:44 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:14:44 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:14:59 DEBUG Main:94 - reading data from a file
+2021-12-18 11:14:59 DEBUG Main:43 - starting the application
+2021-12-18 11:15:00 DEBUG Notification:65 - added tray icon
+2021-12-18 11:15:11 DEBUG Main:94 - reading data from a file
+2021-12-18 11:15:11 DEBUG Main:43 - starting the application
+2021-12-18 11:15:11 DEBUG Notification:65 - added tray icon
+2021-12-18 11:15:33 DEBUG Main:94 - reading data from a file
+2021-12-18 11:15:33 DEBUG Main:43 - starting the application
+2021-12-18 11:15:33 DEBUG Notification:65 - added tray icon
+2021-12-18 11:15:41 DEBUG Main:94 - reading data from a file
+2021-12-18 11:15:41 DEBUG Main:43 - starting the application
+2021-12-18 11:15:41 DEBUG Notification:65 - added tray icon
+2021-12-18 11:15:49 DEBUG Main:94 - reading data from a file
+2021-12-18 11:15:49 DEBUG Main:43 - starting the application
+2021-12-18 11:15:49 DEBUG Notification:65 - added tray icon
+2021-12-18 11:16:04 DEBUG Main:94 - reading data from a file
+2021-12-18 11:16:04 DEBUG Main:43 - starting the application
+2021-12-18 11:16:04 DEBUG Notification:65 - added tray icon
+2021-12-18 11:16:13 DEBUG Main:94 - reading data from a file
+2021-12-18 11:16:13 DEBUG Main:43 - starting the application
+2021-12-18 11:16:13 DEBUG Notification:65 - added tray icon
+2021-12-18 11:16:32 DEBUG Main:94 - reading data from a file
+2021-12-18 11:16:32 DEBUG Main:43 - starting the application
+2021-12-18 11:16:32 DEBUG Notification:65 - added tray icon
+2021-12-18 11:17:04 DEBUG Main:94 - reading data from a file
+2021-12-18 11:17:04 DEBUG Main:43 - starting the application
+2021-12-18 11:17:04 DEBUG Notification:65 - added tray icon
+2021-12-18 11:17:36 DEBUG Main:94 - reading data from a file
+2021-12-18 11:17:36 DEBUG Main:43 - starting the application
+2021-12-18 11:17:36 DEBUG Notification:65 - added tray icon
+2021-12-18 11:18:16 DEBUG Main:94 - reading data from a file
+2021-12-18 11:18:16 DEBUG Main:43 - starting the application
+2021-12-18 11:18:16 DEBUG Notification:65 - added tray icon
+2021-12-18 11:18:26 DEBUG Main:94 - reading data from a file
+2021-12-18 11:18:26 DEBUG Main:43 - starting the application
+2021-12-18 11:18:26 DEBUG Notification:65 - added tray icon
+2021-12-18 11:19:11 DEBUG Main:94 - reading data from a file
+2021-12-18 11:19:11 DEBUG Main:43 - starting the application
+2021-12-18 11:19:12 DEBUG Notification:65 - added tray icon
+2021-12-18 11:19:49 DEBUG Main:94 - reading data from a file
+2021-12-18 11:19:49 DEBUG Main:43 - starting the application
+2021-12-18 11:19:49 DEBUG Notification:65 - added tray icon
+2021-12-18 11:20:43 DEBUG Main:94 - reading data from a file
+2021-12-18 11:20:43 DEBUG Main:43 - starting the application
+2021-12-18 11:20:43 DEBUG Notification:65 - added tray icon
+2021-12-18 11:20:47 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:20:47 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:20:47 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:20:48 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:20:49 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:20:49 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:20:55 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:20:57 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:21:06 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:21:06 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:21:59 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:21:59 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:22:00 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:22:01 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:22:01 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:22:05 DEBUG TaskOverviewController:160 - editing a task title
+2021-12-18 11:22:26 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:22:27 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:22:45 DEBUG Main:94 - reading data from a file
+2021-12-18 11:22:45 DEBUG Main:43 - starting the application
+2021-12-18 11:22:45 DEBUG Notification:65 - added tray icon
+2021-12-18 11:22:46 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:22:47 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:22:48 DEBUG TaskOverviewController:160 - editing a task ыфв
+2021-12-18 11:22:51 DEBUG TaskOverviewController:160 - editing a task ыфв
+2021-12-18 11:23:14 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:23:22 DEBUG Main:94 - reading data from a file
+2021-12-18 11:23:22 DEBUG Main:43 - starting the application
+2021-12-18 11:23:22 DEBUG Notification:65 - added tray icon
+2021-12-18 11:23:24 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:23:25 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:23:34 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:23:40 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:24:01 DEBUG Main:94 - reading data from a file
+2021-12-18 11:24:01 DEBUG Main:43 - starting the application
+2021-12-18 11:24:01 DEBUG Notification:65 - added tray icon
+2021-12-18 11:24:02 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:24:18 DEBUG Main:94 - reading data from a file
+2021-12-18 11:24:18 DEBUG Main:43 - starting the application
+2021-12-18 11:24:18 DEBUG Notification:65 - added tray icon
+2021-12-18 11:24:19 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:24:20 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:24:20 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:24:21 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:24:21 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:31:51 DEBUG Main:94 - reading data from a file
+2021-12-18 11:31:51 DEBUG Main:43 - starting the application
+2021-12-18 11:31:51 DEBUG Notification:65 - added tray icon
+2021-12-18 11:31:53 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:31:54 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:31:54 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:31:56 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:04 DEBUG Main:94 - reading data from a file
+2021-12-18 11:32:04 DEBUG Main:43 - starting the application
+2021-12-18 11:32:05 DEBUG Notification:65 - added tray icon
+2021-12-18 11:32:06 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:07 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:07 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:08 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:19 DEBUG Main:94 - reading data from a file
+2021-12-18 11:32:19 DEBUG Main:43 - starting the application
+2021-12-18 11:32:19 DEBUG Notification:65 - added tray icon
+2021-12-18 11:32:20 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:21 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:26 DEBUG Main:94 - reading data from a file
+2021-12-18 11:32:26 DEBUG Main:43 - starting the application
+2021-12-18 11:32:27 DEBUG Notification:65 - added tray icon
+2021-12-18 11:32:28 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:28 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:29 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:29 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:29 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:32:36 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:36 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:37 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:46 DEBUG Main:94 - reading data from a file
+2021-12-18 11:32:46 DEBUG Main:43 - starting the application
+2021-12-18 11:32:47 DEBUG Notification:65 - added tray icon
+2021-12-18 11:32:49 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:32:50 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:32:50 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:32:50 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:32:51 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:32:51 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:32:52 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:08 DEBUG Main:94 - reading data from a file
+2021-12-18 11:34:08 DEBUG Main:43 - starting the application
+2021-12-18 11:34:08 DEBUG Notification:65 - added tray icon
+2021-12-18 11:34:09 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:10 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:10 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:10 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:34:13 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:34:13 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:13 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:14 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:18 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:34:23 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:23 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:53 DEBUG Main:94 - reading data from a file
+2021-12-18 11:34:53 DEBUG Main:43 - starting the application
+2021-12-18 11:34:54 DEBUG Notification:65 - added tray icon
+2021-12-18 11:34:57 DEBUG TaskOverviewController:57 - task ывфыв was selected
+2021-12-18 11:34:57 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:34:58 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:35:03 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:35:03 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 11:35:07 DEBUG DateDialogWindowController:39 - button cancel pressed
+2021-12-18 11:35:20 DEBUG Main:94 - reading data from a file
+2021-12-18 11:35:20 DEBUG Main:43 - starting the application
+2021-12-18 11:35:21 DEBUG Notification:65 - added tray icon
+2021-12-18 11:35:24 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:35:25 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:35:47 DEBUG Main:94 - reading data from a file
+2021-12-18 11:35:47 DEBUG Main:43 - starting the application
+2021-12-18 11:35:47 DEBUG Notification:65 - added tray icon
+2021-12-18 11:35:48 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:35:49 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:35:49 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:35:51 DEBUG TaskOverviewController:160 - editing a task ыфв
+2021-12-18 11:36:12 DEBUG Main:94 - reading data from a file
+2021-12-18 11:36:12 DEBUG Main:43 - starting the application
+2021-12-18 11:36:12 DEBUG Notification:65 - added tray icon
+2021-12-18 11:36:15 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:36:15 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:36:16 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:36:17 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:36:18 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-18 11:36:19 DEBUG TaskEditDialogController:120 - changing a task to a non-repeated one
+2021-12-18 11:36:19 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-18 11:36:20 DEBUG TaskEditDialogController:120 - changing a task to a non-repeated one
+2021-12-18 11:36:36 DEBUG Main:94 - reading data from a file
+2021-12-18 11:36:36 DEBUG Main:43 - starting the application
+2021-12-18 11:36:37 DEBUG Notification:65 - added tray icon
+2021-12-18 11:36:44 WARN  TaskOverviewController:151 - task to edit is not selected
+2021-12-18 11:36:45 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:36:46 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:37:29 DEBUG Main:94 - reading data from a file
+2021-12-18 11:37:29 DEBUG Main:43 - starting the application
+2021-12-18 11:37:30 DEBUG Notification:65 - added tray icon
+2021-12-18 11:37:33 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:37:34 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:37:50 DEBUG Main:94 - reading data from a file
+2021-12-18 11:37:50 DEBUG Main:43 - starting the application
+2021-12-18 11:37:51 DEBUG Notification:65 - added tray icon
+2021-12-18 11:38:08 DEBUG Main:94 - reading data from a file
+2021-12-18 11:38:08 DEBUG Main:43 - starting the application
+2021-12-18 11:38:08 DEBUG Notification:65 - added tray icon
+2021-12-18 11:38:21 DEBUG Main:94 - reading data from a file
+2021-12-18 11:38:21 DEBUG Main:43 - starting the application
+2021-12-18 11:38:22 DEBUG Notification:65 - added tray icon
+2021-12-18 11:38:32 DEBUG Main:94 - reading data from a file
+2021-12-18 11:38:32 DEBUG Main:43 - starting the application
+2021-12-18 11:38:32 DEBUG Notification:65 - added tray icon
+2021-12-18 11:38:45 DEBUG Main:94 - reading data from a file
+2021-12-18 11:38:45 DEBUG Main:43 - starting the application
+2021-12-18 11:38:45 DEBUG Notification:65 - added tray icon
+2021-12-18 11:38:59 DEBUG Main:94 - reading data from a file
+2021-12-18 11:38:59 DEBUG Main:43 - starting the application
+2021-12-18 11:38:59 DEBUG Notification:65 - added tray icon
+2021-12-18 11:39:09 DEBUG Main:94 - reading data from a file
+2021-12-18 11:39:09 DEBUG Main:43 - starting the application
+2021-12-18 11:39:09 DEBUG Notification:65 - added tray icon
+2021-12-18 11:39:23 DEBUG Main:94 - reading data from a file
+2021-12-18 11:39:23 DEBUG Main:43 - starting the application
+2021-12-18 11:39:23 DEBUG Notification:65 - added tray icon
+2021-12-18 11:39:33 DEBUG Main:94 - reading data from a file
+2021-12-18 11:39:33 DEBUG Main:43 - starting the application
+2021-12-18 11:39:33 DEBUG Notification:65 - added tray icon
+2021-12-18 11:41:43 DEBUG Main:94 - reading data from a file
+2021-12-18 11:41:43 DEBUG Main:43 - starting the application
+2021-12-18 11:41:43 DEBUG Notification:65 - added tray icon
+2021-12-18 11:42:14 DEBUG Main:94 - reading data from a file
+2021-12-18 11:42:14 DEBUG Main:43 - starting the application
+2021-12-18 11:42:14 DEBUG Notification:65 - added tray icon
+2021-12-18 11:42:24 DEBUG Main:94 - reading data from a file
+2021-12-18 11:42:24 DEBUG Main:43 - starting the application
+2021-12-18 11:42:24 DEBUG Notification:65 - added tray icon
+2021-12-18 11:42:34 DEBUG Main:94 - reading data from a file
+2021-12-18 11:42:34 DEBUG Main:43 - starting the application
+2021-12-18 11:42:35 DEBUG Notification:65 - added tray icon
+2021-12-18 11:42:42 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:43 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:43 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:43 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:43 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:44 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:44 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:44 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:44 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:44 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:44 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:48 DEBUG Main:94 - reading data from a file
+2021-12-18 11:42:49 DEBUG Main:43 - starting the application
+2021-12-18 11:42:49 DEBUG Notification:65 - added tray icon
+2021-12-18 11:42:53 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:54 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:54 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:54 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:54 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:55 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:55 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:55 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:55 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:55 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:55 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:55 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:42:55 DEBUG TaskOverviewController:143 - deleting a taskфыв
+2021-12-18 11:42:57 DEBUG Main:29 - writing data to a file
+2021-12-18 11:42:57 DEBUG Main:85 - termination of the application
+2021-12-18 11:43:02 DEBUG Main:94 - reading data from a file
+2021-12-18 11:43:02 DEBUG Main:43 - starting the application
+2021-12-18 11:43:02 DEBUG Notification:65 - added tray icon
+2021-12-18 11:43:05 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:43:06 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:43:06 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:43:46 DEBUG Main:94 - reading data from a file
+2021-12-18 11:43:46 DEBUG Main:43 - starting the application
+2021-12-18 11:43:46 DEBUG Notification:65 - added tray icon
+2021-12-18 11:43:56 DEBUG Main:94 - reading data from a file
+2021-12-18 11:43:56 DEBUG Main:43 - starting the application
+2021-12-18 11:43:56 DEBUG Notification:65 - added tray icon
+2021-12-18 11:47:58 DEBUG Main:94 - reading data from a file
+2021-12-18 11:47:58 DEBUG Main:43 - starting the application
+2021-12-18 11:47:59 DEBUG Notification:65 - added tray icon
+2021-12-18 11:48:06 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:07 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:48:14 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:48:14 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:48:15 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:48:17 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:17 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 11:48:19 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:19 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-18 11:48:25 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:26 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:26 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:27 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:27 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:48:27 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:48:28 DEBUG TaskOverviewController:57 - task test was selected
+2021-12-18 11:48:28 DEBUG TaskOverviewController:57 - task title was selected
+2021-12-18 11:48:28 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:48:40 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:43 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:43 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 11:48:45 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:45 DEBUG TaskOverviewController:216 - filter by current months selected
+2021-12-18 11:48:45 DEBUG TaskOverviewController:57 - task еуые was selected
+2021-12-18 11:48:46 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:48:46 DEBUG TaskOverviewController:202 - filter by current week selected
+2021-12-18 11:48:47 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:49:12 DEBUG Main:94 - reading data from a file
+2021-12-18 11:49:12 DEBUG Main:43 - starting the application
+2021-12-18 11:49:12 DEBUG Notification:65 - added tray icon
+2021-12-18 11:49:55 DEBUG Main:94 - reading data from a file
+2021-12-18 11:49:55 DEBUG Main:43 - starting the application
+2021-12-18 11:49:55 DEBUG Notification:65 - added tray icon
+2021-12-18 11:50:26 DEBUG Main:94 - reading data from a file
+2021-12-18 11:50:26 DEBUG Main:43 - starting the application
+2021-12-18 11:50:26 DEBUG Notification:65 - added tray icon
+2021-12-18 11:50:31 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:50:32 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:50:32 DEBUG TaskOverviewController:57 - task helo was selected
+2021-12-18 11:50:59 DEBUG Main:94 - reading data from a file
+2021-12-18 11:50:59 DEBUG Main:43 - starting the application
+2021-12-18 11:51:00 DEBUG Notification:65 - added tray icon
+2021-12-18 11:51:02 DEBUG TaskOverviewController:57 - task ыфв was selected
+2021-12-18 11:51:03 DEBUG TaskOverviewController:160 - editing a task ыфв
+2021-12-18 11:51:05 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-18 11:51:08 DEBUG TaskOverviewController:173 - adding a task
+2021-12-18 11:51:12 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:51:12 DEBUG TaskOverviewController:268 - filter by date selected
+2021-12-18 11:51:18 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:51:18 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-18 11:51:33 DEBUG Main:94 - reading data from a file
+2021-12-18 11:51:33 DEBUG Main:43 - starting the application
+2021-12-18 11:51:33 DEBUG Notification:65 - added tray icon
+2021-12-18 11:51:41 DEBUG TaskOverviewController:184 - filtering tasks
+2021-12-18 11:51:41 DEBUG TaskOverviewController:233 - filter by date interval selected
+2021-12-18 11:52:13 DEBUG Main:94 - reading data from a file
+2021-12-18 11:52:13 DEBUG Main:43 - starting the application
+2021-12-18 11:52:13 DEBUG Notification:65 - added tray icon
+2021-12-18 11:52:15 DEBUG TaskOverviewController:57 - task фыв was selected
+2021-12-18 11:52:15 DEBUG TaskOverviewController:160 - editing a task фыв
+2021-12-18 11:53:02 DEBUG Main:94 - reading data from a file
+2021-12-18 11:53:02 DEBUG Main:43 - starting the application
+2021-12-18 11:53:02 DEBUG Notification:65 - added tray icon
+2021-12-18 11:53:04 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:53:05 DEBUG TaskOverviewController:162 - editing a task фыв
+2021-12-18 11:53:45 DEBUG Main:94 - reading data from a file
+2021-12-18 11:53:45 DEBUG Main:43 - starting the application
+2021-12-18 11:53:45 DEBUG Notification:65 - added tray icon
+2021-12-18 11:53:48 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-18 11:53:48 DEBUG TaskOverviewController:270 - filter by date selected
+2021-12-18 11:53:50 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-18 11:53:50 DEBUG TaskOverviewController:235 - filter by date interval selected
+2021-12-18 11:53:52 DEBUG DateIntervalDialogWindowController:54 - button cancel pressed
+2021-12-18 11:53:53 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-18 11:53:53 DEBUG TaskOverviewController:270 - filter by date selected
+2021-12-18 11:53:54 DEBUG DateDialogWindowController:39 - button cancel pressed
+2021-12-18 11:54:17 DEBUG Main:94 - reading data from a file
+2021-12-18 11:54:17 DEBUG Main:43 - starting the application
+2021-12-18 11:54:17 DEBUG Notification:65 - added tray icon
+2021-12-18 11:54:25 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-18 11:54:26 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:54:26 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:54:27 DEBUG TaskOverviewController:58 - task test was selected
+2021-12-18 11:54:28 DEBUG TaskOverviewController:58 - task title was selected
+2021-12-18 11:54:28 DEBUG TaskOverviewController:58 - task еуые was selected
+2021-12-18 11:54:29 DEBUG TaskOverviewController:58 - task title was selected
+2021-12-18 11:54:29 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-18 11:54:31 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-18 11:54:31 DEBUG TaskOverviewController:270 - filter by date selected
+2021-12-18 11:54:37 DEBUG Main:94 - reading data from a file
+2021-12-18 11:54:37 DEBUG Main:43 - starting the application
+2021-12-18 11:54:37 DEBUG Notification:65 - added tray icon
+2021-12-18 11:54:40 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:54:41 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:58:06 DEBUG Main:94 - reading data from a file
+2021-12-18 11:58:06 DEBUG Main:43 - starting the application
+2021-12-18 11:58:06 DEBUG Notification:65 - added tray icon
+2021-12-18 11:58:11 WARN  TaskOverviewController:153 - task to edit is not selected
+2021-12-18 11:58:13 DEBUG TaskOverviewController:58 - task ывфыв was selected
+2021-12-18 11:58:14 DEBUG TaskOverviewController:162 - editing a task ывфыв
+2021-12-18 11:58:34 DEBUG Main:94 - reading data from a file
+2021-12-18 11:58:34 DEBUG Main:43 - starting the application
+2021-12-18 11:58:35 DEBUG Notification:65 - added tray icon
+2021-12-18 11:58:37 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 11:58:38 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:07 DEBUG Main:94 - reading data from a file
+2021-12-18 12:01:07 DEBUG Main:43 - starting the application
+2021-12-18 12:01:07 DEBUG Notification:65 - added tray icon
+2021-12-18 12:01:08 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:09 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:10 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-18 12:01:11 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:11 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:11 DEBUG TaskOverviewController:58 - task ывфыв was selected
+2021-12-18 12:01:12 DEBUG TaskOverviewController:58 - task test was selected
+2021-12-18 12:01:12 DEBUG TaskOverviewController:58 - task title was selected
+2021-12-18 12:01:15 DEBUG TaskOverviewController:58 - task еуые was selected
+2021-12-18 12:01:17 DEBUG TaskOverviewController:162 - editing a task еуые
+2021-12-18 12:01:31 DEBUG Main:94 - reading data from a file
+2021-12-18 12:01:31 DEBUG Main:43 - starting the application
+2021-12-18 12:01:31 DEBUG Notification:65 - added tray icon
+2021-12-18 12:01:33 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-18 12:01:34 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:01:35 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-18 12:01:35 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:02:13 DEBUG Main:94 - reading data from a file
+2021-12-18 12:02:13 DEBUG Main:43 - starting the application
+2021-12-18 12:02:14 DEBUG Notification:65 - added tray icon
+2021-12-18 12:02:17 DEBUG TaskOverviewController:58 - task ывфыв was selected
+2021-12-18 12:02:18 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:02:19 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-18 12:02:20 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-18 12:02:53 DEBUG Main:94 - reading data from a file
+2021-12-18 12:02:53 DEBUG Main:43 - starting the application
+2021-12-18 12:02:53 DEBUG Notification:65 - added tray icon
+2021-12-18 12:03:21 DEBUG Main:94 - reading data from a file
+2021-12-18 12:03:21 DEBUG Main:43 - starting the application
+2021-12-18 12:03:21 DEBUG Notification:65 - added tray icon

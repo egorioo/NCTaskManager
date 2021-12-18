@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="198.0" prefWidth="261.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.DateIntervalDialogWindowController">
+<AnchorPane prefHeight="198.0" prefWidth="261.0" stylesheets="@../stylesheets.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.DateIntervalDialogWindowController">
    <children>
       <DatePicker fx:id="startIntervalDatePicker" layoutX="18.0" layoutY="54.0" prefHeight="25.0" prefWidth="117.0" />
       <DatePicker fx:id="endIntervalDatePicker" layoutX="18.0" layoutY="114.0" prefHeight="25.0" prefWidth="117.0" />

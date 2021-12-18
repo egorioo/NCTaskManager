@@ -28,7 +28,7 @@ public class Notification {
                 SystemTray tray = SystemTray.getSystemTray();
                 Image image = null;
 
-                image = ImageIO.read(new File("src/main/resources/images/icon.png"));
+                image = ImageIO.read(new File("src/main/resources/images/icon16px.png"));
 
                 trayIcon = new TrayIcon(image, "Task Manager");
 

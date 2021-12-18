@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="140.0" prefWidth="223.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.DateDialogWindowController">
+<AnchorPane prefHeight="140.0" prefWidth="223.0" stylesheets="@../stylesheets.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.edu.sumdu.j2se.rudenko.tasks.controller.DateDialogWindowController">
    <children>
       <DatePicker fx:id="dateSelectPickerDialog" layoutX="25.0" layoutY="58.0" />
       <Label layoutX="25.0" layoutY="23.0" text="Укажите дату">
