@@ -49,7 +49,9 @@ public class TaskEditDialogController extends TaskEditDialogView {
         displayActivityDialogLabel("Активность");
 
         displayTitleDialogField(task.getTitle());
-        displayIntervalDialogField(Integer.toString(task.getRepeatInterval()));
+
+        displayIntervalDialogField(DateUtil.secondsToTime(task.getRepeatInterval()));
+        intervalTaskField.setPromptText("HH:mm");
 
         groupActive = new ToggleGroup();
         activeRadioBtn.setToggleGroup(groupActive);
@@ -87,9 +89,9 @@ public class TaskEditDialogController extends TaskEditDialogView {
             endTimeField = new TextField();
             displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
 
-            hbox = new HBox(10,endTaskDatePicker,endTimeField);
+            hbox = new HBox(10, endTaskDatePicker, endTimeField);
 
-            gridPaneDialog.add(hbox,1,3);
+            gridPaneDialog.add(hbox, 1, 3);
         }
 
         groupRepeated.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
@@ -112,11 +114,10 @@ public class TaskEditDialogController extends TaskEditDialogView {
                     endTimeField = new TextField();
                     displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
 
-                    hbox = new HBox(10,endTaskDatePicker,endTimeField);
+                    hbox = new HBox(10, endTaskDatePicker, endTimeField);
 
-                    gridPaneDialog.add(hbox,1,3);
-                }
-                else {
+                    gridPaneDialog.add(hbox, 1, 3);
+                } else {
                     logger.debug("changing a task to a non-repeated one");
                     displayTimeStartDialogLabel("Время выполнения");
                     displayEndDialogLabel("");
@@ -124,7 +125,7 @@ public class TaskEditDialogController extends TaskEditDialogView {
                     nonRepeatedRadioBtn.setSelected(true);
                     Label temp = new Label();
                     temp.setText("");
-                    displayIntervalDialogField("0");
+                    displayIntervalDialogField("00:00");
                     gridPaneDialog.getChildren().remove(hbox);
                     displayStartTimeDialogDatePicker(task.getTime().toLocalDate());
                     displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
@@ -138,17 +139,21 @@ public class TaskEditDialogController extends TaskEditDialogView {
         if (isInputValid()) {
             RadioButton selectionRepeated = (RadioButton) groupRepeated.getSelectedToggle();
             RadioButton selectionActive = (RadioButton) groupActive.getSelectedToggle();
-            if (selectionRepeated.getText().equals("Да")) {
-                task.setTitle(getTitleTaskField());
-                task.setTime(getStartTimeDatePicker().atTime(LocalTime.parse(getStartTimeHoursField(),DateTimeFormatter.ofPattern("HH:mm:ss"))),
-                        getEndTimeDatePicker().atTime(LocalTime.parse(getEndTimeHoursField(),DateTimeFormatter.ofPattern("HH:mm:ss"))),
-                        Integer.parseInt(getIntervalTaskField()));
-                task.setActive(selectionActive.getText().equals("Активна"));
-            }
-            else {
-                task.setTitle(getTitleTaskField());
-                task.setTime(getStartTimeDatePicker().atTime(LocalTime.parse(getStartTimeHoursField(),DateTimeFormatter.ofPattern("HH:mm:ss"))));
-                task.setActive(selectionActive.getText().equals("Активна"));
+            try {
+                if (selectionRepeated.getText().equals("Да")) {
+                    task.setTitle(getTitleTaskField());
+                    task.setTime(getStartTimeDatePicker().atTime(LocalTime.parse(getStartTimeHoursField(), DateTimeFormatter.ofPattern("HH:mm:ss"))),
+                            getEndTimeDatePicker().atTime(LocalTime.parse(getEndTimeHoursField(), DateTimeFormatter.ofPattern("HH:mm:ss"))),
+                            DateUtil.timeToSeconds(getIntervalTaskField()));
+
+                    task.setActive(selectionActive.getText().equals("Активна"));
+                } else {
+                    task.setTitle(getTitleTaskField());
+                    task.setTime(getStartTimeDatePicker().atTime(LocalTime.parse(getStartTimeHoursField(), DateTimeFormatter.ofPattern("HH:mm:ss"))));
+                    task.setActive(selectionActive.getText().equals("Активна"));
+                }
+            } catch (IllegalArgumentException | NullPointerException e) {
+                logger.error(e);
             }
 
             stage.close();
@@ -183,8 +188,8 @@ public class TaskEditDialogController extends TaskEditDialogView {
             }
             if (getIntervalTaskField() == null || getIntervalTaskField().length() == 0) {
                 errorMessage += "Неверный интервал \n";
-            } else if (Integer.parseInt(getIntervalTaskField()) <= 0) {
-                errorMessage += "Неверный интервал! Интервал не может быть меньше нуля \n";
+            } else if (!DateUtil.validTimeInterval(getIntervalTaskField())) {
+                errorMessage += "Неверный интервал! Используйте формат HH:mm\n";
             }
             if (getStartTimeDatePicker().equals(getEndTimeDatePicker())
                     && DateUtil.stringToTime(getStartTimeHoursField()).isAfter(DateUtil.stringToTime(getEndTimeHoursField()))) {
@@ -196,6 +201,8 @@ public class TaskEditDialogController extends TaskEditDialogView {
             }
             if (getStartTimeDatePicker().isAfter(getEndTimeDatePicker())) {
                 errorMessage += "Неверное время начала и конца! \n";
+            } else if (getIntervalTaskField().equals("00:00")) {
+                errorMessage += "Неверный интервал! Интервал не может быть равен нулю\n";
             }
         } else {
             if (timeDatePicker == null || getStartTimeHoursField().length() == 0) {
@@ -204,9 +211,11 @@ public class TaskEditDialogController extends TaskEditDialogView {
                 errorMessage += "Неверное время! Используйте формат HH:mm:ss\n";
             }
             if (getIntervalTaskField() == null || getIntervalTaskField().length() == 0) {
-                errorMessage += "Неверный интервал! \n";
-            } else if (!getIntervalTaskField().equals("0")) {
-                errorMessage += "Неверный интервал! Интревал не может быть 0 \n";
+                errorMessage += "Неверный интервал \n";
+            } else if (!DateUtil.validTimeInterval(getIntervalTaskField())) {
+                errorMessage += "Неверный интервал! Используйте формат HH:mm\n";
+            } else if (!getIntervalTaskField().equals("00:00")) {
+                errorMessage += "Неверный интервал! Интервал должен быть равен нулю\n";
             }
         }
 

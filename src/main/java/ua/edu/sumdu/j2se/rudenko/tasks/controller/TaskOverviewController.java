@@ -24,6 +24,7 @@ import java.io.IOException;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 import static java.time.temporal.TemporalAdjusters.lastDayOfMonth;
 
@@ -82,12 +83,13 @@ public class TaskOverviewController extends TaskOverviewView {
             displayEndLabel("Время конца");
             displayStartTimeValue(DateUtil.dateToString(task.getStartTime()));
             displayEndTimeValue(DateUtil.dateToString(task.getEndTime()));
-            displayIntervalValue(String.valueOf(task.getRepeatInterval()));
+            displayIntervalValue(DateUtil.secondsToTime(task.getRepeatInterval()));
             displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
         } else {
             showTaskDetails(null);
             displayTitleValue(task.getTitle());
             displayTimeStartLabel("Время выполнения");
+            displayEndLabel("");
             displayEndTimeValue("");
             displayStartTimeValue(DateUtil.dateToString(task.getTime()));
             displayIntervalValue(task.getRepeatInterval() == 0 ? "Задача не повторяется" : String.valueOf(task.getRepeatInterval()));
@@ -203,12 +205,12 @@ public class TaskOverviewController extends TaskOverviewView {
         try {
             logger.debug("filter by current week selected");
             ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
-
-            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(DayOfWeek.SUNDAY))) {
+            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(),
+                    LocalDateTime.of(LocalDate.now().with(DayOfWeek.SUNDAY), LocalTime.of(23,59,59)))) {
                 tasksWeek.add(task);
             }
             tableView.setItems(tasksWeek);
-        } catch (ClassNotFoundException e) {
+        } catch (NullPointerException | IllegalArgumentException e) {
             logger.error(e);
         }
     }
@@ -217,11 +219,13 @@ public class TaskOverviewController extends TaskOverviewView {
         try {
             logger.debug("filter by current months selected");
             ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
-            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(), LocalDateTime.now().with(lastDayOfMonth()))) {
+
+            for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(),
+                    LocalDateTime.of(LocalDate.now().with(lastDayOfMonth()),LocalTime.of(23,59,59)))) {
                 tasksWeek.add(task);
             }
             tableView.setItems(tasksWeek);
-        } catch (ClassNotFoundException e) {
+        } catch (NullPointerException | IllegalArgumentException e) {
             logger.error(e);
         }
     }
@@ -258,9 +262,7 @@ public class TaskOverviewController extends TaskOverviewView {
                 }
                 tableView.setItems(taskDateInterval);
             }
-        } catch (ClassNotFoundException e) {
-            logger.error(e);
-        } catch (IOException e) {
+        } catch (NullPointerException | IllegalArgumentException | IOException e) {
             logger.error(e);
         }
     }
@@ -295,9 +297,7 @@ public class TaskOverviewController extends TaskOverviewView {
                 }
                 tableView.setItems(taskDate);
             }
-        } catch (ClassNotFoundException e) {
-            logger.error(e);
-        } catch (IOException e) {
+        } catch (NullPointerException | IllegalArgumentException | IOException e) {
             logger.error(e);
         }
     }

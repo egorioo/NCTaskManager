@@ -4,6 +4,7 @@ import javafx.application.Platform;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -17,9 +18,11 @@ public class Notification {
     private Main main;
     private final Timer notificationTimer = new Timer();
     private TrayIcon trayIcon;
+
     public void setMain(Main main) {
         this.main = main;
     }
+
     public void createIcon() {
         try {
             Platform.setImplicitExit(false);
@@ -65,10 +68,7 @@ public class Notification {
                 logger.debug("added tray icon");
             } else
                 logger.error("system tray is not support");
-        }
-          catch (IOException e) {
-            logger.error(e);
-        } catch (AWTException e) {
+        } catch (IOException | AWTException e) {
             logger.error(e);
         }
     }
@@ -96,10 +96,10 @@ public class Notification {
                         for (Task task : list) {
                             titles += task.getTitle() + ", ";
                         }
-                        titles = titles.substring(0, titles.length() - 2 );
+                        titles = titles.substring(0, titles.length() - 2);
                         logger.debug("received notification");
                         trayIcon.displayMessage("Напоминание", "Скоро наступит время выполнение задач: "
-                                + titles , java.awt.TrayIcon.MessageType.INFO);
+                                + titles, java.awt.TrayIcon.MessageType.INFO);
                     }
                 }
             }

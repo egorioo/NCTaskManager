@@ -3,7 +3,6 @@ package ua.edu.sumdu.j2se.rudenko.tasks.model;
 import com.google.gson.Gson;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
-
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -42,7 +41,7 @@ public class TaskIO {
                     outputStream.writeLong(task.getEndTime().toEpochSecond(ZoneOffset.UTC));
             }
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -82,7 +81,7 @@ public class TaskIO {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             write(tasks, fileOutputStream);
         } catch (FileNotFoundException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -95,7 +94,7 @@ public class TaskIO {
             FileInputStream fileInputStream = new FileInputStream(file);
             read(tasks, fileInputStream);
         }  catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -116,7 +115,7 @@ public class TaskIO {
             }
             bufferedWriter.flush();
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -132,7 +131,7 @@ public class TaskIO {
                 tasks.add(json.fromJson(str, Task.class));
             }
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -143,7 +142,7 @@ public class TaskIO {
         try (FileWriter fileWriter = new FileWriter(file)) {
             write(tasks, fileWriter);
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -154,7 +153,7 @@ public class TaskIO {
         try (FileReader fileReader = new FileReader(file)) {
             read(tasks, fileReader);
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 }

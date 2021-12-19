@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 
 public class Tasks {
     public static Iterable<Task> incoming(Iterable<Task> tasks, LocalDateTime start, LocalDateTime end)
-            throws ClassNotFoundException, NullPointerException {
+            throws IllegalArgumentException, NullPointerException {
         if (start == null || end == null) {
             throw new NullPointerException();
         }

@@ -9,7 +9,6 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskOverviewController;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.*;
@@ -17,8 +16,6 @@ import ua.edu.sumdu.j2se.rudenko.tasks.util.Notification;
 
 import java.io.File;
 import java.io.IOException;
-
-
 
 public class Main extends Application {
     private Stage primaryStage;
@@ -43,7 +40,6 @@ public class Main extends Application {
             logger.debug("starting the application");
 
             this.primaryStage = stage;
-            // instructs the javafx system not to exit implicitly when the last application window is shut.
             Platform.setImplicitExit(false);
 
             Notification notification = new Notification();
@@ -59,17 +55,15 @@ public class Main extends Application {
             Scene scene = new Scene(root);
 
             stage.setScene(scene);
-
             stage.setTitle("Task Manager");
-
             stage.setMinHeight(370);
             stage.setMinWidth(550);
             stage.getIcons().add(new Image(Main.class.getResourceAsStream("/images/icon24px.png")));
-
             stage.show();
+
             controller.setMainApp(this);
         } catch (IOException e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 
@@ -84,7 +78,7 @@ public class Main extends Application {
             super.stop();
             logger.debug("termination of the application");
         } catch (Exception e) {
-            logger.fatal(e);
+            logger.error(e);
         }
     }
 

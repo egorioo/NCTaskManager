@@ -1421,3 +1421,824 @@
 2021-12-18 12:03:21 DEBUG Main:94 - reading data from a file
 2021-12-18 12:03:21 DEBUG Main:43 - starting the application
 2021-12-18 12:03:21 DEBUG Notification:65 - added tray icon
+2021-12-18 12:06:10 DEBUG Main:94 - reading data from a file
+2021-12-18 12:06:10 DEBUG Main:43 - starting the application
+2021-12-18 12:06:10 DEBUG Notification:65 - added tray icon
+2021-12-18 12:06:16 WARN  TaskOverviewController:134 - task to delete is not selected
+2021-12-18 12:06:18 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:06:19 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-18 12:06:19 DEBUG TaskOverviewController:145 - deleting a taskфыв
+2021-12-18 12:06:20 DEBUG TaskOverviewController:162 - editing a task фыв
+2021-12-18 12:06:22 DEBUG TaskOverviewController:175 - adding a task
+2021-12-18 12:47:36 DEBUG Main:93 - reading data from a file
+2021-12-18 12:47:36 DEBUG Main:39 - starting the application
+2021-12-18 12:47:36 DEBUG Notification:65 - added tray icon
+2021-12-19 10:07:33 DEBUG Main:93 - reading data from a file
+2021-12-19 10:07:33 DEBUG Main:39 - starting the application
+2021-12-19 10:07:33 DEBUG Notification:65 - added tray icon
+2021-12-19 10:07:37 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-19 10:07:38 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:07:38 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-19 10:07:42 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:07:42 DEBUG TaskOverviewController:270 - filter by date selected
+2021-12-19 10:07:44 DEBUG DateDialogWindowController:39 - button cancel pressed
+2021-12-19 10:07:45 DEBUG TaskOverviewController:162 - editing a task ыфв
+2021-12-19 10:07:46 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-19 10:07:47 DEBUG TaskEditDialogController:120 - changing a task to a non-repeated one
+2021-12-19 10:28:58 DEBUG Main:93 - reading data from a file
+2021-12-19 10:28:58 DEBUG Main:39 - starting the application
+2021-12-19 10:28:58 DEBUG Notification:65 - added tray icon
+2021-12-19 10:29:06 DEBUG Main:93 - reading data from a file
+2021-12-19 10:29:06 DEBUG Main:39 - starting the application
+2021-12-19 10:29:07 DEBUG Notification:65 - added tray icon
+2021-12-19 10:29:08 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-19 10:29:08 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:29:09 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:29:09 DEBUG TaskOverviewController:58 - task ывфыв was selected
+2021-12-19 10:29:10 DEBUG TaskOverviewController:58 - task test was selected
+2021-12-19 10:29:10 DEBUG TaskOverviewController:58 - task title was selected
+2021-12-19 10:29:10 DEBUG TaskOverviewController:58 - task еуые was selected
+2021-12-19 10:29:11 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-19 10:29:11 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:29:12 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:29:12 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:29:14 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:29:14 DEBUG TaskOverviewController:218 - filter by current months selected
+2021-12-19 10:29:15 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:29:15 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:30:01 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:30:01 DEBUG TaskOverviewController:218 - filter by current months selected
+2021-12-19 10:30:03 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:30:03 DEBUG TaskOverviewController:270 - filter by date selected
+2021-12-19 10:30:05 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:30:05 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:30:08 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:30:09 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:30:09 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:30:12 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:30:12 DEBUG TaskOverviewController:58 - task ыфв was selected
+2021-12-19 10:30:13 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:30:13 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:30:14 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:30:14 DEBUG TaskOverviewController:58 - task фыв was selected
+2021-12-19 10:30:15 DEBUG TaskOverviewController:58 - task ывфыв was selected
+2021-12-19 10:30:15 DEBUG TaskOverviewController:58 - task helo was selected
+2021-12-19 10:30:16 DEBUG TaskOverviewController:58 - task test was selected
+2021-12-19 10:30:16 DEBUG TaskOverviewController:58 - task title was selected
+2021-12-19 10:31:28 DEBUG Main:93 - reading data from a file
+2021-12-19 10:31:28 DEBUG Main:39 - starting the application
+2021-12-19 10:31:28 DEBUG Notification:65 - added tray icon
+2021-12-19 10:31:33 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:31:33 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:33:45 DEBUG Main:93 - reading data from a file
+2021-12-19 10:33:45 DEBUG Main:39 - starting the application
+2021-12-19 10:33:45 DEBUG Notification:65 - added tray icon
+2021-12-19 10:33:48 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:48 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:33:51 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:52 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:52 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:33:52 ERROR TaskOverviewController:215 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:33:53 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:53 DEBUG TaskOverviewController:273 - filter by date selected
+2021-12-19 10:33:54 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:54 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:33:54 ERROR TaskOverviewController:215 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:33:55 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:55 DEBUG TaskOverviewController:221 - filter by current months selected
+2021-12-19 10:33:56 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:33:56 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:33:56 ERROR TaskOverviewController:215 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:35:16 DEBUG Main:93 - reading data from a file
+2021-12-19 10:35:16 DEBUG Main:39 - starting the application
+2021-12-19 10:35:16 DEBUG Notification:65 - added tray icon
+2021-12-19 10:35:20 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:35:20 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:35:22 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:35:22 DEBUG TaskOverviewController:218 - filter by current months selected
+2021-12-19 10:35:36 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:35:36 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:35:36 ERROR TaskOverviewController:212 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:35:54 DEBUG Main:93 - reading data from a file
+2021-12-19 10:35:54 DEBUG Main:39 - starting the application
+2021-12-19 10:35:54 DEBUG Notification:65 - added tray icon
+2021-12-19 10:35:57 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:35:57 DEBUG TaskOverviewController:218 - filter by current months selected
+2021-12-19 10:35:59 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:35:59 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:35:59 ERROR TaskOverviewController:212 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:49:27 DEBUG Main:93 - reading data from a file
+2021-12-19 10:49:27 DEBUG Main:39 - starting the application
+2021-12-19 10:49:27 DEBUG Notification:65 - added tray icon
+2021-12-19 10:49:30 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:49:30 DEBUG TaskOverviewController:219 - filter by current months selected
+2021-12-19 10:49:32 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:49:32 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 10:50:36 DEBUG Main:93 - reading data from a file
+2021-12-19 10:50:36 DEBUG Main:39 - starting the application
+2021-12-19 10:50:37 DEBUG Notification:65 - added tray icon
+2021-12-19 10:50:39 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:50:39 DEBUG TaskOverviewController:219 - filter by current months selected
+2021-12-19 10:50:41 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:50:41 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 10:51:37 DEBUG Main:93 - reading data from a file
+2021-12-19 10:51:37 DEBUG Main:39 - starting the application
+2021-12-19 10:51:38 DEBUG Notification:65 - added tray icon
+2021-12-19 10:51:41 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:51:41 DEBUG TaskOverviewController:218 - filter by current months selected
+2021-12-19 10:51:42 DEBUG TaskOverviewController:186 - filtering tasks
+2021-12-19 10:51:42 DEBUG TaskOverviewController:204 - filter by current week selected
+2021-12-19 10:51:42 ERROR TaskOverviewController:212 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 10:52:49 DEBUG Main:93 - reading data from a file
+2021-12-19 10:52:49 DEBUG Main:39 - starting the application
+2021-12-19 10:52:49 DEBUG Notification:65 - added tray icon
+2021-12-19 10:52:51 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:52:51 DEBUG TaskOverviewController:219 - filter by current months selected
+2021-12-19 10:52:53 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:52:53 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 10:52:56 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:52:58 WARN  TaskOverviewController:154 - task to edit is not selected
+2021-12-19 10:53:01 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 10:53:15 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 10:53:15 DEBUG TaskOverviewController:181 - test has been added
+2021-12-19 10:53:17 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:53:17 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 10:53:18 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 10:53:20 DEBUG TaskOverviewController:146 - deleting a tasktest
+2021-12-19 10:53:22 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 10:54:29 DEBUG Main:93 - reading data from a file
+2021-12-19 10:54:29 DEBUG Main:39 - starting the application
+2021-12-19 10:54:29 DEBUG Notification:65 - added tray icon
+2021-12-19 10:54:31 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 10:54:32 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 10:54:32 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 10:54:33 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 10:54:34 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 10:54:38 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 10:54:39 DEBUG TaskOverviewController:163 - editing a task ыфв
+2021-12-19 12:38:07 DEBUG Main:93 - reading data from a file
+2021-12-19 12:38:07 DEBUG Main:39 - starting the application
+2021-12-19 12:38:07 DEBUG Notification:65 - added tray icon
+2021-12-19 12:38:09 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:38:10 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:38:11 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 12:38:11 DEBUG TaskOverviewController:146 - deleting a taskфыв
+2021-12-19 12:38:11 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:38:11 DEBUG TaskOverviewController:146 - deleting a taskыфв
+2021-12-19 12:38:11 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:38:11 DEBUG TaskOverviewController:146 - deleting a taskфыв
+2021-12-19 12:38:11 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:38:11 DEBUG TaskOverviewController:146 - deleting a taskфыв
+2021-12-19 12:38:12 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:38:12 DEBUG TaskOverviewController:146 - deleting a taskфыв
+2021-12-19 12:38:12 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 12:38:12 DEBUG TaskOverviewController:146 - deleting a taskфыв
+2021-12-19 12:38:12 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:38:12 DEBUG TaskOverviewController:146 - deleting a taskывфыв
+2021-12-19 12:38:12 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:38:12 DEBUG TaskOverviewController:146 - deleting a taskhelo
+2021-12-19 12:38:12 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:38:12 DEBUG TaskOverviewController:146 - deleting a tasktest
+2021-12-19 12:38:13 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 12:38:13 DEBUG TaskOverviewController:146 - deleting a tasktitle
+2021-12-19 12:38:13 DEBUG TaskOverviewController:146 - deleting a taskеуые
+2021-12-19 12:38:14 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 12:38:23 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 12:38:23 DEBUG TaskOverviewController:181 - test1 has been added
+2021-12-19 12:38:24 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 12:38:32 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 12:38:32 DEBUG TaskOverviewController:181 - test2 has been added
+2021-12-19 12:38:33 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 12:38:49 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 12:38:49 DEBUG TaskOverviewController:181 - test3 has been added
+2021-12-19 12:38:52 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 12:38:55 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-19 12:39:11 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 12:39:11 DEBUG TaskOverviewController:181 - test4 has been added
+2021-12-19 12:39:15 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:15 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 12:39:17 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:17 DEBUG TaskOverviewController:219 - filter by current months selected
+2021-12-19 12:39:21 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:21 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 12:39:22 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:24 DEBUG TaskOverviewController:176 - adding a task
+2021-12-19 12:39:39 DEBUG TaskEditDialogController:156 - button OK pressed
+2021-12-19 12:39:39 DEBUG TaskOverviewController:181 - test5 has been added
+2021-12-19 12:39:41 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:41 DEBUG TaskOverviewController:219 - filter by current months selected
+2021-12-19 12:39:42 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:42 DEBUG TaskOverviewController:205 - filter by current week selected
+2021-12-19 12:39:44 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:44 DEBUG TaskOverviewController:271 - filter by date selected
+2021-12-19 12:39:48 DEBUG DateDialogWindowController:29 - button OK pressed
+2021-12-19 12:39:48 DEBUG DateDialogWindowController:33 - tasks filtered
+2021-12-19 12:39:51 DEBUG TaskOverviewController:187 - filtering tasks
+2021-12-19 12:39:52 DEBUG TaskOverviewController:59 - task test1 was selected
+2021-12-19 12:39:53 DEBUG TaskOverviewController:163 - editing a task test1
+2021-12-19 12:39:59 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:00 DEBUG TaskOverviewController:59 - task test3 was selected
+2021-12-19 12:40:00 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:01 DEBUG TaskOverviewController:59 - task test5 was selected
+2021-12-19 12:40:01 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:02 DEBUG TaskOverviewController:59 - task test3 was selected
+2021-12-19 12:40:03 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:04 DEBUG TaskOverviewController:59 - task test1 was selected
+2021-12-19 12:40:08 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:08 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:09 DEBUG TaskOverviewController:59 - task test5 was selected
+2021-12-19 12:40:12 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:13 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:13 DEBUG TaskOverviewController:59 - task test1 was selected
+2021-12-19 12:40:14 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:14 DEBUG TaskOverviewController:59 - task test3 was selected
+2021-12-19 12:40:15 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:15 DEBUG TaskOverviewController:59 - task test5 was selected
+2021-12-19 12:40:18 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:19 DEBUG TaskOverviewController:59 - task test5 was selected
+2021-12-19 12:40:21 DEBUG TaskOverviewController:59 - task test4 was selected
+2021-12-19 12:40:21 DEBUG TaskOverviewController:59 - task test3 was selected
+2021-12-19 12:40:22 DEBUG TaskOverviewController:59 - task test2 was selected
+2021-12-19 12:40:23 DEBUG TaskOverviewController:163 - editing a task test2
+2021-12-19 12:40:24 DEBUG TaskEditDialogController:100 - changing a task to a repeated one
+2021-12-19 12:40:25 DEBUG TaskEditDialogController:120 - changing a task to a non-repeated one
+2021-12-19 12:41:15 DEBUG Main:93 - reading data from a file
+2021-12-19 12:41:15 DEBUG Main:39 - starting the application
+2021-12-19 12:41:16 DEBUG Notification:65 - added tray icon
+2021-12-19 12:41:17 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:41:18 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:18 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:19 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 12:41:19 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:20 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:20 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:21 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:21 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 12:41:21 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:22 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:22 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:41:22 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:41:23 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:41:25 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 12:41:29 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:41:45 DEBUG Main:93 - reading data from a file
+2021-12-19 12:41:45 DEBUG Main:39 - starting the application
+2021-12-19 12:41:46 DEBUG Notification:65 - added tray icon
+2021-12-19 12:41:48 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 12:41:50 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:51 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:51 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 12:41:52 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 12:41:53 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:147 - deleting a taskыфв
+2021-12-19 12:41:53 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 12:41:53 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 12:41:53 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:41:53 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 12:41:54 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 12:41:54 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 12:41:55 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:41:55 DEBUG TaskOverviewController:147 - deleting a taskывфыв
+2021-12-19 12:41:57 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:41:57 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:41:58 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 12:41:59 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:41:59 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:48:37 DEBUG Main:93 - reading data from a file
+2021-12-19 12:48:37 DEBUG Main:39 - starting the application
+2021-12-19 12:48:37 DEBUG Notification:65 - added tray icon
+2021-12-19 12:48:38 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 12:48:39 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:48:40 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 12:48:41 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 12:48:41 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:48:42 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:48:50 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:50:21 DEBUG Main:93 - reading data from a file
+2021-12-19 12:50:21 DEBUG Main:39 - starting the application
+2021-12-19 12:50:21 DEBUG Notification:65 - added tray icon
+2021-12-19 12:50:23 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 12:50:23 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:50:24 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:50:38 DEBUG TaskEditDialogController:162 - button OK pressed
+2021-12-19 12:50:38 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 12:50:41 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:51:06 DEBUG Main:93 - reading data from a file
+2021-12-19 12:51:06 DEBUG Main:39 - starting the application
+2021-12-19 12:51:06 DEBUG Notification:65 - added tray icon
+2021-12-19 12:51:08 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:51:10 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:51:18 DEBUG TaskEditDialogController:162 - button OK pressed
+2021-12-19 12:51:18 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 12:51:20 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:51:37 DEBUG TaskEditDialogController:162 - button OK pressed
+2021-12-19 12:51:37 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 12:51:38 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:52:50 DEBUG Main:93 - reading data from a file
+2021-12-19 12:52:50 DEBUG Main:39 - starting the application
+2021-12-19 12:52:50 DEBUG Notification:65 - added tray icon
+2021-12-19 12:53:13 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:53:13 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 12:53:14 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:53:16 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 12:55:12 DEBUG Main:93 - reading data from a file
+2021-12-19 12:55:12 DEBUG Main:39 - starting the application
+2021-12-19 12:55:13 DEBUG Notification:65 - added tray icon
+2021-12-19 12:55:14 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 12:55:18 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:02:30 DEBUG Main:93 - reading data from a file
+2021-12-19 13:02:30 DEBUG Main:39 - starting the application
+2021-12-19 13:02:30 DEBUG Notification:65 - added tray icon
+2021-12-19 13:02:33 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:02:34 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 13:02:34 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:02:37 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:02:53 DEBUG TaskEditDialogController:171 - button cancel pressed
+2021-12-19 13:02:53 DEBUG TaskEditDialogController:172 - data has not been changed
+2021-12-19 13:11:01 DEBUG Main:93 - reading data from a file
+2021-12-19 13:11:01 DEBUG Main:39 - starting the application
+2021-12-19 13:11:01 DEBUG Notification:65 - added tray icon
+2021-12-19 13:11:07 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:11:09 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:11:56 DEBUG Main:93 - reading data from a file
+2021-12-19 13:11:56 DEBUG Main:39 - starting the application
+2021-12-19 13:11:57 DEBUG Notification:65 - added tray icon
+2021-12-19 13:11:59 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:12:08 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:12:55 DEBUG TaskEditDialogController:171 - button cancel pressed
+2021-12-19 13:12:55 DEBUG TaskEditDialogController:172 - data has not been changed
+2021-12-19 13:13:32 DEBUG Main:93 - reading data from a file
+2021-12-19 13:13:33 DEBUG Main:39 - starting the application
+2021-12-19 13:13:33 DEBUG Notification:65 - added tray icon
+2021-12-19 13:13:34 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:13:35 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:13:36 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:13:55 DEBUG Main:93 - reading data from a file
+2021-12-19 13:13:55 DEBUG Main:39 - starting the application
+2021-12-19 13:13:55 DEBUG Notification:65 - added tray icon
+2021-12-19 13:13:57 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:13:58 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:13:59 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:15:18 DEBUG Main:93 - reading data from a file
+2021-12-19 13:15:18 DEBUG Main:39 - starting the application
+2021-12-19 13:15:18 DEBUG Notification:65 - added tray icon
+2021-12-19 13:15:22 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:15:22 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:15:23 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:15:31 DEBUG TaskEditDialogController:164 - button OK pressed
+2021-12-19 13:15:31 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:18:20 DEBUG Main:93 - reading data from a file
+2021-12-19 13:18:20 DEBUG Main:39 - starting the application
+2021-12-19 13:18:20 DEBUG Notification:65 - added tray icon
+2021-12-19 13:18:23 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:18:24 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:18:30 DEBUG TaskEditDialogController:164 - button OK pressed
+2021-12-19 13:18:30 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:20:01 DEBUG Main:93 - reading data from a file
+2021-12-19 13:20:01 DEBUG Main:39 - starting the application
+2021-12-19 13:20:01 DEBUG Notification:65 - added tray icon
+2021-12-19 13:20:22 DEBUG Main:93 - reading data from a file
+2021-12-19 13:20:22 DEBUG Main:39 - starting the application
+2021-12-19 13:20:22 DEBUG Notification:65 - added tray icon
+2021-12-19 13:20:27 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:20:28 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:21:10 DEBUG Main:93 - reading data from a file
+2021-12-19 13:21:10 DEBUG Main:39 - starting the application
+2021-12-19 13:21:11 DEBUG Notification:65 - added tray icon
+2021-12-19 13:21:12 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 13:21:14 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:21:15 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:21:25 DEBUG TaskEditDialogController:172 - button cancel pressed
+2021-12-19 13:21:25 DEBUG TaskEditDialogController:173 - data has not been changed
+2021-12-19 13:23:19 DEBUG Main:93 - reading data from a file
+2021-12-19 13:23:19 DEBUG Main:39 - starting the application
+2021-12-19 13:23:19 DEBUG Notification:65 - added tray icon
+2021-12-19 13:23:21 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:23:22 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:23:23 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:23:35 DEBUG Main:93 - reading data from a file
+2021-12-19 13:23:35 DEBUG Main:39 - starting the application
+2021-12-19 13:23:35 DEBUG Notification:65 - added tray icon
+2021-12-19 13:23:37 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:23:38 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:23:39 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:23:42 DEBUG TaskEditDialogController:165 - button OK pressed
+2021-12-19 13:23:42 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:24:31 DEBUG Main:93 - reading data from a file
+2021-12-19 13:24:31 DEBUG Main:39 - starting the application
+2021-12-19 13:24:32 DEBUG Notification:65 - added tray icon
+2021-12-19 13:25:05 DEBUG Main:93 - reading data from a file
+2021-12-19 13:25:05 DEBUG Main:39 - starting the application
+2021-12-19 13:25:05 DEBUG Notification:65 - added tray icon
+2021-12-19 13:25:07 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:25:08 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:25:09 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:25:10 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:25:14 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:25:14 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:26:38 DEBUG Main:93 - reading data from a file
+2021-12-19 13:26:38 DEBUG Main:39 - starting the application
+2021-12-19 13:26:38 DEBUG Notification:65 - added tray icon
+2021-12-19 13:26:40 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 13:26:41 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:26:42 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:26:45 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:26:45 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:26:54 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:27:00 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:27:00 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:27:15 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:27:30 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:27:30 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:27:42 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:27:47 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:27:47 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:52:02 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 13:52:04 DEBUG TaskOverviewController:164 - editing a task фыв
+2021-12-19 13:52:08 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:52:08 DEBUG TaskOverviewController:169 - фыв has been changed
+2021-12-19 13:52:12 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 13:52:13 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 13:52:17 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 13:52:17 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 13:53:39 DEBUG Main:93 - reading data from a file
+2021-12-19 13:53:39 DEBUG Main:39 - starting the application
+2021-12-19 13:53:40 DEBUG Notification:65 - added tray icon
+2021-12-19 13:53:41 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 13:53:42 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 13:53:43 DEBUG TaskOverviewController:164 - editing a task helo
+2021-12-19 14:05:46 DEBUG Main:93 - reading data from a file
+2021-12-19 14:05:46 DEBUG Main:39 - starting the application
+2021-12-19 14:05:46 DEBUG Notification:65 - added tray icon
+2021-12-19 14:05:48 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 14:05:48 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:05:49 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:05:54 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 14:05:54 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 14:05:57 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:06:02 WARN  TaskEditDialogController:226 - Invalid data: 
+Неверный интервал! 
+
+2021-12-19 14:06:13 DEBUG TaskEditDialogController:173 - button cancel pressed
+2021-12-19 14:06:13 DEBUG TaskEditDialogController:174 - data has not been changed
+2021-12-19 14:08:09 DEBUG Main:93 - reading data from a file
+2021-12-19 14:08:09 DEBUG Main:39 - starting the application
+2021-12-19 14:08:09 DEBUG Notification:65 - added tray icon
+2021-12-19 14:08:11 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:08:12 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:08:20 WARN  TaskEditDialogController:228 - Invalid data: 
+Неверный интервал! Интервал не может быть равен нулю
+
+2021-12-19 14:08:23 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:08:26 WARN  TaskEditDialogController:228 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 14:08:34 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 14:08:34 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 14:08:47 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:09:25 DEBUG Main:93 - reading data from a file
+2021-12-19 14:09:25 DEBUG Main:39 - starting the application
+2021-12-19 14:09:25 DEBUG Notification:65 - added tray icon
+2021-12-19 14:09:28 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:09:28 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 14:09:29 DEBUG TaskOverviewController:164 - editing a task test
+2021-12-19 14:09:35 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:09:43 WARN  TaskEditDialogController:230 - Invalid data: 
+Неверный интервал! Интервал не может быть равен нулю
+
+2021-12-19 14:09:50 DEBUG TaskEditDialogController:166 - button OK pressed
+2021-12-19 14:09:50 DEBUG TaskOverviewController:169 - test has been changed
+2021-12-19 14:09:56 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:09:58 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:10:16 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:10:18 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:10:18 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:10:19 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:10:19 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:10:20 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:10:20 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:10:49 DEBUG Main:93 - reading data from a file
+2021-12-19 14:10:49 DEBUG Main:39 - starting the application
+2021-12-19 14:10:49 DEBUG Notification:65 - added tray icon
+2021-12-19 14:10:51 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:10:52 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:10:54 DEBUG TaskEditDialogController:127 - changing a task to a non-repeated one
+2021-12-19 14:10:56 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:10:57 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 14:10:57 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 14:10:58 DEBUG TaskOverviewController:164 - editing a task фыв
+2021-12-19 14:11:00 DEBUG TaskEditDialogController:107 - changing a task to a repeated one
+2021-12-19 14:11:28 DEBUG Main:93 - reading data from a file
+2021-12-19 14:11:28 DEBUG Main:39 - starting the application
+2021-12-19 14:11:28 DEBUG Notification:65 - added tray icon
+2021-12-19 14:14:37 DEBUG Main:93 - reading data from a file
+2021-12-19 14:14:37 DEBUG Main:39 - starting the application
+2021-12-19 14:14:38 DEBUG Notification:65 - added tray icon
+2021-12-19 14:14:41 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:14:42 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 14:14:42 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:14:43 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:14:51 DEBUG TaskEditDialogController:161 - button OK pressed
+2021-12-19 14:14:51 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 14:14:53 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 14:18:31 DEBUG Main:93 - reading data from a file
+2021-12-19 14:18:31 DEBUG Main:39 - starting the application
+2021-12-19 14:18:31 DEBUG Notification:65 - added tray icon
+2021-12-19 14:18:39 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:18:41 DEBUG TaskOverviewController:177 - adding a task
+2021-12-19 14:18:43 DEBUG TaskEditDialogController:102 - changing a task to a repeated one
+2021-12-19 14:18:57 WARN  TaskEditDialogController:229 - Invalid data: 
+Неверное название задачи!
+
+2021-12-19 14:19:05 ERROR TaskEditDialogController:160 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 14:19:05 DEBUG TaskEditDialogController:165 - button OK pressed
+2021-12-19 14:19:05 DEBUG TaskOverviewController:182 - test10 has been added
+2021-12-19 14:19:19 DEBUG TaskOverviewController:59 - task test10 was selected
+2021-12-19 14:19:21 DEBUG TaskOverviewController:164 - editing a task test10
+2021-12-19 14:19:23 DEBUG TaskEditDialogController:102 - changing a task to a repeated one
+2021-12-19 14:19:30 DEBUG TaskEditDialogController:165 - button OK pressed
+2021-12-19 14:19:30 DEBUG TaskOverviewController:169 - test10 has been changed
+2021-12-19 14:20:10 DEBUG Main:93 - reading data from a file
+2021-12-19 14:20:10 DEBUG Main:39 - starting the application
+2021-12-19 14:20:10 DEBUG Notification:65 - added tray icon
+2021-12-19 14:20:38 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 14:20:40 DEBUG TaskOverviewController:177 - adding a task
+2021-12-19 14:20:42 DEBUG TaskEditDialogController:102 - changing a task to a repeated one
+2021-12-19 14:20:52 WARN  TaskEditDialogController:229 - Invalid data: 
+Неверное название задачи!
+
+2021-12-19 14:20:56 DEBUG TaskEditDialogController:165 - button OK pressed
+2021-12-19 14:20:56 DEBUG TaskOverviewController:182 - asd has been added
+2021-12-19 14:20:59 DEBUG TaskOverviewController:59 - task asd was selected
+2021-12-19 15:42:58 DEBUG Main:93 - reading data from a file
+2021-12-19 15:42:58 DEBUG Main:39 - starting the application
+2021-12-19 15:42:59 DEBUG Notification:65 - added tray icon
+2021-12-19 15:43:01 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 15:43:02 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 15:43:04 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 15:43:04 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 15:43:05 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:44:49 DEBUG Main:93 - reading data from a file
+2021-12-19 15:44:49 DEBUG Main:39 - starting the application
+2021-12-19 15:44:50 DEBUG Notification:65 - added tray icon
+2021-12-19 15:44:51 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 15:44:52 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 15:44:53 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:46:21 DEBUG Main:93 - reading data from a file
+2021-12-19 15:46:21 DEBUG Main:39 - starting the application
+2021-12-19 15:46:21 DEBUG Notification:65 - added tray icon
+2021-12-19 15:46:23 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 15:46:25 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:48:50 DEBUG Main:93 - reading data from a file
+2021-12-19 15:48:50 DEBUG Main:40 - starting the application
+2021-12-19 15:48:50 DEBUG Notification:65 - added tray icon
+2021-12-19 15:48:59 DEBUG Main:93 - reading data from a file
+2021-12-19 15:48:59 DEBUG Main:40 - starting the application
+2021-12-19 15:48:59 DEBUG Notification:65 - added tray icon
+2021-12-19 15:49:57 DEBUG Main:93 - reading data from a file
+2021-12-19 15:49:57 DEBUG Main:40 - starting the application
+2021-12-19 15:49:57 DEBUG Notification:65 - added tray icon
+2021-12-19 15:52:14 DEBUG Main:93 - reading data from a file
+2021-12-19 15:52:14 DEBUG Main:42 - starting the application
+2021-12-19 15:52:14 DEBUG Notification:65 - added tray icon
+2021-12-19 15:52:44 DEBUG Main:93 - reading data from a file
+2021-12-19 15:52:44 DEBUG Main:42 - starting the application
+2021-12-19 15:52:45 DEBUG Notification:65 - added tray icon
+2021-12-19 15:52:55 DEBUG Main:93 - reading data from a file
+2021-12-19 15:52:55 DEBUG Main:42 - starting the application
+2021-12-19 15:52:55 DEBUG Notification:65 - added tray icon
+2021-12-19 15:53:05 DEBUG Main:93 - reading data from a file
+2021-12-19 15:53:05 DEBUG Main:42 - starting the application
+2021-12-19 15:53:05 DEBUG Notification:65 - added tray icon
+2021-12-19 15:53:19 DEBUG Main:93 - reading data from a file
+2021-12-19 15:53:19 DEBUG Main:42 - starting the application
+2021-12-19 15:53:19 DEBUG Notification:65 - added tray icon
+2021-12-19 15:54:47 DEBUG Main:93 - reading data from a file
+2021-12-19 15:54:47 DEBUG Main:42 - starting the application
+2021-12-19 15:54:48 DEBUG Notification:65 - added tray icon
+2021-12-19 15:55:05 DEBUG Main:93 - reading data from a file
+2021-12-19 15:55:05 DEBUG Main:42 - starting the application
+2021-12-19 15:55:05 DEBUG Notification:65 - added tray icon
+2021-12-19 15:55:14 DEBUG Main:93 - reading data from a file
+2021-12-19 15:55:14 DEBUG Main:42 - starting the application
+2021-12-19 15:55:14 DEBUG Notification:65 - added tray icon
+2021-12-19 15:55:25 DEBUG Main:93 - reading data from a file
+2021-12-19 15:55:25 DEBUG Main:42 - starting the application
+2021-12-19 15:55:26 DEBUG Notification:65 - added tray icon
+2021-12-19 15:56:23 DEBUG Main:93 - reading data from a file
+2021-12-19 15:56:23 DEBUG Main:42 - starting the application
+2021-12-19 15:56:23 DEBUG Notification:65 - added tray icon
+2021-12-19 15:56:25 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 15:56:26 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 15:56:27 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:56:34 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 15:56:34 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 15:56:36 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:56:57 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 15:57:17 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 15:57:17 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:06:55 DEBUG Main:93 - reading data from a file
+2021-12-19 16:06:55 DEBUG Main:42 - starting the application
+2021-12-19 16:06:55 DEBUG Notification:65 - added tray icon
+2021-12-19 16:06:57 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 16:06:57 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:06:58 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:07:04 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:07:04 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:07:12 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:07:19 ERROR TaskEditDialogController:158 - java.lang.NumberFormatException: For input string: "1:"
+2021-12-19 16:07:19 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:07:19 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:07:21 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:07:34 ERROR TaskEditDialogController:158 - java.lang.NumberFormatException: For input string: "1:"
+2021-12-19 16:07:34 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:07:34 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:07:37 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:07:54 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:07:54 DEBUG TaskEditDialogController:171 - data has not been changed
+2021-12-19 16:08:03 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:08:55 DEBUG Main:93 - reading data from a file
+2021-12-19 16:08:55 DEBUG Main:42 - starting the application
+2021-12-19 16:08:56 DEBUG Notification:65 - added tray icon
+2021-12-19 16:08:58 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 16:08:58 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:08:59 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:09:03 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:09:10 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:09:13 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:09:13 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:09:14 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:09:22 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:09:26 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:09:26 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:09:28 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:09:32 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:09:39 DEBUG TaskEditDialogController:122 - changing a task to a non-repeated one
+2021-12-19 16:09:41 DEBUG TaskEditDialogController:102 - changing a task to a repeated one
+2021-12-19 16:09:45 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Интервал не может быть равен нулю
+
+2021-12-19 16:09:50 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:09:50 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:09:52 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:10:02 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:10:02 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:10:03 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:10:07 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:10:20 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:10:20 DEBUG TaskEditDialogController:171 - data has not been changed
+2021-12-19 16:12:02 DEBUG Main:93 - reading data from a file
+2021-12-19 16:12:02 DEBUG Main:42 - starting the application
+2021-12-19 16:12:02 DEBUG Notification:65 - added tray icon
+2021-12-19 16:12:04 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:12:05 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:12:10 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:12:10 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:12:12 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:12:17 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:12:17 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:12:18 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:12:21 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:12:21 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:12:22 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:12:27 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:12:27 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:12:29 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:13:37 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:13:37 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:13:38 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:13:57 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:14:07 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:14:11 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:14:11 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:14:12 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:14:19 ERROR TaskEditDialogController:158 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 16:14:19 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:14:19 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:14:27 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:14:31 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:14:31 DEBUG TaskEditDialogController:171 - data has not been changed
+2021-12-19 16:14:33 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:14:41 ERROR TaskEditDialogController:158 - java.lang.IllegalArgumentException: Invalid parameters specified
+2021-12-19 16:14:41 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:14:41 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:14:42 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:15:06 DEBUG Main:93 - reading data from a file
+2021-12-19 16:15:06 DEBUG Main:42 - starting the application
+2021-12-19 16:15:06 DEBUG Notification:65 - added tray icon
+2021-12-19 16:15:08 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:15:09 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:15:10 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:15:14 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:15:48 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:15:48 DEBUG TaskEditDialogController:171 - data has not been changed
+2021-12-19 16:19:02 DEBUG Main:93 - reading data from a file
+2021-12-19 16:19:02 DEBUG Main:42 - starting the application
+2021-12-19 16:19:02 DEBUG Notification:65 - added tray icon
+2021-12-19 16:19:04 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:19:05 DEBUG TaskOverviewController:164 - editing a task test
+2021-12-19 16:19:09 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:19:10 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:19:17 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:19:23 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:19:27 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:19:32 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:19:47 WARN  TaskEditDialogController:227 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-19 16:19:53 DEBUG TaskEditDialogController:163 - button OK pressed
+2021-12-19 16:19:53 DEBUG TaskOverviewController:169 - title has been changed
+2021-12-19 16:20:02 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:20:02 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:20:03 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:20:05 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 16:20:05 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:20:06 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:20:06 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:20:07 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 16:20:37 DEBUG Main:93 - reading data from a file
+2021-12-19 16:20:37 DEBUG Main:42 - starting the application
+2021-12-19 16:20:37 DEBUG Notification:65 - added tray icon
+2021-12-19 16:20:40 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:20:40 DEBUG TaskOverviewController:272 - filter by date selected
+2021-12-19 16:20:43 DEBUG DateDialogWindowController:29 - button OK pressed
+2021-12-19 16:20:43 DEBUG DateDialogWindowController:33 - tasks filtered
+2021-12-19 16:20:45 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:20:45 DEBUG TaskOverviewController:220 - filter by current months selected
+2021-12-19 16:20:47 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:20:47 DEBUG TaskOverviewController:206 - filter by current week selected
+2021-12-19 16:20:49 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:20:59 WARN  TaskOverviewController:136 - task to delete is not selected
+2021-12-19 16:21:02 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:21:04 DEBUG TaskOverviewController:59 - task ыфв was selected
+2021-12-19 16:21:04 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 16:21:05 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:21:05 DEBUG TaskOverviewController:147 - deleting a taskыфв
+2021-12-19 16:21:05 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:21:05 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 16:21:06 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:21:06 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 16:21:06 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:21:06 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 16:21:06 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 16:21:06 DEBUG TaskOverviewController:147 - deleting a taskфыв
+2021-12-19 16:21:07 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 16:21:07 DEBUG TaskOverviewController:147 - deleting a taskывфыв
+2021-12-19 16:21:09 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:21:09 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:21:09 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 16:21:10 DEBUG TaskOverviewController:59 - task helo was selected
+2021-12-19 16:21:11 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:21:11 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:21:12 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:21:14 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:21:14 DEBUG TaskEditDialogController:171 - data has not been changed
+2021-12-19 16:21:17 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:21:17 DEBUG TaskOverviewController:206 - filter by current week selected
+2021-12-19 16:21:18 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:21:18 DEBUG TaskOverviewController:220 - filter by current months selected
+2021-12-19 16:21:20 DEBUG TaskOverviewController:188 - filtering tasks
+2021-12-19 16:21:29 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:21:30 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:22:02 DEBUG Main:93 - reading data from a file
+2021-12-19 16:22:02 DEBUG Main:42 - starting the application
+2021-12-19 16:22:02 DEBUG Notification:65 - added tray icon
+2021-12-19 16:22:04 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:22:05 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:22:07 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:22:54 DEBUG Main:93 - reading data from a file
+2021-12-19 16:22:54 DEBUG Main:42 - starting the application
+2021-12-19 16:22:54 DEBUG Notification:65 - added tray icon
+2021-12-19 16:22:56 DEBUG TaskOverviewController:59 - task ывфыв was selected
+2021-12-19 16:22:57 DEBUG TaskOverviewController:59 - task фыв was selected
+2021-12-19 16:22:58 DEBUG TaskOverviewController:59 - task test was selected
+2021-12-19 16:22:58 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:23:01 DEBUG TaskOverviewController:59 - task еуые was selected
+2021-12-19 16:23:02 DEBUG TaskOverviewController:59 - task title was selected
+2021-12-19 16:23:04 DEBUG TaskOverviewController:164 - editing a task title
+2021-12-19 16:23:18 DEBUG TaskEditDialogController:170 - button cancel pressed
+2021-12-19 16:23:18 DEBUG TaskEditDialogController:171 - data has not been changed
