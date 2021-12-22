@@ -74,11 +74,11 @@ public class DateUtil {
                 return false;
             if (Integer.parseInt(time.substring(0, 2)) < 0 || Integer.parseInt(time.substring(3)) < 0)
                 return false;
+            if (Integer.parseInt(time.substring(3)) >= 60)
+                return false;
             return true;
         } catch (NumberFormatException e) {
             return false;
         }
     }
-
-
 }

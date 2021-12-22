@@ -1,16 +1,15 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.DateDialogWindowView;
 
 import java.time.LocalDate;
 
-public class DateDialogWindowController {
+public class DateDialogWindowController extends DateDialogWindowView {
     private static final Logger logger = Logger.getLogger(DateDialogWindowController.class);
-    @FXML
-    private DatePicker dateSelectPickerDialog;
+
     private Stage stage;
     private LocalDate date;
 
@@ -27,7 +26,7 @@ public class DateDialogWindowController {
     @FXML
     private void okDateButtonDialog() {
         logger.debug("button OK pressed");
-        date = dateSelectPickerDialog.getValue();
+        date = getSelectedDatePicker();
         okClicked = true;
         stage.close();
         logger.debug("tasks filtered");

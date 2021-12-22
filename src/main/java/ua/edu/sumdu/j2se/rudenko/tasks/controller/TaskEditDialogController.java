@@ -1,14 +1,10 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.controller;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.control.Alert;
+import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
-import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskEditDialogView;
 
@@ -17,121 +13,13 @@ import java.time.format.DateTimeFormatter;
 
 public class TaskEditDialogController extends TaskEditDialogView {
     private static final Logger logger = Logger.getLogger(TaskEditDialogController.class);
-    @FXML
-    private DatePicker timeDatePicker;
-    @FXML
-    private RadioButton activeRadioBtn;
-    @FXML
-    private RadioButton nonActiveRadioBtn;
-    @FXML
-    private GridPane gridPaneDialog;
-    @FXML
-    private RadioButton repeatedRadioBtn;
-    @FXML
-    private RadioButton nonRepeatedRadioBtn;
 
-    private Task task;
     private Stage stage;
-    private HBox hbox;
-    private ToggleGroup groupActive;
-    private ToggleGroup groupRepeated;
 
     public boolean okClicked = false;
 
     public void setDialogStage(Stage stage) {
         this.stage = stage;
-    }
-
-    public void showCurrentTask(Task task) {
-        this.task = task;
-        displayTitleDialogLabel("Название");
-        displayIntervalDialogLabel("Интервал");
-        displayActivityDialogLabel("Активность");
-
-        displayTitleDialogField(task.getTitle());
-
-        displayIntervalDialogField(DateUtil.secondsToTime(task.getRepeatInterval()));
-        intervalTaskField.setPromptText("HH:mm");
-
-        groupActive = new ToggleGroup();
-        activeRadioBtn.setToggleGroup(groupActive);
-        nonActiveRadioBtn.setToggleGroup(groupActive);
-
-        groupRepeated = new ToggleGroup();
-        repeatedRadioBtn.setToggleGroup(groupRepeated);
-        nonRepeatedRadioBtn.setToggleGroup(groupRepeated);
-        if (task.isActive()) {
-            activeRadioBtn.setSelected(true);
-        } else {
-            nonActiveRadioBtn.setSelected(true);
-        }
-        if (!task.isRepeated()) {
-            displayTimeStartDialogLabel("Время выполнения");
-            displayEndDialogLabel("");
-
-            nonRepeatedRadioBtn.setSelected(true);
-
-            displayStartTimeDialogDatePicker(task.getTime().toLocalDate());
-            displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-        } else {
-            displayTimeStartDialogLabel("Время начала");
-            displayEndDialogLabel("Время конца");
-
-            repeatedRadioBtn.setSelected(true);
-
-            displayStartTimeDialogDatePicker(task.getStartTime().toLocalDate());
-            displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-
-            endTaskDatePicker = new DatePicker();
-            endTaskDatePicker.setPrefWidth(191);
-            displayEndDialogDatePicker(task.getEndTime().toLocalDate());
-
-            endTimeField = new TextField();
-            displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-
-            hbox = new HBox(10, endTaskDatePicker, endTimeField);
-
-            gridPaneDialog.add(hbox, 1, 3);
-        }
-
-        groupRepeated.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
-            @Override
-            public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
-                RadioButton selectedBtn = (RadioButton) t1;
-                if (selectedBtn.getText().equals("Да")) {
-                    logger.debug("changing a task to a repeated one");
-                    displayTimeStartDialogLabel("Время начала");
-                    displayEndDialogLabel("Время конца");
-                    repeatedRadioBtn.setSelected(true);
-
-                    displayStartTimeDialogDatePicker(task.getStartTime().toLocalDate());
-                    displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-
-                    endTaskDatePicker = new DatePicker();
-                    endTaskDatePicker.setPrefWidth(191);
-                    displayEndDialogDatePicker(task.getEndTime().toLocalDate());
-
-                    endTimeField = new TextField();
-                    displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-
-                    hbox = new HBox(10, endTaskDatePicker, endTimeField);
-
-                    gridPaneDialog.add(hbox, 1, 3);
-                } else {
-                    logger.debug("changing a task to a non-repeated one");
-                    displayTimeStartDialogLabel("Время выполнения");
-                    displayEndDialogLabel("");
-
-                    nonRepeatedRadioBtn.setSelected(true);
-                    Label temp = new Label();
-                    temp.setText("");
-                    displayIntervalDialogField("00:00");
-                    gridPaneDialog.getChildren().remove(hbox);
-                    displayStartTimeDialogDatePicker(task.getTime().toLocalDate());
-                    displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-                }
-            }
-        });
     }
 
     @FXML

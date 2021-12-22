@@ -3,12 +3,14 @@ package ua.edu.sumdu.j2se.rudenko.tasks.model;
 import com.google.gson.Gson;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
+
 import java.io.*;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 
 public class TaskIO {
     private static final Logger logger = Logger.getLogger(Main.class);
+
     /**
      * Writes tasks from the list in stream in the binary format
      * Structure of format:
@@ -93,7 +95,7 @@ public class TaskIO {
             logger.debug("reading data from a file");
             FileInputStream fileInputStream = new FileInputStream(file);
             read(tasks, fileInputStream);
-        }  catch (IOException e) {
+        } catch (IOException e) {
             logger.error(e);
         }
     }

@@ -7,17 +7,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Tasks;
+import ua.edu.sumdu.j2se.rudenko.tasks.services.StageManager;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.DateDialogWindowView;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.DateIntervalDialogWindowView;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskEditDialogView;
 import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskOverviewView;
 
 import java.io.IOException;
@@ -69,34 +73,6 @@ public class TaskOverviewController extends TaskOverviewView {
         rightAnchorPane.setMinWidth(300);
     }
 
-    private void showTaskDetails(Task task) {
-        if (task == null) {
-            displayTitleValue("");
-            displayStartTimeValue("");
-            displayEndTimeValue("");
-            displayIntervalValue("");
-            displayActivityValue("");
-        } else if (task.isRepeated()) {
-            showTaskDetails(null);
-            displayTitleValue(task.getTitle());
-            displayTimeStartLabel("Время начала");
-            displayEndLabel("Время конца");
-            displayStartTimeValue(DateUtil.dateToString(task.getStartTime()));
-            displayEndTimeValue(DateUtil.dateToString(task.getEndTime()));
-            displayIntervalValue(DateUtil.secondsToTime(task.getRepeatInterval()));
-            displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
-        } else {
-            showTaskDetails(null);
-            displayTitleValue(task.getTitle());
-            displayTimeStartLabel("Время выполнения");
-            displayEndLabel("");
-            displayEndTimeValue("");
-            displayStartTimeValue(DateUtil.dateToString(task.getTime()));
-            displayIntervalValue(task.getRepeatInterval() == 0 ? "Задача не повторяется" : String.valueOf(task.getRepeatInterval()));
-            displayActivityValue(task.isActive() ? "Активна" : "Неактивна");
-        }
-    }
-
     public void setMainApp(Main main) {
         this.main = main;
         tableView.setItems(main.getData());
@@ -104,18 +80,8 @@ public class TaskOverviewController extends TaskOverviewView {
 
     public boolean showTaskEditDialog(Task task) {
         try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/TaskEditDialog.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
-
             Stage dialogStage = new Stage();
-            dialogStage.setTitle("Изменить");
-            dialogStage.initModality(Modality.WINDOW_MODAL);
-            dialogStage.initOwner(main.getPrimaryStage());
-            Scene scene = new Scene(page);
-            dialogStage.setScene(scene);
-            dialogStage.setResizable(false);
-            dialogStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
+            FXMLLoader loader = TaskEditDialogView.createEditDialogWindow(dialogStage);
 
             TaskEditDialogController controller = loader.getController();
             controller.showCurrentTask(task);
@@ -136,7 +102,7 @@ public class TaskOverviewController extends TaskOverviewView {
             logger.warn("task to delete is not selected");
 
             Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.initOwner(main.getPrimaryStage());
+            alert.initOwner(StageManager.getInstance().getPrimaryStage());
             alert.setTitle("Ошибка");
             alert.setHeaderText("Задача не выбрана");
             alert.setContentText("Выберите задачу из списка");
@@ -155,7 +121,7 @@ public class TaskOverviewController extends TaskOverviewView {
             logger.warn("task to edit is not selected");
 
             Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.initOwner(main.getPrimaryStage());
+            alert.initOwner(StageManager.getInstance().getPrimaryStage());
             alert.setTitle("Ошибка");
             alert.setHeaderText("Задача не выбрана");
             alert.setContentText("Выберите задачу из списка");
@@ -206,7 +172,7 @@ public class TaskOverviewController extends TaskOverviewView {
             logger.debug("filter by current week selected");
             ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
             for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(),
-                    LocalDateTime.of(LocalDate.now().with(DayOfWeek.SUNDAY), LocalTime.of(23,59,59)))) {
+                    LocalDateTime.of(LocalDate.now().with(DayOfWeek.SUNDAY), LocalTime.of(23, 59, 59)))) {
                 tasksWeek.add(task);
             }
             tableView.setItems(tasksWeek);
@@ -221,7 +187,7 @@ public class TaskOverviewController extends TaskOverviewView {
             ObservableList<Task> tasksWeek = FXCollections.observableArrayList();
 
             for (Task task : Tasks.incoming(main.getData(), LocalDateTime.now(),
-                    LocalDateTime.of(LocalDate.now().with(lastDayOfMonth()),LocalTime.of(23,59,59)))) {
+                    LocalDateTime.of(LocalDate.now().with(lastDayOfMonth()), LocalTime.of(23, 59, 59)))) {
                 tasksWeek.add(task);
             }
             tableView.setItems(tasksWeek);
@@ -237,22 +203,11 @@ public class TaskOverviewController extends TaskOverviewView {
     private void filterTimeInterval() {
         try {
             logger.debug("filter by date interval selected");
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/DateIntervalDialogWindow.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
-
             Stage dateSelectStage = new Stage();
-            dateSelectStage.setTitle("");
-            dateSelectStage.initModality(Modality.WINDOW_MODAL);
-            dateSelectStage.initOwner(main.getPrimaryStage());
-            Scene scene = new Scene(page);
-            dateSelectStage.setScene(scene);
-            dateSelectStage.setResizable(false);
-            dateSelectStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
+            FXMLLoader loader = DateIntervalDialogWindowView.createDateIntervalWindow(dateSelectStage);
+
             DateIntervalDialogWindowController controller = loader.getController();
-
             controller.setDialogStage(dateSelectStage);
-
             dateSelectStage.showAndWait();
 
             if (controller.okClicked) {
@@ -270,23 +225,11 @@ public class TaskOverviewController extends TaskOverviewView {
     private void filterDay() {
         try {
             logger.debug("filter by date selected");
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/DateDialogWindow.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
-
             Stage dateSelectStage = new Stage();
-            dateSelectStage.setTitle("");
-            dateSelectStage.initModality(Modality.WINDOW_MODAL);
-            dateSelectStage.initOwner(main.getPrimaryStage());
-            Scene scene = new Scene(page);
-            dateSelectStage.setScene(scene);
-            dateSelectStage.setResizable(false);
-            dateSelectStage.getIcons().add(new Image(TaskOverviewController.class.getResourceAsStream("/images/icon24px.png")));
+            FXMLLoader loader = DateDialogWindowView.createDateWindow(dateSelectStage);
 
             DateDialogWindowController controller = loader.getController();
-
             controller.setDialogStage(dateSelectStage);
-
             dateSelectStage.showAndWait();
 
             if (controller.okClicked) {

@@ -4,14 +4,17 @@ import javafx.application.Platform;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
+import ua.edu.sumdu.j2se.rudenko.tasks.services.StageManager;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Notification {
     private static final Logger logger = Logger.getLogger(Notification.class);
@@ -38,8 +41,8 @@ public class Notification {
                 trayIcon.addActionListener(event -> Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        main.getPrimaryStage().show();
-                        main.getPrimaryStage().toFront();
+                        StageManager.getInstance().getPrimaryStage().show();
+                        StageManager.getInstance().getPrimaryStage().toFront();
                     }
                 }));
 
@@ -47,8 +50,8 @@ public class Notification {
                 showItem.addActionListener(event -> Platform.runLater(new Runnable() {
                     @Override
                     public void run() {
-                        main.getPrimaryStage().show();
-                        main.getPrimaryStage().toFront();
+                        StageManager.getInstance().getPrimaryStage().show();
+                        StageManager.getInstance().getPrimaryStage().toFront();
                     }
                 }));
 
