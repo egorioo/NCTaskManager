@@ -1,11 +1,15 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.view;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
@@ -27,6 +31,22 @@ public class TaskOverviewView {
     private Label intervalValue;
     @FXML
     private Label activeValue;
+    @FXML
+    private AnchorPane leftAnchorPane;
+    @FXML
+    private AnchorPane rightAnchorPane;
+    @FXML
+    protected ComboBox<String> filterComboBox;
+
+    public void initializeView() {
+        ObservableList<String> filters = FXCollections.observableArrayList("На этой неделе",
+                "В этом месяце", "Указать дату", "Указать промежуток", "Все задачи");
+        filterComboBox.setValue("Все задачи");
+        filterComboBox.setItems(filters);
+
+        leftAnchorPane.setMinWidth(150);
+        rightAnchorPane.setMinWidth(300);
+    }
 
     public static FXMLLoader createMainWindow(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader();

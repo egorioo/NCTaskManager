@@ -111,7 +111,7 @@ public class TaskEditDialogController extends TaskEditDialogView {
             return true;
         } else {
             logger.warn("Invalid data: \n" + errorMessage);
-            // Показываем сообщение об ошибке.
+
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
             alert.setTitle("Ошибка");

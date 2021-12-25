@@ -20,11 +20,11 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main extends Application {
-    private AbstractTaskList list = new ArrayTaskList();
-    private ObservableList<Task> tasksData = FXCollections.observableArrayList();
+    private final ObservableList<Task> tasksData = FXCollections.observableArrayList();
     private static final Logger logger = Logger.getLogger(Main.class);
 
     public Main() {
+        AbstractTaskList list = new ArrayTaskList();
         TaskIO.readBinary(list, new File("data.txt"));
         for (Task task : list) {
             tasksData.add(task);

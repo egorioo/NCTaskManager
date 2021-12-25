@@ -8,10 +8,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Alert;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
@@ -37,17 +35,11 @@ public class TaskOverviewController extends TaskOverviewView {
     private static final Logger logger = Logger.getLogger(TaskOverviewController.class);
 
     @FXML
-    private AnchorPane leftAnchorPane;
-    @FXML
-    private AnchorPane rightAnchorPane;
-    @FXML
     private TableView<Task> tableView;
     @FXML
     private TableColumn<Task, String> nameColumn;
     @FXML
     private TableColumn<Task, String> dateColumn;
-    @FXML
-    private ComboBox<String> filterComboBox;
 
     @FXML
     private void initialize() {
@@ -65,12 +57,7 @@ public class TaskOverviewController extends TaskOverviewView {
             }
         });
 
-        ObservableList<String> filters = FXCollections.observableArrayList("На этой неделе", "В этом месяце", "Указать дату", "Указать промежуток", "Все задачи");
-        filterComboBox.setValue("Все задачи");
-        filterComboBox.setItems(filters);
-
-        leftAnchorPane.setMinWidth(150);
-        rightAnchorPane.setMinWidth(300);
+        initializeView();
     }
 
     public void setMainApp(Main main) {

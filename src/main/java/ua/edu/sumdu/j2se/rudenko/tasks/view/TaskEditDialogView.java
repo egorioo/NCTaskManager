@@ -167,7 +167,6 @@ public class TaskEditDialogView {
         });
     }
 
-
     public void displayTitleDialogLabel(String title) {
         nameTaskLabel.setText(title);
     }
