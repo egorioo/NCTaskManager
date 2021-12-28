@@ -1,40 +1,78 @@
 package ua.edu.sumdu.j2se.rudenko.tasks;
 
-import java.io.*;
-import java.time.LocalDateTime;
-import java.time.ZoneOffset;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
+import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.rudenko.tasks.controller.TaskOverviewController;
+import ua.edu.sumdu.j2se.rudenko.tasks.model.AbstractTaskList;
+import ua.edu.sumdu.j2se.rudenko.tasks.model.ArrayTaskList;
+import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
+import ua.edu.sumdu.j2se.rudenko.tasks.model.TaskIO;
+import ua.edu.sumdu.j2se.rudenko.tasks.services.StageManager;
+import ua.edu.sumdu.j2se.rudenko.tasks.util.Notification;
+import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskOverviewView;
 
-public class Main {
-    public static void main(String[] args) {
+import java.io.File;
+import java.io.IOException;
+
+public class Main extends Application {
+    private final ObservableList<Task> tasksData = FXCollections.observableArrayList();
+    private static final Logger logger = Logger.getLogger(Main.class);
+
+    public Main() {
         AbstractTaskList list = new ArrayTaskList();
-        Task t1 = new Task("name", LocalDateTime.now(), LocalDateTime.now().plusDays(2),500);
-        Task t2 = new Task("name", LocalDateTime.now());
-        Task t3 = new Task("name", LocalDateTime.now());
-        t1.setActive(true);
-        list.add(t1);
-        list.add(t2);
-        list.add(t3);
-
-
-        /*TaskIO.writeBinary(list,new File("file.txt"));
-
-        System.out.println("----------------");*/
-        AbstractTaskList arr = new ArrayTaskList();
-        /*TaskIO.readBinary(arr,new File("file.txt"));
-
-        System.out.println(arr);*/
-
-        /*try {
-           TaskIO.write(list, new FileWriter("file.txt"));
-        } catch (IOException e) {
-            e.printStackTrace();
+        TaskIO.readBinary(list, new File("data.txt"));
+        for (Task task : list) {
+            tasksData.add(task);
         }
+    }
 
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) {
         try {
-            TaskIO.read(arr, new FileReader("file.txt"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
+            logger.debug("starting the application");
 
+            StageManager.getInstance().setPrimaryStage(stage);
+            Platform.setImplicitExit(false);
+
+            Notification notification = new Notification();
+            notification.setMain(this);
+            notification.createIcon();
+            notification.enableNotifications();
+
+            FXMLLoader loader = TaskOverviewView.createMainWindow(stage);
+
+            TaskOverviewController controller = loader.getController();
+            controller.setMainApp(this);
+        } catch (IOException e) {
+            logger.error(e);
+        }
+    }
+
+    @Override
+    public void stop() {
+        try {
+            AbstractTaskList tempList = new ArrayTaskList();
+            for (Task task : tasksData) {
+                tempList.add(task);
+            }
+            TaskIO.writeBinary(tempList, new File("data.txt"));
+            super.stop();
+            logger.debug("termination of the application");
+        } catch (Exception e) {
+            logger.error(e);
+        }
+    }
+
+    public ObservableList<Task> getData() {
+        return tasksData;
     }
 }
