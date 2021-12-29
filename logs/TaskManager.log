@@ -92,3 +92,6 @@
 2021-12-29 16:26:26 DEBUG Main:95 - reading data from a file
 2021-12-29 16:26:26 DEBUG Main:41 - starting the application
 2021-12-29 16:26:27 DEBUG Notification:71 - added tray icon
+2021-12-29 17:52:51 DEBUG Main:95 - reading data from a file
+2021-12-29 17:52:51 DEBUG Main:41 - starting the application
+2021-12-29 17:52:52 DEBUG Notification:71 - added tray icon
