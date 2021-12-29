@@ -5,6 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.RadioButton;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.rudenko.tasks.controller.util.ErrorMessages;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 import ua.edu.sumdu.j2se.rudenko.tasks.view.TaskEditDialogView;
 
@@ -60,50 +61,50 @@ public class TaskEditDialogController extends TaskEditDialogView {
     private boolean isInputValid() {
         String errorMessage = "";
         if (getTitleTaskField() == null || getTitleTaskField().length() == 0) {
-            errorMessage += "Неверное название задачи!\n";
+            errorMessage += ErrorMessages.INVALID_TITLE;
         }
         RadioButton temp = (RadioButton) groupRepeated.getSelectedToggle();
         if (temp.getText().equals("Да")) {
             if (timeDatePicker == null || getStartTimeHoursField().length() == 0) {
-                errorMessage += "Неверное время начала!\n";
+                errorMessage += ErrorMessages.INVALID_START_TIME;
             } else if (!DateUtil.validTime(getStartTimeHoursField())) {
-                errorMessage += "Неверное время начала! Используйте формат HH:mm:ss\n";
+                errorMessage += ErrorMessages.INVALID_START_TIME_FORMAT;
             }
             if (endTaskDatePicker == null || getEndTimeHoursField().length() == 0) {
-                errorMessage += "Неверное время начала!\n";
+                errorMessage += ErrorMessages.INVALID_START_TIME;
             } else if (!DateUtil.validTime(getEndTimeHoursField())) {
-                errorMessage += "Неверное время начала! Используйте формат HH:mm:ss\n";
+                errorMessage += ErrorMessages.INVALID_START_TIME_FORMAT;
             }
             if (getIntervalTaskField() == null || getIntervalTaskField().length() == 0) {
-                errorMessage += "Неверный интервал \n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL;
             } else if (!DateUtil.validTimeInterval(getIntervalTaskField())) {
-                errorMessage += "Неверный интервал! Используйте формат HH:mm\n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL_FORMAT;
             }
             if (getStartTimeDatePicker().equals(getEndTimeDatePicker())
                     && DateUtil.stringToTime(getStartTimeHoursField()).isAfter(DateUtil.stringToTime(getEndTimeHoursField()))) {
-                errorMessage += "Неверное время начала и конца!\n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME;
             }
             if (getStartTimeDatePicker().equals(getEndTimeDatePicker())
                     && DateUtil.stringToTime(getStartTimeHoursField()).equals(DateUtil.stringToTime(getEndTimeHoursField()))) {
-                errorMessage += "Неверное время начала и конца! Время не может быть одинаковым\n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME_SAME;
             }
             if (getStartTimeDatePicker().isAfter(getEndTimeDatePicker())) {
-                errorMessage += "Неверное время начала и конца! \n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME;
             } else if (getIntervalTaskField().equals("00:00")) {
-                errorMessage += "Неверный интервал! Интервал не может быть равен нулю\n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL_NULL;
             }
         } else {
             if (timeDatePicker == null || getStartTimeHoursField().length() == 0) {
-                errorMessage += "Неверное время!\n";
+                errorMessage += ErrorMessages.INVALID_TIME;
             } else if (!DateUtil.validTime(getStartTimeHoursField())) {
-                errorMessage += "Неверное время! Используйте формат HH:mm:ss\n";
+                errorMessage += ErrorMessages.INVALID_TIME_FORMAT;
             }
             if (getIntervalTaskField() == null || getIntervalTaskField().length() == 0) {
-                errorMessage += "Неверный интервал \n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL;
             } else if (!DateUtil.validTimeInterval(getIntervalTaskField())) {
-                errorMessage += "Неверный интервал! Используйте формат HH:mm\n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL_FORMAT;
             } else if (!getIntervalTaskField().equals("00:00")) {
-                errorMessage += "Неверный интервал! Интервал должен быть равен нулю\n";
+                errorMessage += ErrorMessages.INVALID_INTERVAL_NULL;
             }
         }
 
@@ -115,7 +116,7 @@ public class TaskEditDialogController extends TaskEditDialogView {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
             alert.setTitle("Ошибка");
-            alert.setHeaderText("Неверные данные");
+            alert.setHeaderText(ErrorMessages.INCORRECT_DATA);
             alert.setContentText(errorMessage);
             alert.showAndWait();
             return false;

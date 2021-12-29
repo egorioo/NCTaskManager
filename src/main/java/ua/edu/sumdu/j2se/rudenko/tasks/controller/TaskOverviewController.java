@@ -13,6 +13,7 @@ import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.rudenko.tasks.Main;
+import ua.edu.sumdu.j2se.rudenko.tasks.controller.util.ErrorMessages;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Task;
 import ua.edu.sumdu.j2se.rudenko.tasks.model.Tasks;
 import ua.edu.sumdu.j2se.rudenko.tasks.services.StageManager;
@@ -91,7 +92,7 @@ public class TaskOverviewController extends TaskOverviewView {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(StageManager.getInstance().getPrimaryStage());
             alert.setTitle("Ошибка");
-            alert.setHeaderText("Задача не выбрана");
+            alert.setHeaderText(ErrorMessages.TASK_NOT_SELECTED);
             alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {
@@ -110,7 +111,7 @@ public class TaskOverviewController extends TaskOverviewView {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.initOwner(StageManager.getInstance().getPrimaryStage());
             alert.setTitle("Ошибка");
-            alert.setHeaderText("Задача не выбрана");
+            alert.setHeaderText(ErrorMessages.TASK_NOT_SELECTED);
             alert.setContentText("Выберите задачу из списка");
             alert.showAndWait();
         } else {

@@ -1,7 +1,5 @@
 package ua.edu.sumdu.j2se.rudenko.tasks.view;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -127,42 +125,39 @@ public class TaskEditDialogView {
             gridPaneDialog.add(hbox, 1, 3);
         }
 
-        groupRepeated.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
-            @Override
-            public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
-                RadioButton selectedBtn = (RadioButton) t1;
-                if (selectedBtn.getText().equals("Да")) {
-                    logger.debug("changing a task to a repeated one");
-                    displayTimeStartDialogLabel("Время начала");
-                    displayEndDialogLabel("Время конца");
-                    repeatedRadioBtn.setSelected(true);
+        groupRepeated.selectedToggleProperty().addListener((observableValue, toggle, t1) -> {
+            RadioButton selectedBtn = (RadioButton) t1;
+            if (selectedBtn.getText().equals("Да")) {
+                logger.debug("changing a task to a repeated one");
+                displayTimeStartDialogLabel("Время начала");
+                displayEndDialogLabel("Время конца");
+                repeatedRadioBtn.setSelected(true);
 
-                    displayStartTimeDialogDatePicker(task.getStartTime().toLocalDate());
-                    displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+                displayStartTimeDialogDatePicker(task.getStartTime().toLocalDate());
+                displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
 
-                    endTaskDatePicker = new DatePicker();
-                    endTaskDatePicker.setPrefWidth(191);
-                    displayEndDialogDatePicker(task.getEndTime().toLocalDate());
+                endTaskDatePicker = new DatePicker();
+                endTaskDatePicker.setPrefWidth(191);
+                displayEndDialogDatePicker(task.getEndTime().toLocalDate());
 
-                    endTimeField = new TextField();
-                    displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+                endTimeField = new TextField();
+                displayEndDialogField(task.getEndTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
 
-                    hbox = new HBox(10, endTaskDatePicker, endTimeField);
+                hbox = new HBox(10, endTaskDatePicker, endTimeField);
 
-                    gridPaneDialog.add(hbox, 1, 3);
-                } else {
-                    logger.debug("changing a task to a non-repeated one");
-                    displayTimeStartDialogLabel("Время выполнения");
-                    displayEndDialogLabel("");
+                gridPaneDialog.add(hbox, 1, 3);
+            } else {
+                logger.debug("changing a task to a non-repeated one");
+                displayTimeStartDialogLabel("Время выполнения");
+                displayEndDialogLabel("");
 
-                    nonRepeatedRadioBtn.setSelected(true);
-                    Label temp = new Label();
-                    temp.setText("");
-                    displayIntervalDialogField("00:00");
-                    gridPaneDialog.getChildren().remove(hbox);
-                    displayStartTimeDialogDatePicker(task.getTime().toLocalDate());
-                    displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
-                }
+                nonRepeatedRadioBtn.setSelected(true);
+                Label temp = new Label();
+                temp.setText("");
+                displayIntervalDialogField("00:00");
+                gridPaneDialog.getChildren().remove(hbox);
+                displayStartTimeDialogDatePicker(task.getTime().toLocalDate());
+                displayStartTimeDialogField(task.getTime().toLocalTime().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
             }
         });
     }

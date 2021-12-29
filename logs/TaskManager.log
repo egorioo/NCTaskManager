@@ -1,0 +1,94 @@
+2021-12-25 11:57:42 DEBUG Main:95 - reading data from a file
+2021-12-25 11:57:42 DEBUG Main:41 - starting the application
+2021-12-25 11:57:42 DEBUG Notification:71 - added tray icon
+2021-12-25 11:57:46 WARN  TaskOverviewController:108 - task to edit is not selected
+2021-12-25 11:57:48 DEBUG TaskOverviewController:55 - task test2 was selected
+2021-12-25 11:57:48 DEBUG TaskOverviewController:117 - editing a task test2
+2021-12-25 11:57:49 DEBUG TaskEditDialogView:133 - changing a task to a repeated one
+2021-12-25 11:57:50 DEBUG TaskEditDialogView:152 - changing a task to a non-repeated one
+2021-12-25 11:57:50 DEBUG TaskEditDialogView:133 - changing a task to a repeated one
+2021-12-25 11:58:41 DEBUG Main:95 - reading data from a file
+2021-12-25 11:58:42 DEBUG Main:41 - starting the application
+2021-12-25 11:58:42 DEBUG Notification:71 - added tray icon
+2021-12-25 11:58:44 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-25 11:58:44 DEBUG TaskOverviewController:173 - filter by current months selected
+2021-12-25 11:58:45 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-25 11:58:45 DEBUG TaskOverviewController:159 - filter by current week selected
+2021-12-25 11:58:46 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-25 11:58:46 DEBUG TaskOverviewController:214 - filter by date selected
+2021-12-25 11:58:47 DEBUG DateDialogWindowController:38 - button cancel pressed
+2021-12-25 11:58:48 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-25 11:58:50 DEBUG TaskOverviewController:55 - task test3R was selected
+2021-12-25 11:58:51 DEBUG TaskOverviewController:117 - editing a task test3R
+2021-12-25 11:58:52 DEBUG TaskEditDialogView:152 - changing a task to a non-repeated one
+2021-12-25 11:58:53 DEBUG TaskEditDialogView:133 - changing a task to a repeated one
+2021-12-25 11:58:55 DEBUG TaskOverviewController:130 - adding a task
+2021-12-25 11:58:56 DEBUG TaskEditDialogView:133 - changing a task to a repeated one
+2021-12-25 11:59:05 DEBUG TaskEditDialogController:49 - button OK pressed
+2021-12-25 11:59:05 DEBUG TaskOverviewController:135 - sd has been added
+2021-12-29 15:56:58 DEBUG Main:95 - reading data from a file
+2021-12-29 15:56:58 DEBUG Main:41 - starting the application
+2021-12-29 15:56:59 DEBUG Notification:71 - added tray icon
+2021-12-29 15:57:01 DEBUG TaskOverviewController:55 - task test3R was selected
+2021-12-29 15:57:01 DEBUG TaskOverviewController:55 - task test2 was selected
+2021-12-29 15:57:03 DEBUG TaskOverviewController:55 - task test1 was selected
+2021-12-29 15:57:05 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:57:05 DEBUG TaskOverviewController:214 - filter by date selected
+2021-12-29 15:57:07 DEBUG DateDialogWindowController:28 - button OK pressed
+2021-12-29 15:57:07 DEBUG DateDialogWindowController:32 - tasks filtered
+2021-12-29 15:57:07 ERROR TaskOverviewController:231 - java.lang.NullPointerException
+2021-12-29 15:57:16 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:57:16 DEBUG TaskOverviewController:159 - filter by current week selected
+2021-12-29 15:57:17 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:57:17 DEBUG TaskOverviewController:214 - filter by date selected
+2021-12-29 15:57:21 DEBUG DateDialogWindowController:28 - button OK pressed
+2021-12-29 15:57:21 DEBUG DateDialogWindowController:32 - tasks filtered
+2021-12-29 15:57:21 ERROR TaskOverviewController:231 - java.lang.NullPointerException
+2021-12-29 15:57:58 DEBUG Main:95 - reading data from a file
+2021-12-29 15:57:58 DEBUG Main:41 - starting the application
+2021-12-29 15:57:58 DEBUG Notification:71 - added tray icon
+2021-12-29 15:58:01 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:01 DEBUG TaskOverviewController:159 - filter by current week selected
+2021-12-29 15:58:02 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:02 DEBUG TaskOverviewController:173 - filter by current months selected
+2021-12-29 15:58:03 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:03 DEBUG TaskOverviewController:214 - filter by date selected
+2021-12-29 15:58:06 DEBUG DateDialogWindowController:28 - button OK pressed
+2021-12-29 15:58:06 DEBUG DateDialogWindowController:32 - tasks filtered
+2021-12-29 15:58:09 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:09 DEBUG TaskOverviewController:173 - filter by current months selected
+2021-12-29 15:58:10 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:10 DEBUG TaskOverviewController:159 - filter by current week selected
+2021-12-29 15:58:11 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:11 DEBUG TaskOverviewController:214 - filter by date selected
+2021-12-29 15:58:13 DEBUG DateDialogWindowController:28 - button OK pressed
+2021-12-29 15:58:13 DEBUG DateDialogWindowController:32 - tasks filtered
+2021-12-29 15:58:13 ERROR TaskOverviewController:231 - java.lang.NullPointerException
+2021-12-29 15:58:14 DEBUG TaskOverviewController:141 - filtering tasks
+2021-12-29 15:58:14 DEBUG TaskOverviewController:192 - filter by date interval selected
+2021-12-29 15:58:16 DEBUG DateIntervalDialogWindowController:41 - button ok pressed
+2021-12-29 15:58:16 WARN  DateIntervalDialogWindowController:86 - Invalid data: 
+Неверное время начала!
+Неверное время конца!
+
+2021-12-29 15:58:22 DEBUG DateIntervalDialogWindowController:41 - button ok pressed
+2021-12-29 15:58:22 WARN  DateIntervalDialogWindowController:86 - Invalid data: 
+Неверное время начала!
+Неверное время конца!
+
+2021-12-29 16:25:01 DEBUG Main:95 - reading data from a file
+2021-12-29 16:25:01 DEBUG Main:41 - starting the application
+2021-12-29 16:25:01 DEBUG Notification:71 - added tray icon
+2021-12-29 16:25:06 WARN  TaskOverviewController:108 - task to edit is not selected
+2021-12-29 16:25:11 DEBUG TaskOverviewController:55 - task test3R was selected
+2021-12-29 16:25:12 DEBUG TaskOverviewController:117 - editing a task test3R
+2021-12-29 16:25:15 WARN  TaskEditDialogController:114 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-29 16:25:24 DEBUG TaskEditDialogView:150 - changing a task to a non-repeated one
+2021-12-29 16:25:27 WARN  TaskEditDialogController:114 - Invalid data: 
+Неверный интервал! Используйте формат HH:mm
+
+2021-12-29 16:26:26 DEBUG Main:95 - reading data from a file
+2021-12-29 16:26:26 DEBUG Main:41 - starting the application
+2021-12-29 16:26:27 DEBUG Notification:71 - added tray icon

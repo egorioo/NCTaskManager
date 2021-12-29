@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import org.apache.log4j.Logger;
+import ua.edu.sumdu.j2se.rudenko.tasks.controller.util.ErrorMessages;
 import ua.edu.sumdu.j2se.rudenko.tasks.util.DateUtil;
 import ua.edu.sumdu.j2se.rudenko.tasks.view.DateIntervalDialogWindowView;
 
@@ -57,26 +58,26 @@ public class DateIntervalDialogWindowController extends DateIntervalDialogWindow
     private boolean validInput() {
         String errorMessage = "";
         if (startIntervalDatePicker == null || getStartHoursIntervalField().length() == 0) {
-            errorMessage += "Неверное время начала!\n";
+            errorMessage += ErrorMessages.INVALID_START_TIME;
         } else if (!DateUtil.validTime(getStartHoursIntervalField())) {
-            errorMessage += "Неверное время начала! Используйте формат HH:mm:ss\n";
+            errorMessage += ErrorMessages.INVALID_START_TIME_FORMAT;
         }
         if (endIntervalDatePicker == null || getEndHoursIntervalField().length() == 0) {
-            errorMessage += "Неверное время конца!\n";
+            errorMessage += ErrorMessages.INVALID_END_TIME;
         } else if (!DateUtil.validTime(getEndHoursIntervalField())) {
-            errorMessage += "Неверное время конца! Используйте формат HH:mm:ss\n";
+            errorMessage += ErrorMessages.INVALID_END_TIME_FORMAT;
         }
         if (!getStartHoursIntervalField().equals("") && !getEndHoursIntervalField().equals("")) {
             if (getStartIntervalDatePicker().equals(getEndIntervalDatePicker())
                     && DateUtil.stringToTime(getStartHoursIntervalField()).isAfter(DateUtil.stringToTime(getEndHoursIntervalField()))) {
-                errorMessage += "Неверное время начала и конца!\n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME;
             }
             if (getStartIntervalDatePicker().equals(getEndIntervalDatePicker())
                     && DateUtil.stringToTime(getStartHoursIntervalField()).equals(DateUtil.stringToTime(getEndHoursIntervalField()))) {
-                errorMessage += "Неверное время начала и конца! Время не может быть одинаковым\n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME_SAME;
             }
             if (getStartIntervalDatePicker().isAfter(getEndIntervalDatePicker())) {
-                errorMessage += "Неверное время начала и конца! \n";
+                errorMessage += ErrorMessages.INVALID_START_END_TIME;
             }
         }
 
@@ -88,7 +89,7 @@ public class DateIntervalDialogWindowController extends DateIntervalDialogWindow
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.initOwner(stage);
             alert.setTitle("Ошибка");
-            alert.setHeaderText("Неверные данные");
+            alert.setHeaderText(ErrorMessages.INCORRECT_DATA);
             alert.setContentText(errorMessage);
             alert.showAndWait();
             return false;
