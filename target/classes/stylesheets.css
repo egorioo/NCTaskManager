@@ -1,0 +1,334 @@
+.root {
+	-fx-body-color : #F5F5F5;
+	-fx-outer-border : #cecece;
+}
+
+.label-bright {
+    -fx-font-size: 10pt;
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 18pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:focused,.table-view:focused .table-row-cell:focused:odd {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #0096c9;
+}
+
+.table-row-cell{
+    -fx-table-cell-border-color:transparent;
+}
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.button:focused, .toggle-button:focused,
+.split-menu-button:focused, .menu-button:focused,
+.number-button:focused,
+.combo-box:focused .text-field, .choice-box:focused, .color-picker:focused, .date-picker:focused .text-field
+{
+	-fx-effect: dropshadow(gaussian, #b4d1f3, 3, 3, 0, 0);
+}
+.combo-box:focused * {
+	-fx-effect: none;
+}
+
+.button,.menu-button,.toggle-button,.split-menu-button {
+	-fx-font-size: 14;
+	-fx-background-radius: 4;
+	-fx-border-radius: 4;
+	-fx-pref-height: 30;
+	-fx-min-width: 30;
+}
+.button,.menu-button,.split-menu-button,.toggle-button,.number-button {
+	-fx-background-insets: 0, 0, -1, 0;
+}
+
+.split-menu-button > .label {
+	-fx-border-radius: 4 0 0 4;
+	-fx-background-radius: 3 0 0 3;
+}
+
+.split-menu-button > .arrow-button {
+	-fx-border-radius: 0 4 4 0;
+	-fx-background-radius: 0 3 3 0;
+}
+
+/*button styles*/
+
+/*default button settings*/
+
+/*bgcolor setting*/
+.color-picker,.date-picker > .arrow-button,
+.number-button,.left-arrow-button,.right-arrow-button,
+.button,.split-menu-button,.toggle-button,.menu-button,
+.font-menu-button, .split-menu-button > .label, .split-menu-button > .arrow-button {
+	-fx-background-color: white;
+}
+
+.color-picker,.date-picker > .arrow-button,
+.button,.menu-button,.toggle-button,.number-button,.left-arrow-button,.right-arrow-button,
+.font-menu-button,
+.split-menu-button > .label,.split-menu-button > .arrow-button {
+	-fx-border-color: #cccccc;
+	-fx-text-fill: #333333;
+}
+
+	/*for date picker arrow button*/
+.date-picker > .arrow-button {
+	-fx-border-radius: 0 4 4 0;
+}
+.combo-box > .arrow-button, .choice-box > .arrow-button {
+	-fx-border-width: 0;
+}
+	/*hover state*/
+.color-picker:hover,
+.date-picker:hover > .arrow-button,
+.combo-box:hover,.choice-box:hover,
+.number-button:hover,.left-arrow-button:hover,.right-arrow-button:hover,
+.button:hover,.menu-button:hover,.toggle-button:hover,
+.font-menu-button:hover,
+.split-menu-button > .label:hover, .split-menu-button > .arrow-button:hover {
+	-fx-background-color: #e6e6e6;
+	-fx-border-color: #acacac;
+}
+	/*pressed selected*/
+.color-picker:pressed,.color-picker:selected,
+.number-button:pressed,.number-button:selected,
+.date-picker:pressed > .arrow-button,
+.combo-box:pressed > .arrow-button,.combo-box:selected > .arrow-button,
+.choice-box:pressed > .arrow-button,.choice-box:selected > .arrow-button,
+.font-menu-button:pressed,.font-menu-button:selected,
+.left-arrow-button:pressed,.left-arrow-button:selected,
+.right-arrow-button:pressed,.right-arrow-button:selected,
+.button:pressed, .button:selected,.menu-button:pressed,.menu-button:selected
+,.toggle-button:pressed,.toggle-button:selected,
+.split-menu-button:pressed > .label, .split-menu-button > .arrow-button:pressed {
+	-fx-background-color: #e6e6e6;
+	-fx-border-color: #acacac;
+	-fx-effect: innershadow(gaussian, #adadad, 10, 0, 0, 3);
+}
+
+/////
+
+.text-field {
+	-fx-pref-height: 30;
+}
+
+.combo-box, .choice-box {
+	-fx-background-insets: 0;
+	-fx-border-color: #cecece;
+	-fx-padding: -1;
+	-fx-border-width: 1;
+}
+
+.combo-box, .choice-box, .color-picker, .date-picker {
+	-fx-border-radius: 4;
+	-fx-background-radius: 4;
+	-fx-pref-height: 30;
+}
+
+.combo-box:editable > .arrow-button {
+	-fx-background-color: white;
+}
+
+.combo-box:editable > .arrow-button:hover {
+	-fx-background-color: #e6e6e6;
+}
+
+.combo-box:editable > .arrow-button:pressed {
+	-fx-effect: innershadow(gaussian, #adadad, 10, 0, 0, 3);
+}
+
+.combo-box > .text-input, .date-picker > .text-input {
+	-fx-background-radius: 4 0 0 4;
+	-fx-border-width: 0;
+}
+
+.text-field, .text-area {
+	-fx-border-color: #cccccc;
+	-fx-background-color: white;
+	-fx-border-radius: 4;
+	-fx-background-radius: 4;
+	-fx-effect: innershadow(gaussian, transparent, 0, 0, 0, 0);
+}
+
+.text-field:focused, .text-area:focused {
+	-fx-border-color: #66afe9;
+	-fx-effect: dropshadow(gaussian, #66afe9, 10, 0, 0, 0);
+}
+
+.text-area .scroll-pane, .text-area .scroll-pane .content {
+	-fx-background-color: white;
+	-fx-background-radius: 4;
+}
+
+.scroll-bar {
+	-fx-background-color: #fafafa;
+	-fx-background-radius: 0;
+	-fx-block-increment: 50;
+}
+
+.corner {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar .decrement-button, .scroll-bar .decrement-arrow {
+	visibility: hidden;
+	-fx-pref-height: 1;
+	-fx-pref-width: 1;
+}
+
+.scroll-bar .increment-button, .scroll-bar .increment-arrow {
+	visibility: hidden;
+	-fx-pref-height: 1;
+	-fx-pref-width: 1;
+}
+
+.scroll-bar:vertical {
+	-fx-pref-width: 10;
+}
+
+.scroll-bar:horizontal {
+	-fx-pref-height: 10;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb {
+	-fx-background-color: #c9c9c9;
+	-fx-background-insets: 2 0 2 0;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:vertical .thumb {
+	-fx-background-color: #c9c9c9;
+	-fx-background-insets: 0 2 0 2;
+	-fx-background-radius: 5;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+	-fx-background-color: #b5b5b5;
+}
+
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+	-fx-background-color: #a0a0a0;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+	-fx-background-color: transparent;
+	-fx-background-radius: 5;
+	-fx-padding: 5;
+}
+
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+	-fx-background-color: transparent;
+	-fx-background-radius: 5;
+	-fx-padding: 5;
+}
+
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+	-fx-background-color: transparent, rgb(96, 96, 96), rgb(96, 96, 96);
+}
+
+/*table view columns*/
+.filler,.column-header,.show-hide-columns-button {
+	-fx-background-color: #dddddd, white, white;
+}
+.show-hide-columns-button {
+	-fx-border-width: 0;
+	-fx-background-insets: 0 0 1 1;
+}
+.column-header:hover,.show-hide-columns-button:hover {
+	-fx-background-color: #dddddd, white, #f8f8f8;
+}
+.column-header-background > .filler {
+	-fx-border-color: transparent #dddddd transparent transparent;
+	-fx-border-insets: 0 1 0 0;
+}
+.column-drag-header {
+	-fx-background-color: #2fb254;
+}
+
+/*split pane*/
+.split-pane > .split-pane-divider {
+	-fx-background-color: white;
+	-fx-border-color: #eeeeee;
+	-fx-pref-width: 8;
+}
+.split-pane:horizontal > .split-pane-divider {
+	-fx-background-insets: 0, 0 1 0 1;
+	-fx-border-width: 0 1 0 1;
+}
+/* vertical the two nodes are placed on top of each other. */
+.split-pane:vertical > .split-pane-divider {
+	-fx-background-insets: 0, 1 0 1 0;
+	-fx-border-width: 1 0 1 0;
+}
+.split-pane > .split-pane-divider:hover {
+	-fx-background-color: #E0E0E0;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * RadioButton                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.radio-button {
+	-fx-label-padding: 0.0em 0.0em 0.1em 0.416667em; /* 0 0 0 5 */
+	-fx-text-fill: -fx-text-background-color;
+	-fx-padding: 0 0 .5 0;
+}
+.radio-button > .radio,
+.radio-button:focused > .radio  {
+	-fx-border-color: #56c0e0;
+	-fx-border-radius: 1em;
+	-fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+	-fx-padding: 1 2 3 2;
+	-fx-background-color: white;
+}
+.radio-button > .radio > .dot {
+	-fx-background-color: transparent;
+	-fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+	-fx-padding: 0.333333em; /* 4 -- radius of the inner black dot when selected */
+	-fx-background-insets: 3 2 1 2;
+}
+.radio-button:selected > .radio,.radio-button:hover > .radio {
+	-fx-fill-color: #56c0e0;
+}
+.radio-button:pressed > .radio {
+	-fx-background-color: #50c0e2;
+}
+.radio-button:selected > .radio > .dot {
+	-fx-background-color: #56c0e0;
+}
